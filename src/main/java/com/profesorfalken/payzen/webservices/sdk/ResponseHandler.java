@@ -1,6 +1,4 @@
 /*
- * Copyright 2015 Javier Garcia Alonso.
- *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -16,12 +14,13 @@
 package com.profesorfalken.payzen.webservices.sdk;
 
 /**
- * Allows to handle the response using a callback logic. Uses @FunctionalInterface 
- * annotation in order to be supported by Java 8+ closures
- * 
+ * Allows to handle the response using a callback logic. Uses
+ * @FunctionalInterface annotation in order to be supported by Java 8+ closures
+ *
  * @author Javier Garcia Alonso
  */
 @FunctionalInterface
 public interface ResponseHandler {
+
     void handle(ServiceResult response) throws Exception;
 }

@@ -1,6 +1,4 @@
 /*
- * Copyright 2015 Javier Garcia Alonso.
- *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -25,15 +23,16 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Utils used by request object builders
- * 
+ *
  * @author Javier Garcia Alonso
  */
 public class BuilderUtils {
+
     private static final Logger logger = LoggerFactory.getLogger(BuilderUtils.class);
 
     /**
      * Converts an object du type java.util.Date into XMLGregorianCalendar
-     * 
+     *
      * @param date date in format java.util.Date
      * @return object du type XMLGregorianCalendar
      */

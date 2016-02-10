@@ -1,6 +1,4 @@
 /*
- * Copyright 2015 Javier Garcia Alonso.
- *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -15,13 +13,13 @@
  */
 package com.profesorfalken.payzen.webservices.sdk.builder.request;
 
-import com.lyra.vads.ws.v5.OrderRequest;
 import com.lyra.vads.ws.v5.ExtInfo;
+import com.lyra.vads.ws.v5.OrderRequest;
 import java.util.List;
 
 /**
  * Builder class to help in the construction of a OrderRequest
- * 
+ *
  * @author Javier Garcia Alonso
  */
 public class OrderRequestBuilder {

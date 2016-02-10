@@ -1,6 +1,4 @@
 /*
- * Copyright 2015 Javier Garcia Alonso.
- *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -20,17 +18,17 @@ import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLSession;
 
 /**
- * Verifier that checks that the hostName matchs with the server's auhentication 
+ * Verifier that checks that the hostName matchs with the server's auhentication
  * scheme
- * 
+ *
  * @author Javier Garcia Alonso
  */
 public class PayzenHostnameVerifier implements HostnameVerifier {
 
     @Override
     public boolean verify(String hostname, SSLSession session) {
-        HostnameVerifier hv =
-            HttpsURLConnection.getDefaultHostnameVerifier();
+        HostnameVerifier hv
+                = HttpsURLConnection.getDefaultHostnameVerifier();
         String endpointToVerify = Config.getConfig().getProperty("endpointHost");
         return hv.verify(endpointToVerify, session);
     }

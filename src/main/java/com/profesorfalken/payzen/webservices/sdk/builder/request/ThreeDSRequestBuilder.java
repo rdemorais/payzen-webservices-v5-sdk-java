@@ -1,6 +1,4 @@
 /*
- * Copyright 2015 Javier Garcia Alonso.
- *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -20,7 +18,7 @@ import com.lyra.vads.ws.v5.ThreeDSRequest;
 
 /**
  * Builder class to help in the construction of a ThreeDSRequest
- * 
+ *
  * @author Javier Garcia Alonso
  */
 public class ThreeDSRequestBuilder {
@@ -35,10 +33,10 @@ public class ThreeDSRequestBuilder {
     private String xid;
     private String cavv;
     private String algorithm;
-    
+
     private ThreeDSRequestBuilder() {
     }
-  
+
     public static ThreeDSRequestBuilder create() {
         return new ThreeDSRequestBuilder();
     }
@@ -57,7 +55,7 @@ public class ThreeDSRequestBuilder {
         this.pares = pares;
         return this;
     }
-    
+
     public ThreeDSRequestBuilder brand(String brand) {
         this.brand = brand;
         return this;

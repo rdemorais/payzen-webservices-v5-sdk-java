@@ -1,6 +1,4 @@
 /*
- * Copyright 2015 Javier Garcia Alonso.
- *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -21,10 +19,11 @@ import java.util.List;
 
 /**
  * Builder class to help in the construction of a ShoppingCartRequest
- * 
+ *
  * @author Javier Garcia Alonso
  */
 public class ShoppingCartRequestBuilder {
+
     private Long insuranceAmount;
     private Long shippingAmount;
     private Long taxAmount;
@@ -45,15 +44,15 @@ public class ShoppingCartRequestBuilder {
     public void setCartItemInfo(List<CartItemInfo> cartItemInfo) {
         this.cartItemInfo = cartItemInfo;
     }
-    
+
     public ShoppingCartRequest build() {
         ShoppingCartRequest shoppingCartRequest = new ShoppingCartRequest();
-        
+
         shoppingCartRequest.setInsuranceAmount(insuranceAmount);
         shoppingCartRequest.setShippingAmount(shippingAmount);
         shoppingCartRequest.setTaxAmount(taxAmount);
         shoppingCartRequest.getCartItemInfo().addAll(cartItemInfo);
-        
+
         return shoppingCartRequest;
     }
 }

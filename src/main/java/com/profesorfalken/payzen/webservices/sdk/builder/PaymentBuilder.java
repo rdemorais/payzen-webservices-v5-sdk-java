@@ -1,6 +1,4 @@
 /*
- * Copyright 2015 Javier Garcia Alonso.
- *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -21,12 +19,12 @@ import com.lyra.vads.ws.v5.CreatePayment;
 import com.lyra.vads.ws.v5.OrderRequest;
 import com.lyra.vads.ws.v5.PaymentRequest;
 import com.lyra.vads.ws.v5.ThreeDSRequest;
-import java.util.Date;
 import com.profesorfalken.payzen.webservices.sdk.util.BuilderUtils;
+import java.util.Date;
 
 /**
  * Builder class to help in the construction of a PaymentRequest
- * 
+ *
  * @author Javier Garcia Alonso
  */
 public class PaymentBuilder {
@@ -82,7 +80,7 @@ public class PaymentBuilder {
         this.card = card;
         return this;
     }
-    
+
     public PaymentBuilder threeDS(ThreeDSRequest threeDS) {
         this.threeDS = threeDS;
         return this;

@@ -1,6 +1,4 @@
 /*
- * Copyright 2015 Javier Garcia Alonso.
- *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -30,15 +28,15 @@ import com.lyra.vads.ws.v5.QueryRequest;
 import com.lyra.vads.ws.v5.ThreeDSMode;
 import com.lyra.vads.ws.v5.ThreeDSRequest;
 import com.lyra.vads.ws.v5.UpdatePaymentResponse;
-import java.util.Collections;
-import java.util.Date;
-import javax.xml.ws.BindingProvider;
-import javax.xml.ws.handler.MessageContext;
 import com.profesorfalken.payzen.webservices.sdk.client.ClientV5;
 import com.profesorfalken.payzen.webservices.sdk.util.BuilderUtils;
 import com.profesorfalken.payzen.webservices.sdk.util.RequestUtils;
 import com.profesorfalken.payzen.webservices.sdk.util.SessionUtils;
+import java.util.Collections;
+import java.util.Date;
 import java.util.Map;
+import javax.xml.ws.BindingProvider;
+import javax.xml.ws.handler.MessageContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -436,7 +434,7 @@ final class PaymentInstance {
 
         return serviceResult;
     }
-    
+
     /**
      * Updates an existing transaction using the UUID of the transaction<p>
      *
@@ -445,7 +443,7 @@ final class PaymentInstance {
      *
      * @param uuidTransaction unique identifier of the transaction
      * @param amount the new amount of the transaction
-     * 
+     *
      * @return result with all the response objects
      *
      * @see Payment#details(java.lang.String)
@@ -454,7 +452,7 @@ final class PaymentInstance {
         PaymentAPI api = new ClientV5(config).getPaymentAPIImplPort();
         QueryRequest queryRequest = new QueryRequest();
         queryRequest.setUuid(uuidTransaction);
-        
+
         PaymentRequest paymentRequest = new PaymentRequest();
         paymentRequest.setAmount(amount);
         paymentRequest.setCurrency(currency);
@@ -465,7 +463,7 @@ final class PaymentInstance {
 
         return serviceResult;
     }
-    
+
     /**
      * Updates an existing transaction using the UUID of the transaction<p>
      *
@@ -474,7 +472,7 @@ final class PaymentInstance {
      *
      * @param uuidTransaction unique identifier of the transaction
      * @param captureDate expected capture date
-     * 
+     *
      * @return result with all the response objects
      *
      * @see Payment#details(java.lang.String)
@@ -483,7 +481,7 @@ final class PaymentInstance {
         PaymentAPI api = new ClientV5(config).getPaymentAPIImplPort();
         QueryRequest queryRequest = new QueryRequest();
         queryRequest.setUuid(uuidTransaction);
-        
+
         PaymentRequest paymentRequest = new PaymentRequest();
         paymentRequest.setExpectedCaptureDate(BuilderUtils.date2XMLGregorianCalendar(captureDate));
 
@@ -493,7 +491,7 @@ final class PaymentInstance {
 
         return serviceResult;
     }
-    
+
     /**
      * Updates an existing transaction using the UUID of the transaction<p>
      *
@@ -511,7 +509,7 @@ final class PaymentInstance {
         PaymentAPI api = new ClientV5(config).getPaymentAPIImplPort();
         QueryRequest queryRequest = new QueryRequest();
         queryRequest.setUuid(uuidTransaction);
-        
+
         PaymentRequest paymentRequest = new PaymentRequest();
         paymentRequest.setAmount(amount);
         paymentRequest.setCurrency(currency);
@@ -522,7 +520,7 @@ final class PaymentInstance {
 
         return serviceResult;
     }
-    
+
     /**
      * Updates an existing transaction using the UUID of the transaction<p>
      *
@@ -540,7 +538,7 @@ final class PaymentInstance {
         PaymentAPI api = new ClientV5(config).getPaymentAPIImplPort();
         QueryRequest queryRequest = new QueryRequest();
         queryRequest.setUuid(uuidTransaction);
-        
+
         PaymentRequest paymentRequest = new PaymentRequest();
         paymentRequest.setExpectedCaptureDate(BuilderUtils.date2XMLGregorianCalendar(captureDate));
 

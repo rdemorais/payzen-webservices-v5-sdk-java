@@ -1,6 +1,4 @@
 /*
- * Copyright 2015 Javier Garcia Alonso.
- *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -38,7 +36,7 @@ import com.profesorfalken.payzen.webservices.sdk.util.Config;
 
 /**
  * Result object that encapsulates the response of a Payzen Web Service.
- * 
+ *
  * @author Javier Garcia Alonso
  */
 public final class ServiceResult {
@@ -91,11 +89,11 @@ public final class ServiceResult {
         subscriptionResponse = detailsPaymentResult.getSubscriptionResponse();
         threeDSResponse = detailsPaymentResult.getThreeDSResponse();
     }
-    
+
     public ServiceResult(CancelPaymentResponse.CancelPaymentResult cancelResult) {
         commonResponse = cancelResult.getCommonResponse();
     }
-    
+
     public ServiceResult(UpdatePaymentResponse.UpdatePaymentResult updateResult) {
         commonResponse = updateResult.getCommonResponse();
         paymentResponse = updateResult.getPaymentResponse();

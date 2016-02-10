@@ -1,6 +1,4 @@
 /*
- * Copyright 2015 Javier Garcia Alonso.
- *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -15,25 +13,26 @@
  */
 package com.profesorfalken.payzen.webservices.sdk.handler.response;
 
-import org.apache.commons.lang.builder.ToStringBuilder;
 import com.profesorfalken.payzen.webservices.sdk.ResponseHandler;
 import com.profesorfalken.payzen.webservices.sdk.ServiceResult;
+import org.apache.commons.lang.builder.ToStringBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
  * Response handler (callback) that writes all the response in the logs
- * 
+ *
  * @author Javier Garcia Alonso
  */
-public class LogResponseHandler implements ResponseHandler{
+public class LogResponseHandler implements ResponseHandler {
+
     private static final Logger logger = LoggerFactory.getLogger(LogResponseHandler.class);
 
     @Override
     public void handle(ServiceResult response) throws Exception {
         logger.info("Response Code: " + response.getCommonResponse().getResponseCode());
         logger.info("Response Code Detail: " + response.getCommonResponse().getResponseCodeDetail());
-        
+
         logger.info("Common Response: " + ToStringBuilder.reflectionToString(response.getCommonResponse()));
         logger.info("Authorization Response: " + ToStringBuilder.reflectionToString(response.getAuthorizationResponse()));
         logger.info("Capture Response: " + ToStringBuilder.reflectionToString(response.getCaptureResponse()));
@@ -49,5 +48,5 @@ public class LogResponseHandler implements ResponseHandler{
         logger.info("3DS Response: " + ToStringBuilder.reflectionToString(response.getThreeDSResponse()));
         logger.info("Token Response: " + ToStringBuilder.reflectionToString(response.getTokenResponse()));
     }
-    
+
 }
