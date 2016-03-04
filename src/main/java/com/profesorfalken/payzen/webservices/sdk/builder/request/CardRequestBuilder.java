@@ -14,12 +14,12 @@
 package com.profesorfalken.payzen.webservices.sdk.builder.request;
 
 import com.lyra.vads.ws.v5.CardRequest;
-import com.profesorfalken.payzen.webservices.sdk.util.BuilderUtils;
 import java.util.Date;
+import com.profesorfalken.payzen.webservices.sdk.util.BuilderUtils;
 
 /**
  * Builder class to help in the construction of a CardRequest
- *
+ * 
  * @author Javier Garcia Alonso
  */
 public class CardRequestBuilder {

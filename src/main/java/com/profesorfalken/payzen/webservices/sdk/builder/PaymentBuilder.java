@@ -19,12 +19,12 @@ import com.lyra.vads.ws.v5.CreatePayment;
 import com.lyra.vads.ws.v5.OrderRequest;
 import com.lyra.vads.ws.v5.PaymentRequest;
 import com.lyra.vads.ws.v5.ThreeDSRequest;
-import com.profesorfalken.payzen.webservices.sdk.util.BuilderUtils;
 import java.util.Date;
+import com.profesorfalken.payzen.webservices.sdk.util.BuilderUtils;
 
 /**
  * Builder class to help in the construction of a PaymentRequest
- *
+ * 
  * @author Javier Garcia Alonso
  */
 public class PaymentBuilder {
@@ -80,7 +80,7 @@ public class PaymentBuilder {
         this.card = card;
         return this;
     }
-
+    
     public PaymentBuilder threeDS(ThreeDSRequest threeDS) {
         this.threeDS = threeDS;
         return this;

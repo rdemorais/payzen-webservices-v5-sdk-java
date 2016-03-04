@@ -13,6 +13,16 @@
  */
 package com.profesorfalken.payzen.webservices.sdk;
 
+import java.util.Collections;
+import java.util.Date;
+import java.util.Map;
+
+import javax.xml.ws.BindingProvider;
+import javax.xml.ws.handler.MessageContext;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.lyra.vads.ws.v5.CancelPaymentResponse;
 import com.lyra.vads.ws.v5.CardRequest;
 import com.lyra.vads.ws.v5.CommonRequest;
@@ -28,17 +38,11 @@ import com.lyra.vads.ws.v5.QueryRequest;
 import com.lyra.vads.ws.v5.ThreeDSMode;
 import com.lyra.vads.ws.v5.ThreeDSRequest;
 import com.lyra.vads.ws.v5.UpdatePaymentResponse;
+import com.lyra.vads.ws.v5.ValidatePaymentResponse.ValidatePaymentResult;
 import com.profesorfalken.payzen.webservices.sdk.client.ClientV5;
 import com.profesorfalken.payzen.webservices.sdk.util.BuilderUtils;
 import com.profesorfalken.payzen.webservices.sdk.util.RequestUtils;
 import com.profesorfalken.payzen.webservices.sdk.util.SessionUtils;
-import java.util.Collections;
-import java.util.Date;
-import java.util.Map;
-import javax.xml.ws.BindingProvider;
-import javax.xml.ws.handler.MessageContext;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Implementation of methods used by Payment class to create web service
@@ -434,7 +438,7 @@ final class PaymentInstance {
 
         return serviceResult;
     }
-
+    
     /**
      * Updates an existing transaction using the UUID of the transaction<p>
      *
@@ -443,7 +447,7 @@ final class PaymentInstance {
      *
      * @param uuidTransaction unique identifier of the transaction
      * @param amount the new amount of the transaction
-     *
+     * 
      * @return result with all the response objects
      *
      * @see Payment#details(java.lang.String)
@@ -452,7 +456,7 @@ final class PaymentInstance {
         PaymentAPI api = new ClientV5(config).getPaymentAPIImplPort();
         QueryRequest queryRequest = new QueryRequest();
         queryRequest.setUuid(uuidTransaction);
-
+        
         PaymentRequest paymentRequest = new PaymentRequest();
         paymentRequest.setAmount(amount);
         paymentRequest.setCurrency(currency);
@@ -463,7 +467,7 @@ final class PaymentInstance {
 
         return serviceResult;
     }
-
+    
     /**
      * Updates an existing transaction using the UUID of the transaction<p>
      *
@@ -472,7 +476,7 @@ final class PaymentInstance {
      *
      * @param uuidTransaction unique identifier of the transaction
      * @param captureDate expected capture date
-     *
+     * 
      * @return result with all the response objects
      *
      * @see Payment#details(java.lang.String)
@@ -481,7 +485,7 @@ final class PaymentInstance {
         PaymentAPI api = new ClientV5(config).getPaymentAPIImplPort();
         QueryRequest queryRequest = new QueryRequest();
         queryRequest.setUuid(uuidTransaction);
-
+        
         PaymentRequest paymentRequest = new PaymentRequest();
         paymentRequest.setExpectedCaptureDate(BuilderUtils.date2XMLGregorianCalendar(captureDate));
 
@@ -491,7 +495,33 @@ final class PaymentInstance {
 
         return serviceResult;
     }
+    
+    /**
+     * Updates an existing transaction using the UUID of the transaction<p>
+     *
+     * Please read official documentation for more detailed information about
+     * parameter content.
+     *
+     * @param uuidTransaction unique identifier of the transaction
+     * @param paymentRequest payment request parameters to update
+     * 
+     * @return result with all the response objects
+     *
+     * @see Payment#details(java.lang.String)
+     */
+    ServiceResult updateSimple(Map<String, String> config, String uuidTransaction, PaymentRequest paymentRequest) {
+        PaymentAPI api = new ClientV5(config).getPaymentAPIImplPort();
+        QueryRequest queryRequest = new QueryRequest();
+        queryRequest.setUuid(uuidTransaction);
+        
+        UpdatePaymentResponse.UpdatePaymentResult updateResponse = api.updatePayment(new CommonRequest(), queryRequest, paymentRequest);
 
+        ServiceResult serviceResult = new ServiceResult(updateResponse);
+
+        return serviceResult;
+    }
+    
+    
     /**
      * Updates an existing transaction using the UUID of the transaction<p>
      *
@@ -509,7 +539,7 @@ final class PaymentInstance {
         PaymentAPI api = new ClientV5(config).getPaymentAPIImplPort();
         QueryRequest queryRequest = new QueryRequest();
         queryRequest.setUuid(uuidTransaction);
-
+        
         PaymentRequest paymentRequest = new PaymentRequest();
         paymentRequest.setAmount(amount);
         paymentRequest.setCurrency(currency);
@@ -520,7 +550,7 @@ final class PaymentInstance {
 
         return serviceResult;
     }
-
+    
     /**
      * Updates an existing transaction using the UUID of the transaction<p>
      *
@@ -538,7 +568,7 @@ final class PaymentInstance {
         PaymentAPI api = new ClientV5(config).getPaymentAPIImplPort();
         QueryRequest queryRequest = new QueryRequest();
         queryRequest.setUuid(uuidTransaction);
-
+        
         PaymentRequest paymentRequest = new PaymentRequest();
         paymentRequest.setExpectedCaptureDate(BuilderUtils.date2XMLGregorianCalendar(captureDate));
 
@@ -548,6 +578,30 @@ final class PaymentInstance {
 
         return serviceResult;
     }
+    
+    /**
+     * Validate an existing transaction using the UUID of the transaction<p>
+     * 
+     * Please read official documentation for more detailed information about parameter content.
+     * 
+     * @param uuidTransaction unique identifier of the transaction
+     * @param paymentRequest paymentRequest parameters to update
+     * @return result with all the response objects
+     */
+    ValidatePaymentResult validatePayment(Map<String, String> config, String uuidTransaction, String comment) {
+        PaymentAPI api = new ClientV5(config).getPaymentAPIImplPort();
+        QueryRequest queryRequest = new QueryRequest();
+        queryRequest.setUuid(uuidTransaction);
+        
+        CommonRequest commonRequest = new CommonRequest();
+        if (comment != null && !comment.isEmpty())
+        	commonRequest.setComment(comment);
+        
+        ValidatePaymentResult validatePayment = api.validatePayment(commonRequest, queryRequest);
+
+        return validatePayment;
+    }
+    
 
     //TODO: not used for the moment
     ServiceResult details(Map<String, String> config, String orderId) {

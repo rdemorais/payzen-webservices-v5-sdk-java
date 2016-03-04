@@ -18,7 +18,7 @@ import com.lyra.vads.ws.v5.ThreeDSRequest;
 
 /**
  * Builder class to help in the construction of a ThreeDSRequest
- *
+ * 
  * @author Javier Garcia Alonso
  */
 public class ThreeDSRequestBuilder {
@@ -33,10 +33,10 @@ public class ThreeDSRequestBuilder {
     private String xid;
     private String cavv;
     private String algorithm;
-
+    
     private ThreeDSRequestBuilder() {
     }
-
+  
     public static ThreeDSRequestBuilder create() {
         return new ThreeDSRequestBuilder();
     }
@@ -55,7 +55,7 @@ public class ThreeDSRequestBuilder {
         this.pares = pares;
         return this;
     }
-
+    
     public ThreeDSRequestBuilder brand(String brand) {
         this.brand = brand;
         return this;

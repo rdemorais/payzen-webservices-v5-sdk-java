@@ -38,15 +38,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * This SOAP handler class generates the header of the message with all the
+ * This SOAP handler class generates the header of the message with all the 
  * authentication token information
- *
+ * 
  * @author Javier Garcia Alonso
  */
 public class HeaderHandler implements SOAPHandler<SOAPMessageContext> {
-
     private static final Logger logger = LoggerFactory.getLogger(HeaderHandler.class);
-
+    
     private final String shopId;
     private final String shopKey;
     private final String mode;
@@ -60,24 +59,24 @@ public class HeaderHandler implements SOAPHandler<SOAPMessageContext> {
     }
 
     /**
-     * Takes the outgoing SOAP message and modifies it adding the header
+     * Takes the outgoing SOAP message and modifies it adding the header 
      * information
-     *
+     * 
      * @param smc SOAP message context
-     * @return
+     * @return 
      */
     @Override
     public boolean handleMessage(SOAPMessageContext smc) {
 
         Boolean outboundProperty = (Boolean) smc.get(MessageContext.MESSAGE_OUTBOUND_PROPERTY);
-
+        
         if (Boolean.TRUE.equals(outboundProperty)) {
 
             SOAPMessage message = smc.getMessage();
 
             try {
                 SOAPEnvelope envelope = message.getSOAPPart().getEnvelope();
-
+                
                 //Creates header into SOAP envelope
                 SOAPHeader header = envelope.getHeader();
                 if (header == null) {

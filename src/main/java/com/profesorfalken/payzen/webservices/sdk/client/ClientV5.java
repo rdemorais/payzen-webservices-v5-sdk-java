@@ -14,17 +14,17 @@
 package com.profesorfalken.payzen.webservices.sdk.client;
 
 import com.lyra.vads.ws.v5.PaymentAPI;
+import java.net.MalformedURLException;
+import java.net.URL;
+import javax.net.ssl.HttpsURLConnection;
+import javax.xml.namespace.QName;
+import javax.xml.ws.Service;
 import com.profesorfalken.payzen.webservices.sdk.handler.soap.HeaderHandlerResolver;
 import com.profesorfalken.payzen.webservices.sdk.util.Config;
 import com.profesorfalken.payzen.webservices.sdk.util.NullHostnameVerifier;
 import com.profesorfalken.payzen.webservices.sdk.util.PayzenHostnameVerifier;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.Map;
 import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.HttpsURLConnection;
-import javax.xml.namespace.QName;
-import javax.xml.ws.Service;
 
 /**
  * Encapsulates the client WS to call Payment operations
@@ -50,8 +50,8 @@ public class ClientV5 {
         }
 
         //Adds hostnameverifier to check domain/certificate
-        HostnameVerifier verifier = ("true".equalsIgnoreCase(disableHostnameVerifier))
-                ? new NullHostnameVerifier() : new PayzenHostnameVerifier();
+        HostnameVerifier verifier = ("true".equalsIgnoreCase(disableHostnameVerifier)) ? 
+                new NullHostnameVerifier() : new PayzenHostnameVerifier();
         HttpsURLConnection.setDefaultHostnameVerifier(verifier);
 
         //Initialises port

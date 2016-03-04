@@ -19,17 +19,16 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Util class that reads the content of the config file and convert it into
+ * Util class that reads the content of the config file and convert it into 
  * Properties.
- *
+ * 
  * @author javier
  */
 public final class Config {
-
     private static final Logger logger = LoggerFactory.getLogger(Config.class);
-    private static final String CONFIG_FILENAME = "payzen-config.properties";
-
-    private static Properties config;
+   private static final String CONFIG_FILENAME = "payzen-config.properties";
+   
+   private static Properties config;   
 
     public static Properties getConfig() {
         if (config == null) {
@@ -41,7 +40,7 @@ public final class Config {
                 logger.error("Cannot read config values from file:" + CONFIG_FILENAME, ex);
             }
         }
-
+        
         return config;
     }
 }
