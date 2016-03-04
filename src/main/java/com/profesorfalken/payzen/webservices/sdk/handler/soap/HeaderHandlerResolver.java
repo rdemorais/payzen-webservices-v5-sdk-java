@@ -20,8 +20,8 @@ import javax.xml.ws.handler.HandlerResolver;
 import javax.xml.ws.handler.PortInfo;
 
 /**
- * Class used to add a handler into the web service handler chain
- *
+ * Class used to add a handler into the web service handler chain 
+ * 
  * @author Javier Garcia Alonso
  */
 public class HeaderHandlerResolver implements HandlerResolver {
@@ -38,7 +38,7 @@ public class HeaderHandlerResolver implements HandlerResolver {
 
     /**
      * Adds HeaderHandler into the handler chain
-     *
+     * 
      * @param portInfo
      * @return list of handlers
      */

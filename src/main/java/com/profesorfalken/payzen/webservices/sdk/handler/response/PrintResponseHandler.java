@@ -13,23 +13,22 @@
  */
 package com.profesorfalken.payzen.webservices.sdk.handler.response;
 
+import org.apache.commons.lang.builder.ToStringBuilder;
 import com.profesorfalken.payzen.webservices.sdk.ResponseHandler;
 import com.profesorfalken.payzen.webservices.sdk.ServiceResult;
-import org.apache.commons.lang.builder.ToStringBuilder;
 
 /**
- * Response handler (callback) that writes all the response in the standard
- * output
- *
+ * Response handler (callback) that writes all the response in the standard output
+ * 
  * @author Javier Garcia Alonso
  */
-public class PrintResponseHandler implements ResponseHandler {
+public class PrintResponseHandler implements ResponseHandler{
 
     @Override
     public void handle(ServiceResult response) throws Exception {
         System.out.println("Response Code: " + response.getCommonResponse().getResponseCode());
         System.out.println("Response Code Detail: " + response.getCommonResponse().getResponseCodeDetail());
-
+        
         System.out.println("Common Response: " + ToStringBuilder.reflectionToString(response.getCommonResponse()));
         System.out.println("Authorization Response: " + ToStringBuilder.reflectionToString(response.getAuthorizationResponse()));
         System.out.println("Capture Response: " + ToStringBuilder.reflectionToString(response.getCaptureResponse()));
@@ -45,5 +44,5 @@ public class PrintResponseHandler implements ResponseHandler {
         System.out.println("3DS Response: " + ToStringBuilder.reflectionToString(response.getThreeDSResponse()));
         System.out.println("Token Response: " + ToStringBuilder.reflectionToString(response.getTokenResponse()));
     }
-
+    
 }

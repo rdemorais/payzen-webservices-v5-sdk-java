@@ -14,16 +14,15 @@
 package com.profesorfalken.payzen.webservices.sdk.builder.request;
 
 import com.lyra.vads.ws.v5.PaymentRequest;
-import com.profesorfalken.payzen.webservices.sdk.util.BuilderUtils;
 import java.util.Date;
+import com.profesorfalken.payzen.webservices.sdk.util.BuilderUtils;
 
 /**
  * Builder class to help in the construction of a PaymentRequest
- *
+ * 
  * @author Javier Garcia Alonso
  */
 public class PaymentRequestBuilder {
-
     private String transactionId;
     private Long amount;
     private Integer currency;
@@ -33,7 +32,7 @@ public class PaymentRequestBuilder {
 
     private PaymentRequestBuilder() {
     }
-
+  
     public static PaymentRequestBuilder create() {
         return new PaymentRequestBuilder();
     }

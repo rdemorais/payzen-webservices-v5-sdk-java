@@ -23,11 +23,10 @@ import com.lyra.vads.ws.v5.ShippingDetailsRequest;
 
 /**
  * Builder class to help in the construction of a CustomerRequest
- *
+ * 
  * @author Javier Garcia Alonso
  */
 public class CustomerRequestBuilder {
-
     private BillingDetailsRequest billingDetailsRequest;
     private ShippingDetailsRequest shippingDetailsRequest;
     private ExtraDetailsRequest extraDetailsRequest;
@@ -46,14 +45,14 @@ public class CustomerRequestBuilder {
         this.extraDetailsRequest = extraDetailsRequest;
         return this;
     }
-
+    
     public CustomerRequest build() {
         CustomerRequest customerRequest = new CustomerRequest();
-
+        
         customerRequest.setBillingDetails(billingDetailsRequest);
         customerRequest.setShippingDetails(shippingDetailsRequest);
         customerRequest.setExtraDetails(extraDetailsRequest);
-
+        
         return customerRequest;
     }
 
@@ -189,7 +188,7 @@ public class CustomerRequestBuilder {
             billingDetailsRequest.setTitle(title);
             billingDetailsRequest.setType(type);
             billingDetailsRequest.setZipCode(zipCode);
-
+            
             return billingDetailsRequest;
         }
     }

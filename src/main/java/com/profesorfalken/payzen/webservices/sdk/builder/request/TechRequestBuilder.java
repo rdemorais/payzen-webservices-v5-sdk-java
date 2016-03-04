@@ -17,11 +17,10 @@ import com.lyra.vads.ws.v5.TechRequest;
 
 /**
  * Builder class to help in the construction of a TechRequest
- *
+ * 
  * @author Javier Garcia Alonso
  */
 public class TechRequestBuilder {
-
     private String browserUserAgent;
     private String browserAccept;
 
@@ -34,13 +33,13 @@ public class TechRequestBuilder {
         this.browserAccept = browserAccept;
         return this;
     }
-
+    
     public TechRequest build() {
         TechRequest techRequest = new TechRequest();
-
+        
         techRequest.setBrowserAccept(browserAccept);
         techRequest.setBrowserUserAgent(browserUserAgent);
-
+        
         return techRequest;
     }
 }

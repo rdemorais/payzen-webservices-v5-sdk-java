@@ -23,16 +23,15 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Utils used by request object builders
- *
+ * 
  * @author Javier Garcia Alonso
  */
 public class BuilderUtils {
-
     private static final Logger logger = LoggerFactory.getLogger(BuilderUtils.class);
 
     /**
      * Converts an object du type java.util.Date into XMLGregorianCalendar
-     *
+     * 
      * @param date date in format java.util.Date
      * @return object du type XMLGregorianCalendar
      */
