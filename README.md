@@ -99,7 +99,7 @@ Really, it is that easy.
                 myConfig
     );
 
-**Log all the response:**
+**Log all the response**
 
     create("Test Order",
                 100, 
