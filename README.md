@@ -50,7 +50,7 @@ Really, it is that easy.
 
 ## More examples ##
 
-**Create payment using builder objects:** 
+**Create payment using builder objects** 
 
     OrderRequestBuilder orderRequestBuilder
         = OrderRequestBuilder
@@ -82,6 +82,22 @@ Really, it is that easy.
         (result) -> "Payment Done"
     );
 
+**Override configuration for an operation call** 
+
+    Map<String, String>  myConfig = new HashMap<>();
+    //Change shop
+    myConfig.put("shopId", "123456789");
+    myConfig.put("shopKey", "XXXXXXXXXXXXXXXXXXXXX");
+    create("Test Order",
+                100, 
+                978,
+                "4970100000000003",
+                12,
+                2017,
+                "123",
+                (result) -> "Payment Done",
+                myConfig
+    );
 
 **Log all the response:**
 
