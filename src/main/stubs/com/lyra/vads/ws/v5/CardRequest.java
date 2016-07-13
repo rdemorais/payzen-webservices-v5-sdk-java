@@ -9,9 +9,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Classe Java pour cardRequest complex type.
+ * <p>Java class for cardRequest complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="cardRequest">
@@ -55,7 +55,7 @@ public class CardRequest {
     protected String paymentToken;
 
     /**
-     * Obtient la valeur de la propriété number.
+     * Gets the value of the number property.
      * 
      * @return
      *     possible object is
@@ -67,7 +67,7 @@ public class CardRequest {
     }
 
     /**
-     * Définit la valeur de la propriété number.
+     * Sets the value of the number property.
      * 
      * @param value
      *     allowed object is
@@ -79,7 +79,7 @@ public class CardRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété scheme.
+     * Gets the value of the scheme property.
      * 
      * @return
      *     possible object is
@@ -91,7 +91,7 @@ public class CardRequest {
     }
 
     /**
-     * Définit la valeur de la propriété scheme.
+     * Sets the value of the scheme property.
      * 
      * @param value
      *     allowed object is
@@ -103,7 +103,7 @@ public class CardRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété expiryMonth.
+     * Gets the value of the expiryMonth property.
      * 
      * @return
      *     possible object is
@@ -115,7 +115,7 @@ public class CardRequest {
     }
 
     /**
-     * Définit la valeur de la propriété expiryMonth.
+     * Sets the value of the expiryMonth property.
      * 
      * @param value
      *     allowed object is
@@ -127,7 +127,7 @@ public class CardRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété expiryYear.
+     * Gets the value of the expiryYear property.
      * 
      * @return
      *     possible object is
@@ -139,7 +139,7 @@ public class CardRequest {
     }
 
     /**
-     * Définit la valeur de la propriété expiryYear.
+     * Sets the value of the expiryYear property.
      * 
      * @param value
      *     allowed object is
@@ -151,7 +151,7 @@ public class CardRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété cardSecurityCode.
+     * Gets the value of the cardSecurityCode property.
      * 
      * @return
      *     possible object is
@@ -163,7 +163,7 @@ public class CardRequest {
     }
 
     /**
-     * Définit la valeur de la propriété cardSecurityCode.
+     * Sets the value of the cardSecurityCode property.
      * 
      * @param value
      *     allowed object is
@@ -175,7 +175,7 @@ public class CardRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété cardHolderBirthDay.
+     * Gets the value of the cardHolderBirthDay property.
      * 
      * @return
      *     possible object is
@@ -187,7 +187,7 @@ public class CardRequest {
     }
 
     /**
-     * Définit la valeur de la propriété cardHolderBirthDay.
+     * Sets the value of the cardHolderBirthDay property.
      * 
      * @param value
      *     allowed object is
@@ -199,7 +199,7 @@ public class CardRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété paymentToken.
+     * Gets the value of the paymentToken property.
      * 
      * @return
      *     possible object is
@@ -211,7 +211,7 @@ public class CardRequest {
     }
 
     /**
-     * Définit la valeur de la propriété paymentToken.
+     * Sets the value of the paymentToken property.
      * 
      * @param value
      *     allowed object is

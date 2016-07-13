@@ -9,9 +9,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Classe Java pour commonRequest complex type.
+ * <p>Java class for commonRequest complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="commonRequest">
@@ -46,7 +46,7 @@ public class CommonRequest {
     protected String comment;
 
     /**
-     * Obtient la valeur de la propriété paymentSource.
+     * Gets the value of the paymentSource property.
      * 
      * @return
      *     possible object is
@@ -58,7 +58,7 @@ public class CommonRequest {
     }
 
     /**
-     * Définit la valeur de la propriété paymentSource.
+     * Sets the value of the paymentSource property.
      * 
      * @param value
      *     allowed object is
@@ -70,7 +70,7 @@ public class CommonRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété submissionDate.
+     * Gets the value of the submissionDate property.
      * 
      * @return
      *     possible object is
@@ -82,7 +82,7 @@ public class CommonRequest {
     }
 
     /**
-     * Définit la valeur de la propriété submissionDate.
+     * Sets the value of the submissionDate property.
      * 
      * @param value
      *     allowed object is
@@ -94,7 +94,7 @@ public class CommonRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété contractNumber.
+     * Gets the value of the contractNumber property.
      * 
      * @return
      *     possible object is
@@ -106,7 +106,7 @@ public class CommonRequest {
     }
 
     /**
-     * Définit la valeur de la propriété contractNumber.
+     * Sets the value of the contractNumber property.
      * 
      * @param value
      *     allowed object is
@@ -118,7 +118,7 @@ public class CommonRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété comment.
+     * Gets the value of the comment property.
      * 
      * @return
      *     possible object is
@@ -130,7 +130,7 @@ public class CommonRequest {
     }
 
     /**
-     * Définit la valeur de la propriété comment.
+     * Sets the value of the comment property.
      * 
      * @param value
      *     allowed object is

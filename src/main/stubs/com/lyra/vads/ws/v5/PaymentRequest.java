@@ -9,9 +9,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Classe Java pour paymentRequest complex type.
+ * <p>Java class for paymentRequest complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="paymentRequest">
@@ -52,7 +52,7 @@ public class PaymentRequest {
     protected String paymentOptionCode;
 
     /**
-     * Obtient la valeur de la propriété transactionId.
+     * Gets the value of the transactionId property.
      * 
      * @return
      *     possible object is
@@ -64,7 +64,7 @@ public class PaymentRequest {
     }
 
     /**
-     * Définit la valeur de la propriété transactionId.
+     * Sets the value of the transactionId property.
      * 
      * @param value
      *     allowed object is
@@ -76,7 +76,7 @@ public class PaymentRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété amount.
+     * Gets the value of the amount property.
      * 
      * @return
      *     possible object is
@@ -88,7 +88,7 @@ public class PaymentRequest {
     }
 
     /**
-     * Définit la valeur de la propriété amount.
+     * Sets the value of the amount property.
      * 
      * @param value
      *     allowed object is
@@ -100,7 +100,7 @@ public class PaymentRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété currency.
+     * Gets the value of the currency property.
      * 
      * @return
      *     possible object is
@@ -112,7 +112,7 @@ public class PaymentRequest {
     }
 
     /**
-     * Définit la valeur de la propriété currency.
+     * Sets the value of the currency property.
      * 
      * @param value
      *     allowed object is
@@ -124,7 +124,7 @@ public class PaymentRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété expectedCaptureDate.
+     * Gets the value of the expectedCaptureDate property.
      * 
      * @return
      *     possible object is
@@ -136,7 +136,7 @@ public class PaymentRequest {
     }
 
     /**
-     * Définit la valeur de la propriété expectedCaptureDate.
+     * Sets the value of the expectedCaptureDate property.
      * 
      * @param value
      *     allowed object is
@@ -148,7 +148,7 @@ public class PaymentRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété manualValidation.
+     * Gets the value of the manualValidation property.
      * 
      * @return
      *     possible object is
@@ -160,7 +160,7 @@ public class PaymentRequest {
     }
 
     /**
-     * Définit la valeur de la propriété manualValidation.
+     * Sets the value of the manualValidation property.
      * 
      * @param value
      *     allowed object is
@@ -172,7 +172,7 @@ public class PaymentRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété paymentOptionCode.
+     * Gets the value of the paymentOptionCode property.
      * 
      * @return
      *     possible object is
@@ -184,7 +184,7 @@ public class PaymentRequest {
     }
 
     /**
-     * Définit la valeur de la propriété paymentOptionCode.
+     * Sets the value of the paymentOptionCode property.
      * 
      * @param value
      *     allowed object is

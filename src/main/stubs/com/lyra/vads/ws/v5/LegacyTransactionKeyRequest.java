@@ -9,9 +9,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Classe Java pour legacyTransactionKeyRequest complex type.
+ * <p>Java class for legacyTransactionKeyRequest complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="legacyTransactionKeyRequest">
@@ -43,7 +43,7 @@ public class LegacyTransactionKeyRequest {
     protected XMLGregorianCalendar creationDate;
 
     /**
-     * Obtient la valeur de la propriété transactionId.
+     * Gets the value of the transactionId property.
      * 
      * @return
      *     possible object is
@@ -55,7 +55,7 @@ public class LegacyTransactionKeyRequest {
     }
 
     /**
-     * Définit la valeur de la propriété transactionId.
+     * Sets the value of the transactionId property.
      * 
      * @param value
      *     allowed object is
@@ -67,7 +67,7 @@ public class LegacyTransactionKeyRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété sequenceNumber.
+     * Gets the value of the sequenceNumber property.
      * 
      * @return
      *     possible object is
@@ -79,7 +79,7 @@ public class LegacyTransactionKeyRequest {
     }
 
     /**
-     * Définit la valeur de la propriété sequenceNumber.
+     * Sets the value of the sequenceNumber property.
      * 
      * @param value
      *     allowed object is
@@ -91,7 +91,7 @@ public class LegacyTransactionKeyRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété creationDate.
+     * Gets the value of the creationDate property.
      * 
      * @return
      *     possible object is
@@ -103,7 +103,7 @@ public class LegacyTransactionKeyRequest {
     }
 
     /**
-     * Définit la valeur de la propriété creationDate.
+     * Sets the value of the creationDate property.
      * 
      * @param value
      *     allowed object is

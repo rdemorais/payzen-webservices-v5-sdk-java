@@ -11,9 +11,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Classe Java pour settlementRequest complex type.
+ * <p>Java class for settlementRequest complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="settlementRequest">
@@ -74,7 +74,7 @@ public class SettlementRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété commission.
+     * Gets the value of the commission property.
      * 
      * @return
      *     possible object is
@@ -86,7 +86,7 @@ public class SettlementRequest {
     }
 
     /**
-     * Définit la valeur de la propriété commission.
+     * Sets the value of the commission property.
      * 
      * @param value
      *     allowed object is
@@ -98,7 +98,7 @@ public class SettlementRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété date.
+     * Gets the value of the date property.
      * 
      * @return
      *     possible object is
@@ -110,7 +110,7 @@ public class SettlementRequest {
     }
 
     /**
-     * Définit la valeur de la propriété date.
+     * Sets the value of the date property.
      * 
      * @param value
      *     allowed object is

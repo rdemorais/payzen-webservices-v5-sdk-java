@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.lyra.payzensdk</groupId>
-    <artifactId>payzen-ws-sdk</artifactId>
-    <version>1.0.0</version>
+    <groupId>com.profesorfalken</groupId>
+    <artifactId>PayzenWebServicesSDK</artifactId>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
     
     <name>Payzen Webservices SDK</name>
     <description>SDK to use Payzen SOAP Web Services</description>
-    <url>https://github.com/payzen/payzen-webservices-v5-sdk-java</url>
+    <url>https://github.com/profesorfalken/PayzenWebServicesSDK</url>
 
     <licenses>
         <license>
@@ -20,15 +20,15 @@
     
     <developers>
         <developer>
-            <name>David Fieffe</name>
-            <email>david.fieffe@lyra-network.com</email>
-            <organization>Lyra Network</organization>
-            <organizationUrl>http://www.lyra-network.com</organizationUrl>
+            <name>Javier Garcia Alonso</name>
+            <email>jgarciaalo@gmail.com</email>
+            <organization>ProfesorFalken</organization>
+            <organizationUrl>http://www.profesorfalken.com</organizationUrl>
         </developer>
     </developers>
     
     <scm>
-        <url>https://github.com/payzen/payzen-webservices-v5-sdk-java.git</url>
+        <url>https://github.com/profesorfalken/PayzenWebServicesSDK.git</url>
     </scm>
     
     <distributionManagement>
@@ -36,7 +36,7 @@
             <id>ossrh</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
-		<repository>
+        <repository>
             <id>ossrh</id>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
@@ -46,6 +46,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.5</maven.compiler.source>
         <maven.compiler.target>1.5</maven.compiler.target>
+        <maven.javadoc.failOnError>false</maven.javadoc.failOnError>
     </properties>
     <build>
         <resources>
@@ -66,7 +67,7 @@
                     <plugin>
                         <groupId>org.sonatype.plugins</groupId>
                         <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <version>1.6.7</version>
+                        <version>1.6.3</version>
                         <extensions>true</extensions>
                         <configuration>
                             <serverId>ossrh</serverId>

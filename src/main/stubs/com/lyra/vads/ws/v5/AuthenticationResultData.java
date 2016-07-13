@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour authenticationResultData complex type.
+ * <p>Java class for authenticationResultData complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="authenticationResultData">
@@ -58,7 +58,7 @@ public class AuthenticationResultData {
     protected String transactionCondition;
 
     /**
-     * Obtient la valeur de la propriété brand.
+     * Gets the value of the brand property.
      * 
      * @return
      *     possible object is
@@ -70,7 +70,7 @@ public class AuthenticationResultData {
     }
 
     /**
-     * Définit la valeur de la propriété brand.
+     * Sets the value of the brand property.
      * 
      * @param value
      *     allowed object is
@@ -82,7 +82,7 @@ public class AuthenticationResultData {
     }
 
     /**
-     * Obtient la valeur de la propriété enrolled.
+     * Gets the value of the enrolled property.
      * 
      * @return
      *     possible object is
@@ -94,7 +94,7 @@ public class AuthenticationResultData {
     }
 
     /**
-     * Définit la valeur de la propriété enrolled.
+     * Sets the value of the enrolled property.
      * 
      * @param value
      *     allowed object is
@@ -106,7 +106,7 @@ public class AuthenticationResultData {
     }
 
     /**
-     * Obtient la valeur de la propriété status.
+     * Gets the value of the status property.
      * 
      * @return
      *     possible object is
@@ -118,7 +118,7 @@ public class AuthenticationResultData {
     }
 
     /**
-     * Définit la valeur de la propriété status.
+     * Sets the value of the status property.
      * 
      * @param value
      *     allowed object is
@@ -130,7 +130,7 @@ public class AuthenticationResultData {
     }
 
     /**
-     * Obtient la valeur de la propriété eci.
+     * Gets the value of the eci property.
      * 
      * @return
      *     possible object is
@@ -142,7 +142,7 @@ public class AuthenticationResultData {
     }
 
     /**
-     * Définit la valeur de la propriété eci.
+     * Sets the value of the eci property.
      * 
      * @param value
      *     allowed object is
@@ -154,7 +154,7 @@ public class AuthenticationResultData {
     }
 
     /**
-     * Obtient la valeur de la propriété xid.
+     * Gets the value of the xid property.
      * 
      * @return
      *     possible object is
@@ -166,7 +166,7 @@ public class AuthenticationResultData {
     }
 
     /**
-     * Définit la valeur de la propriété xid.
+     * Sets the value of the xid property.
      * 
      * @param value
      *     allowed object is
@@ -178,7 +178,7 @@ public class AuthenticationResultData {
     }
 
     /**
-     * Obtient la valeur de la propriété cavv.
+     * Gets the value of the cavv property.
      * 
      * @return
      *     possible object is
@@ -190,7 +190,7 @@ public class AuthenticationResultData {
     }
 
     /**
-     * Définit la valeur de la propriété cavv.
+     * Sets the value of the cavv property.
      * 
      * @param value
      *     allowed object is
@@ -202,7 +202,7 @@ public class AuthenticationResultData {
     }
 
     /**
-     * Obtient la valeur de la propriété cavvAlgorithm.
+     * Gets the value of the cavvAlgorithm property.
      * 
      * @return
      *     possible object is
@@ -214,7 +214,7 @@ public class AuthenticationResultData {
     }
 
     /**
-     * Définit la valeur de la propriété cavvAlgorithm.
+     * Sets the value of the cavvAlgorithm property.
      * 
      * @param value
      *     allowed object is
@@ -226,7 +226,7 @@ public class AuthenticationResultData {
     }
 
     /**
-     * Obtient la valeur de la propriété signValid.
+     * Gets the value of the signValid property.
      * 
      * @return
      *     possible object is
@@ -238,7 +238,7 @@ public class AuthenticationResultData {
     }
 
     /**
-     * Définit la valeur de la propriété signValid.
+     * Sets the value of the signValid property.
      * 
      * @param value
      *     allowed object is
@@ -250,7 +250,7 @@ public class AuthenticationResultData {
     }
 
     /**
-     * Obtient la valeur de la propriété transactionCondition.
+     * Gets the value of the transactionCondition property.
      * 
      * @return
      *     possible object is
@@ -262,7 +262,7 @@ public class AuthenticationResultData {
     }
 
     /**
-     * Définit la valeur de la propriété transactionCondition.
+     * Sets the value of the transactionCondition property.
      * 
      * @param value
      *     allowed object is

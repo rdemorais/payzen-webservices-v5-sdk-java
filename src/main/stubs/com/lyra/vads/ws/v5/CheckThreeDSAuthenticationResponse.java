@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour checkThreeDSAuthenticationResponse complex type.
+ * <p>Java class for checkThreeDSAuthenticationResponse complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="checkThreeDSAuthenticationResponse">
@@ -45,7 +45,7 @@ public class CheckThreeDSAuthenticationResponse {
     protected CheckThreeDSAuthenticationResponse.CheckThreeDSAuthenticationResult checkThreeDSAuthenticationResult;
 
     /**
-     * Obtient la valeur de la propriété checkThreeDSAuthenticationResult.
+     * Gets the value of the checkThreeDSAuthenticationResult property.
      * 
      * @return
      *     possible object is
@@ -57,7 +57,7 @@ public class CheckThreeDSAuthenticationResponse {
     }
 
     /**
-     * Définit la valeur de la propriété checkThreeDSAuthenticationResult.
+     * Sets the value of the checkThreeDSAuthenticationResult property.
      * 
      * @param value
      *     allowed object is
@@ -70,9 +70,9 @@ public class CheckThreeDSAuthenticationResponse {
 
 
     /**
-     * <p>Classe Java pour anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType>
@@ -102,7 +102,7 @@ public class CheckThreeDSAuthenticationResponse {
         protected ThreeDSResponse threeDSResponse;
 
         /**
-         * Obtient la valeur de la propriété commonResponse.
+         * Gets the value of the commonResponse property.
          * 
          * @return
          *     possible object is
@@ -114,7 +114,7 @@ public class CheckThreeDSAuthenticationResponse {
         }
 
         /**
-         * Définit la valeur de la propriété commonResponse.
+         * Sets the value of the commonResponse property.
          * 
          * @param value
          *     allowed object is
@@ -126,7 +126,7 @@ public class CheckThreeDSAuthenticationResponse {
         }
 
         /**
-         * Obtient la valeur de la propriété threeDSResponse.
+         * Gets the value of the threeDSResponse property.
          * 
          * @return
          *     possible object is
@@ -138,7 +138,7 @@ public class CheckThreeDSAuthenticationResponse {
         }
 
         /**
-         * Définit la valeur de la propriété threeDSResponse.
+         * Sets the value of the threeDSResponse property.
          * 
          * @param value
          *     allowed object is

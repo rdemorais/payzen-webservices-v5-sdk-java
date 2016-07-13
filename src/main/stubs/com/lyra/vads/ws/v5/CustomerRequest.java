@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour customerRequest complex type.
+ * <p>Java class for customerRequest complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="customerRequest">
@@ -40,7 +40,7 @@ public class CustomerRequest {
     protected ExtraDetailsRequest extraDetails;
 
     /**
-     * Obtient la valeur de la propriété billingDetails.
+     * Gets the value of the billingDetails property.
      * 
      * @return
      *     possible object is
@@ -52,7 +52,7 @@ public class CustomerRequest {
     }
 
     /**
-     * Définit la valeur de la propriété billingDetails.
+     * Sets the value of the billingDetails property.
      * 
      * @param value
      *     allowed object is
@@ -64,7 +64,7 @@ public class CustomerRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété shippingDetails.
+     * Gets the value of the shippingDetails property.
      * 
      * @return
      *     possible object is
@@ -76,7 +76,7 @@ public class CustomerRequest {
     }
 
     /**
-     * Définit la valeur de la propriété shippingDetails.
+     * Sets the value of the shippingDetails property.
      * 
      * @param value
      *     allowed object is
@@ -88,7 +88,7 @@ public class CustomerRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété extraDetails.
+     * Gets the value of the extraDetails property.
      * 
      * @return
      *     possible object is
@@ -100,7 +100,7 @@ public class CustomerRequest {
     }
 
     /**
-     * Définit la valeur de la propriété extraDetails.
+     * Sets the value of the extraDetails property.
      * 
      * @param value
      *     allowed object is
