@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for cartItemInfo complex type.
+ * <p>Classe Java pour cartItemInfo complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="cartItemInfo">
@@ -52,7 +52,7 @@ public class CartItemInfo {
     protected String productExtId;
 
     /**
-     * Gets the value of the productLabel property.
+     * Obtient la valeur de la propriété productLabel.
      * 
      * @return
      *     possible object is
@@ -64,7 +64,7 @@ public class CartItemInfo {
     }
 
     /**
-     * Sets the value of the productLabel property.
+     * Définit la valeur de la propriété productLabel.
      * 
      * @param value
      *     allowed object is
@@ -76,7 +76,7 @@ public class CartItemInfo {
     }
 
     /**
-     * Gets the value of the productType property.
+     * Obtient la valeur de la propriété productType.
      * 
      * @return
      *     possible object is
@@ -88,7 +88,7 @@ public class CartItemInfo {
     }
 
     /**
-     * Sets the value of the productType property.
+     * Définit la valeur de la propriété productType.
      * 
      * @param value
      *     allowed object is
@@ -100,7 +100,7 @@ public class CartItemInfo {
     }
 
     /**
-     * Gets the value of the productRef property.
+     * Obtient la valeur de la propriété productRef.
      * 
      * @return
      *     possible object is
@@ -112,7 +112,7 @@ public class CartItemInfo {
     }
 
     /**
-     * Sets the value of the productRef property.
+     * Définit la valeur de la propriété productRef.
      * 
      * @param value
      *     allowed object is
@@ -124,7 +124,7 @@ public class CartItemInfo {
     }
 
     /**
-     * Gets the value of the productQty property.
+     * Obtient la valeur de la propriété productQty.
      * 
      * @return
      *     possible object is
@@ -136,7 +136,7 @@ public class CartItemInfo {
     }
 
     /**
-     * Sets the value of the productQty property.
+     * Définit la valeur de la propriété productQty.
      * 
      * @param value
      *     allowed object is
@@ -148,7 +148,7 @@ public class CartItemInfo {
     }
 
     /**
-     * Gets the value of the productAmount property.
+     * Obtient la valeur de la propriété productAmount.
      * 
      * @return
      *     possible object is
@@ -160,7 +160,7 @@ public class CartItemInfo {
     }
 
     /**
-     * Sets the value of the productAmount property.
+     * Définit la valeur de la propriété productAmount.
      * 
      * @param value
      *     allowed object is
@@ -172,7 +172,7 @@ public class CartItemInfo {
     }
 
     /**
-     * Gets the value of the productVat property.
+     * Obtient la valeur de la propriété productVat.
      * 
      * @return
      *     possible object is
@@ -184,7 +184,7 @@ public class CartItemInfo {
     }
 
     /**
-     * Sets the value of the productVat property.
+     * Définit la valeur de la propriété productVat.
      * 
      * @param value
      *     allowed object is
@@ -196,7 +196,7 @@ public class CartItemInfo {
     }
 
     /**
-     * Gets the value of the productExtId property.
+     * Obtient la valeur de la propriété productExtId.
      * 
      * @return
      *     possible object is
@@ -208,7 +208,7 @@ public class CartItemInfo {
     }
 
     /**
-     * Sets the value of the productExtId property.
+     * Définit la valeur de la propriété productExtId.
      * 
      * @param value
      *     allowed object is

@@ -9,9 +9,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Java class for tokenResponse complex type.
+ * <p>Classe Java pour tokenResponse complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="tokenResponse">
@@ -41,7 +41,7 @@ public class TokenResponse {
     protected XMLGregorianCalendar cancellationDate;
 
     /**
-     * Gets the value of the creationDate property.
+     * Obtient la valeur de la propriété creationDate.
      * 
      * @return
      *     possible object is
@@ -53,7 +53,7 @@ public class TokenResponse {
     }
 
     /**
-     * Sets the value of the creationDate property.
+     * Définit la valeur de la propriété creationDate.
      * 
      * @param value
      *     allowed object is
@@ -65,7 +65,7 @@ public class TokenResponse {
     }
 
     /**
-     * Gets the value of the cancellationDate property.
+     * Obtient la valeur de la propriété cancellationDate.
      * 
      * @return
      *     possible object is
@@ -77,7 +77,7 @@ public class TokenResponse {
     }
 
     /**
-     * Sets the value of the cancellationDate property.
+     * Définit la valeur de la propriété cancellationDate.
      * 
      * @param value
      *     allowed object is

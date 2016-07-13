@@ -9,9 +9,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Java class for captureResponse complex type.
+ * <p>Classe Java pour captureResponse complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="captureResponse">
@@ -52,7 +52,7 @@ public class CaptureResponse {
     protected Boolean chargeback;
 
     /**
-     * Gets the value of the date property.
+     * Obtient la valeur de la propriété date.
      * 
      * @return
      *     possible object is
@@ -64,7 +64,7 @@ public class CaptureResponse {
     }
 
     /**
-     * Sets the value of the date property.
+     * Définit la valeur de la propriété date.
      * 
      * @param value
      *     allowed object is
@@ -76,7 +76,7 @@ public class CaptureResponse {
     }
 
     /**
-     * Gets the value of the number property.
+     * Obtient la valeur de la propriété number.
      * 
      * @return
      *     possible object is
@@ -88,7 +88,7 @@ public class CaptureResponse {
     }
 
     /**
-     * Sets the value of the number property.
+     * Définit la valeur de la propriété number.
      * 
      * @param value
      *     allowed object is
@@ -100,7 +100,7 @@ public class CaptureResponse {
     }
 
     /**
-     * Gets the value of the reconciliationStatus property.
+     * Obtient la valeur de la propriété reconciliationStatus.
      * 
      * @return
      *     possible object is
@@ -112,7 +112,7 @@ public class CaptureResponse {
     }
 
     /**
-     * Sets the value of the reconciliationStatus property.
+     * Définit la valeur de la propriété reconciliationStatus.
      * 
      * @param value
      *     allowed object is
@@ -124,7 +124,7 @@ public class CaptureResponse {
     }
 
     /**
-     * Gets the value of the refundAmount property.
+     * Obtient la valeur de la propriété refundAmount.
      * 
      * @return
      *     possible object is
@@ -136,7 +136,7 @@ public class CaptureResponse {
     }
 
     /**
-     * Sets the value of the refundAmount property.
+     * Définit la valeur de la propriété refundAmount.
      * 
      * @param value
      *     allowed object is
@@ -148,7 +148,7 @@ public class CaptureResponse {
     }
 
     /**
-     * Gets the value of the refundCurrency property.
+     * Obtient la valeur de la propriété refundCurrency.
      * 
      * @return
      *     possible object is
@@ -160,7 +160,7 @@ public class CaptureResponse {
     }
 
     /**
-     * Sets the value of the refundCurrency property.
+     * Définit la valeur de la propriété refundCurrency.
      * 
      * @param value
      *     allowed object is
@@ -172,7 +172,7 @@ public class CaptureResponse {
     }
 
     /**
-     * Gets the value of the chargeback property.
+     * Obtient la valeur de la propriété chargeback.
      * 
      * @return
      *     possible object is
@@ -184,7 +184,7 @@ public class CaptureResponse {
     }
 
     /**
-     * Sets the value of the chargeback property.
+     * Définit la valeur de la propriété chargeback.
      * 
      * @param value
      *     allowed object is

@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for threeDSRequest complex type.
+ * <p>Classe Java pour threeDSRequest complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="threeDSRequest">
@@ -26,6 +26,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="xid" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="cavv" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="algorithm" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="mpiExtension" type="{http://v5.ws.vads.lyra.com/}mpiExtensionRequest" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -45,7 +46,8 @@ import javax.xml.bind.annotation.XmlType;
     "eci",
     "xid",
     "cavv",
-    "algorithm"
+    "algorithm",
+    "mpiExtension"
 })
 public class ThreeDSRequest {
 
@@ -59,9 +61,10 @@ public class ThreeDSRequest {
     protected String xid;
     protected String cavv;
     protected String algorithm;
+    protected MpiExtensionRequest mpiExtension;
 
     /**
-     * Gets the value of the mode property.
+     * Obtient la valeur de la propriété mode.
      * 
      * @return
      *     possible object is
@@ -73,7 +76,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Sets the value of the mode property.
+     * Définit la valeur de la propriété mode.
      * 
      * @param value
      *     allowed object is
@@ -85,7 +88,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Gets the value of the requestId property.
+     * Obtient la valeur de la propriété requestId.
      * 
      * @return
      *     possible object is
@@ -97,7 +100,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Sets the value of the requestId property.
+     * Définit la valeur de la propriété requestId.
      * 
      * @param value
      *     allowed object is
@@ -109,7 +112,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Gets the value of the pares property.
+     * Obtient la valeur de la propriété pares.
      * 
      * @return
      *     possible object is
@@ -121,7 +124,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Sets the value of the pares property.
+     * Définit la valeur de la propriété pares.
      * 
      * @param value
      *     allowed object is
@@ -133,7 +136,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Gets the value of the brand property.
+     * Obtient la valeur de la propriété brand.
      * 
      * @return
      *     possible object is
@@ -145,7 +148,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Sets the value of the brand property.
+     * Définit la valeur de la propriété brand.
      * 
      * @param value
      *     allowed object is
@@ -157,7 +160,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Gets the value of the enrolled property.
+     * Obtient la valeur de la propriété enrolled.
      * 
      * @return
      *     possible object is
@@ -169,7 +172,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Sets the value of the enrolled property.
+     * Définit la valeur de la propriété enrolled.
      * 
      * @param value
      *     allowed object is
@@ -181,7 +184,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Gets the value of the status property.
+     * Obtient la valeur de la propriété status.
      * 
      * @return
      *     possible object is
@@ -193,7 +196,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Sets the value of the status property.
+     * Définit la valeur de la propriété status.
      * 
      * @param value
      *     allowed object is
@@ -205,7 +208,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Gets the value of the eci property.
+     * Obtient la valeur de la propriété eci.
      * 
      * @return
      *     possible object is
@@ -217,7 +220,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Sets the value of the eci property.
+     * Définit la valeur de la propriété eci.
      * 
      * @param value
      *     allowed object is
@@ -229,7 +232,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Gets the value of the xid property.
+     * Obtient la valeur de la propriété xid.
      * 
      * @return
      *     possible object is
@@ -241,7 +244,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Sets the value of the xid property.
+     * Définit la valeur de la propriété xid.
      * 
      * @param value
      *     allowed object is
@@ -253,7 +256,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Gets the value of the cavv property.
+     * Obtient la valeur de la propriété cavv.
      * 
      * @return
      *     possible object is
@@ -265,7 +268,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Sets the value of the cavv property.
+     * Définit la valeur de la propriété cavv.
      * 
      * @param value
      *     allowed object is
@@ -277,7 +280,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Gets the value of the algorithm property.
+     * Obtient la valeur de la propriété algorithm.
      * 
      * @return
      *     possible object is
@@ -289,7 +292,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Sets the value of the algorithm property.
+     * Définit la valeur de la propriété algorithm.
      * 
      * @param value
      *     allowed object is
@@ -298,6 +301,30 @@ public class ThreeDSRequest {
      */
     public void setAlgorithm(String value) {
         this.algorithm = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété mpiExtension.
+     * 
+     * @return
+     *     possible object is
+     *     {@link MpiExtensionRequest }
+     *     
+     */
+    public MpiExtensionRequest getMpiExtension() {
+        return mpiExtension;
+    }
+
+    /**
+     * Définit la valeur de la propriété mpiExtension.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link MpiExtensionRequest }
+     *     
+     */
+    public void setMpiExtension(MpiExtensionRequest value) {
+        this.mpiExtension = value;
     }
 
 }

@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for cardResponse complex type.
+ * <p>Classe Java pour cardResponse complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="cardResponse">
@@ -55,7 +55,7 @@ public class CardResponse {
     protected Integer expiryYear;
 
     /**
-     * Gets the value of the number property.
+     * Obtient la valeur de la propriété number.
      * 
      * @return
      *     possible object is
@@ -67,7 +67,7 @@ public class CardResponse {
     }
 
     /**
-     * Sets the value of the number property.
+     * Définit la valeur de la propriété number.
      * 
      * @param value
      *     allowed object is
@@ -79,7 +79,7 @@ public class CardResponse {
     }
 
     /**
-     * Gets the value of the scheme property.
+     * Obtient la valeur de la propriété scheme.
      * 
      * @return
      *     possible object is
@@ -91,7 +91,7 @@ public class CardResponse {
     }
 
     /**
-     * Sets the value of the scheme property.
+     * Définit la valeur de la propriété scheme.
      * 
      * @param value
      *     allowed object is
@@ -103,7 +103,7 @@ public class CardResponse {
     }
 
     /**
-     * Gets the value of the brand property.
+     * Obtient la valeur de la propriété brand.
      * 
      * @return
      *     possible object is
@@ -115,7 +115,7 @@ public class CardResponse {
     }
 
     /**
-     * Sets the value of the brand property.
+     * Définit la valeur de la propriété brand.
      * 
      * @param value
      *     allowed object is
@@ -127,7 +127,7 @@ public class CardResponse {
     }
 
     /**
-     * Gets the value of the country property.
+     * Obtient la valeur de la propriété country.
      * 
      * @return
      *     possible object is
@@ -139,7 +139,7 @@ public class CardResponse {
     }
 
     /**
-     * Sets the value of the country property.
+     * Définit la valeur de la propriété country.
      * 
      * @param value
      *     allowed object is
@@ -151,7 +151,7 @@ public class CardResponse {
     }
 
     /**
-     * Gets the value of the productCode property.
+     * Obtient la valeur de la propriété productCode.
      * 
      * @return
      *     possible object is
@@ -163,7 +163,7 @@ public class CardResponse {
     }
 
     /**
-     * Sets the value of the productCode property.
+     * Définit la valeur de la propriété productCode.
      * 
      * @param value
      *     allowed object is
@@ -175,7 +175,7 @@ public class CardResponse {
     }
 
     /**
-     * Gets the value of the bankCode property.
+     * Obtient la valeur de la propriété bankCode.
      * 
      * @return
      *     possible object is
@@ -187,7 +187,7 @@ public class CardResponse {
     }
 
     /**
-     * Sets the value of the bankCode property.
+     * Définit la valeur de la propriété bankCode.
      * 
      * @param value
      *     allowed object is
@@ -199,7 +199,7 @@ public class CardResponse {
     }
 
     /**
-     * Gets the value of the expiryMonth property.
+     * Obtient la valeur de la propriété expiryMonth.
      * 
      * @return
      *     possible object is
@@ -211,7 +211,7 @@ public class CardResponse {
     }
 
     /**
-     * Sets the value of the expiryMonth property.
+     * Définit la valeur de la propriété expiryMonth.
      * 
      * @param value
      *     allowed object is
@@ -223,7 +223,7 @@ public class CardResponse {
     }
 
     /**
-     * Gets the value of the expiryYear property.
+     * Obtient la valeur de la propriété expiryYear.
      * 
      * @return
      *     possible object is
@@ -235,7 +235,7 @@ public class CardResponse {
     }
 
     /**
-     * Sets the value of the expiryYear property.
+     * Définit la valeur de la propriété expiryYear.
      * 
      * @param value
      *     allowed object is

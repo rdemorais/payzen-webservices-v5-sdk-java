@@ -1,4 +1,6 @@
 /*
+ * Copyright 2015 Javier Garcia Alonso.
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -27,7 +29,6 @@ import org.slf4j.LoggerFactory;
 public class LogResponseHandler implements ResponseHandler{
     private static final Logger logger = LoggerFactory.getLogger(LogResponseHandler.class);
 
-    @Override
     public void handle(ServiceResult response) throws Exception {
         logger.info("Response Code: " + response.getCommonResponse().getResponseCode());
         logger.info("Response Code Detail: " + response.getCommonResponse().getResponseCodeDetail());

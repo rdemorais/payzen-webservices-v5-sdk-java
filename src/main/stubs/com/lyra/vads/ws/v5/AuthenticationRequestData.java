@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for authenticationRequestData complex type.
+ * <p>Classe Java pour authenticationRequestData complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="authenticationRequestData">
@@ -49,7 +49,7 @@ public class AuthenticationRequestData {
     protected String threeDSRequestId;
 
     /**
-     * Gets the value of the threeDSAcctId property.
+     * Obtient la valeur de la propriété threeDSAcctId.
      * 
      * @return
      *     possible object is
@@ -61,7 +61,7 @@ public class AuthenticationRequestData {
     }
 
     /**
-     * Sets the value of the threeDSAcctId property.
+     * Définit la valeur de la propriété threeDSAcctId.
      * 
      * @param value
      *     allowed object is
@@ -73,7 +73,7 @@ public class AuthenticationRequestData {
     }
 
     /**
-     * Gets the value of the threeDSAcsUrl property.
+     * Obtient la valeur de la propriété threeDSAcsUrl.
      * 
      * @return
      *     possible object is
@@ -85,7 +85,7 @@ public class AuthenticationRequestData {
     }
 
     /**
-     * Sets the value of the threeDSAcsUrl property.
+     * Définit la valeur de la propriété threeDSAcsUrl.
      * 
      * @param value
      *     allowed object is
@@ -97,7 +97,7 @@ public class AuthenticationRequestData {
     }
 
     /**
-     * Gets the value of the threeDSBrand property.
+     * Obtient la valeur de la propriété threeDSBrand.
      * 
      * @return
      *     possible object is
@@ -109,7 +109,7 @@ public class AuthenticationRequestData {
     }
 
     /**
-     * Sets the value of the threeDSBrand property.
+     * Définit la valeur de la propriété threeDSBrand.
      * 
      * @param value
      *     allowed object is
@@ -121,7 +121,7 @@ public class AuthenticationRequestData {
     }
 
     /**
-     * Gets the value of the threeDSEncodedPareq property.
+     * Obtient la valeur de la propriété threeDSEncodedPareq.
      * 
      * @return
      *     possible object is
@@ -133,7 +133,7 @@ public class AuthenticationRequestData {
     }
 
     /**
-     * Sets the value of the threeDSEncodedPareq property.
+     * Définit la valeur de la propriété threeDSEncodedPareq.
      * 
      * @param value
      *     allowed object is
@@ -145,7 +145,7 @@ public class AuthenticationRequestData {
     }
 
     /**
-     * Gets the value of the threeDSEnrolled property.
+     * Obtient la valeur de la propriété threeDSEnrolled.
      * 
      * @return
      *     possible object is
@@ -157,7 +157,7 @@ public class AuthenticationRequestData {
     }
 
     /**
-     * Sets the value of the threeDSEnrolled property.
+     * Définit la valeur de la propriété threeDSEnrolled.
      * 
      * @param value
      *     allowed object is
@@ -169,7 +169,7 @@ public class AuthenticationRequestData {
     }
 
     /**
-     * Gets the value of the threeDSRequestId property.
+     * Obtient la valeur de la propriété threeDSRequestId.
      * 
      * @return
      *     possible object is
@@ -181,7 +181,7 @@ public class AuthenticationRequestData {
     }
 
     /**
-     * Sets the value of the threeDSRequestId property.
+     * Définit la valeur de la propriété threeDSRequestId.
      * 
      * @param value
      *     allowed object is

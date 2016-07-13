@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for customerResponse complex type.
+ * <p>Classe Java pour customerResponse complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="customerResponse">
@@ -40,7 +40,7 @@ public class CustomerResponse {
     protected ExtraDetailsResponse extraDetails;
 
     /**
-     * Gets the value of the billingDetails property.
+     * Obtient la valeur de la propriété billingDetails.
      * 
      * @return
      *     possible object is
@@ -52,7 +52,7 @@ public class CustomerResponse {
     }
 
     /**
-     * Sets the value of the billingDetails property.
+     * Définit la valeur de la propriété billingDetails.
      * 
      * @param value
      *     allowed object is
@@ -64,7 +64,7 @@ public class CustomerResponse {
     }
 
     /**
-     * Gets the value of the shippingDetails property.
+     * Obtient la valeur de la propriété shippingDetails.
      * 
      * @return
      *     possible object is
@@ -76,7 +76,7 @@ public class CustomerResponse {
     }
 
     /**
-     * Sets the value of the shippingDetails property.
+     * Définit la valeur de la propriété shippingDetails.
      * 
      * @param value
      *     allowed object is
@@ -88,7 +88,7 @@ public class CustomerResponse {
     }
 
     /**
-     * Gets the value of the extraDetails property.
+     * Obtient la valeur de la propriété extraDetails.
      * 
      * @return
      *     possible object is
@@ -100,7 +100,7 @@ public class CustomerResponse {
     }
 
     /**
-     * Sets the value of the extraDetails property.
+     * Définit la valeur de la propriété extraDetails.
      * 
      * @param value
      *     allowed object is

@@ -10,9 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for orderRequest complex type.
+ * <p>Classe Java pour orderRequest complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="orderRequest">
@@ -41,7 +41,7 @@ public class OrderRequest {
     protected List<ExtInfo> extInfo;
 
     /**
-     * Gets the value of the orderId property.
+     * Obtient la valeur de la propriété orderId.
      * 
      * @return
      *     possible object is
@@ -53,7 +53,7 @@ public class OrderRequest {
     }
 
     /**
-     * Sets the value of the orderId property.
+     * Définit la valeur de la propriété orderId.
      * 
      * @param value
      *     allowed object is

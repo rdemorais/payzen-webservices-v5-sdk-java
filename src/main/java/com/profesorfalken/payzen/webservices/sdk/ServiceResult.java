@@ -1,4 +1,6 @@
 /*
+ * Copyright 2015 Javier Garcia Alonso.
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -27,6 +29,7 @@ import com.lyra.vads.ws.v5.GetPaymentUuidResponse;
 import com.lyra.vads.ws.v5.MarkResponse;
 import com.lyra.vads.ws.v5.OrderResponse;
 import com.lyra.vads.ws.v5.PaymentResponse;
+import com.lyra.vads.ws.v5.RefundPaymentResponse.RefundPaymentResult;
 import com.lyra.vads.ws.v5.ShoppingCartResponse;
 import com.lyra.vads.ws.v5.SubscriptionResponse;
 import com.lyra.vads.ws.v5.ThreeDSResponse;
@@ -113,6 +116,20 @@ public final class ServiceResult {
     public ServiceResult(GetPaymentUuidResponse.LegacyTransactionKeyResult getPaymentUuidResult) {
         commonResponse = getPaymentUuidResult.getCommonResponse();
         paymentResponse = getPaymentUuidResult.getPaymentResponse();
+    }
+    
+    public ServiceResult(RefundPaymentResult refundPaymentResult) {
+    	 commonResponse = refundPaymentResult.getCommonResponse();
+         paymentResponse = refundPaymentResult.getPaymentResponse();
+         orderResponse = refundPaymentResult.getOrderResponse();
+         cardResponse = refundPaymentResult.getCardResponse();
+         authorizationResponse = refundPaymentResult.getAuthorizationResponse();
+         captureResponse = refundPaymentResult.getCaptureResponse();
+         customerResponse = refundPaymentResult.getCustomerResponse();
+         markResponse = refundPaymentResult.getMarkResponse();
+         threeDSResponse = refundPaymentResult.getThreeDSResponse();
+         extraResponse = refundPaymentResult.getExtraResponse();
+         fraudManagementResponse = refundPaymentResult.getFraudManagementResponse();
     }
 
     public CommonResponse getCommonResponse() {

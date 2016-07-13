@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for getPaymentUuid complex type.
+ * <p>Classe Java pour getPaymentUuid complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="getPaymentUuid">
@@ -34,7 +34,7 @@ public class GetPaymentUuid {
     protected LegacyTransactionKeyRequest legacyTransactionKeyRequest;
 
     /**
-     * Gets the value of the legacyTransactionKeyRequest property.
+     * Obtient la valeur de la propriété legacyTransactionKeyRequest.
      * 
      * @return
      *     possible object is
@@ -46,7 +46,7 @@ public class GetPaymentUuid {
     }
 
     /**
-     * Sets the value of the legacyTransactionKeyRequest property.
+     * Définit la valeur de la propriété legacyTransactionKeyRequest.
      * 
      * @param value
      *     allowed object is

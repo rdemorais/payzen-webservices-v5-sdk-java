@@ -1,4 +1,6 @@
 /*
+ * Copyright 2015 Javier Garcia Alonso.
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -29,11 +31,19 @@ public class HeaderHandlerResolver implements HandlerResolver {
     private final String shopId;
     private final String shopKey;
     private final String mode;
-
+    private final String wsUser;
+    private final String returnUrl;
+    
     public HeaderHandlerResolver(String shopId, String shopKey, String mode) {
+    	this(shopId, shopKey, mode, null, null);
+    }
+    
+    public HeaderHandlerResolver(String shopId, String shopKey, String mode, String wsUser, String returnUrl) {
         this.shopId = shopId;
         this.shopKey = shopKey;
         this.mode = mode;
+        this.wsUser = wsUser;
+        this.returnUrl = returnUrl;
     }
 
     /**
@@ -42,11 +52,10 @@ public class HeaderHandlerResolver implements HandlerResolver {
      * @param portInfo
      * @return list of handlers
      */
-    @Override
     public List<Handler> getHandlerChain(PortInfo portInfo) {
         List<Handler> handlerChain = new ArrayList<Handler>();
 
-        HeaderHandler hh = new HeaderHandler(shopId, shopKey, mode);
+        HeaderHandler hh = new HeaderHandler(shopId, shopKey, mode, wsUser, returnUrl);
 
         handlerChain.add(hh);
 

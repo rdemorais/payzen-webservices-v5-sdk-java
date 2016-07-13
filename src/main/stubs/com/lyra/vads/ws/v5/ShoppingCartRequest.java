@@ -5,23 +5,24 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for shoppingCartRequest complex type.
+ * <p>Classe Java pour shoppingCartRequest complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="shoppingCartRequest">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="insuranceAmount" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="shippingAmount" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="taxAmount" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="cartItemInfo" type="{http://v5.ws.vads.lyra.com/}cartItemInfo" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="insuranceAmount" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="shippingAmount" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="taxAmount" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="cartItemInfo" type="{http://v5.ws.vads.lyra.com/}cartItemInfo" maxOccurs="unbounded"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -39,80 +40,57 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ShoppingCartRequest {
 
-    protected Long insuranceAmount;
-    protected Long shippingAmount;
-    protected Long taxAmount;
+    protected long insuranceAmount;
+    protected long shippingAmount;
+    protected long taxAmount;
+    @XmlElement(required = true)
     protected List<CartItemInfo> cartItemInfo;
 
     /**
-     * Gets the value of the insuranceAmount property.
+     * Obtient la valeur de la propriété insuranceAmount.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
      */
-    public Long getInsuranceAmount() {
+    public long getInsuranceAmount() {
         return insuranceAmount;
     }
 
     /**
-     * Sets the value of the insuranceAmount property.
+     * Définit la valeur de la propriété insuranceAmount.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
      */
-    public void setInsuranceAmount(Long value) {
+    public void setInsuranceAmount(long value) {
         this.insuranceAmount = value;
     }
 
     /**
-     * Gets the value of the shippingAmount property.
+     * Obtient la valeur de la propriété shippingAmount.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
      */
-    public Long getShippingAmount() {
+    public long getShippingAmount() {
         return shippingAmount;
     }
 
     /**
-     * Sets the value of the shippingAmount property.
+     * Définit la valeur de la propriété shippingAmount.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
      */
-    public void setShippingAmount(Long value) {
+    public void setShippingAmount(long value) {
         this.shippingAmount = value;
     }
 
     /**
-     * Gets the value of the taxAmount property.
+     * Obtient la valeur de la propriété taxAmount.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
      */
-    public Long getTaxAmount() {
+    public long getTaxAmount() {
         return taxAmount;
     }
 
     /**
-     * Sets the value of the taxAmount property.
+     * Définit la valeur de la propriété taxAmount.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
      */
-    public void setTaxAmount(Long value) {
+    public void setTaxAmount(long value) {
         this.taxAmount = value;
     }
 

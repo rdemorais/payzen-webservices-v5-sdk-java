@@ -35,8 +35,11 @@ public class ObjectFactory {
     private final static QName _CapturePaymentResponse_QNAME = new QName("http://v5.ws.vads.lyra.com/", "capturePaymentResponse");
     private final static QName _CancelPayment_QNAME = new QName("http://v5.ws.vads.lyra.com/", "cancelPayment");
     private final static QName _CheckThreeDSAuthentication_QNAME = new QName("http://v5.ws.vads.lyra.com/", "checkThreeDSAuthentication");
+    private final static QName _CreateTokenFromTransactionResponse_QNAME = new QName("http://v5.ws.vads.lyra.com/", "createTokenFromTransactionResponse");
+    private final static QName _UpdatePaymentDetailsResponse_QNAME = new QName("http://v5.ws.vads.lyra.com/", "updatePaymentDetailsResponse");
     private final static QName _UpdatePayment_QNAME = new QName("http://v5.ws.vads.lyra.com/", "updatePayment");
     private final static QName _CreatePaymentResponse_QNAME = new QName("http://v5.ws.vads.lyra.com/", "createPaymentResponse");
+    private final static QName _UpdatePaymentDetails_QNAME = new QName("http://v5.ws.vads.lyra.com/", "updatePaymentDetails");
     private final static QName _FindPaymentsResponse_QNAME = new QName("http://v5.ws.vads.lyra.com/", "findPaymentsResponse");
     private final static QName _RefundPaymentResponse_QNAME = new QName("http://v5.ws.vads.lyra.com/", "refundPaymentResponse");
     private final static QName _GetPaymentDetails_QNAME = new QName("http://v5.ws.vads.lyra.com/", "getPaymentDetails");
@@ -47,6 +50,7 @@ public class ObjectFactory {
     private final static QName _CancelPaymentResponse_QNAME = new QName("http://v5.ws.vads.lyra.com/", "cancelPaymentResponse");
     private final static QName _CheckThreeDSAuthenticationResponse_QNAME = new QName("http://v5.ws.vads.lyra.com/", "checkThreeDSAuthenticationResponse");
     private final static QName _RefundPayment_QNAME = new QName("http://v5.ws.vads.lyra.com/", "refundPayment");
+    private final static QName _CreateTokenFromTransaction_QNAME = new QName("http://v5.ws.vads.lyra.com/", "createTokenFromTransaction");
     private final static QName _DuplicatePaymentResponse_QNAME = new QName("http://v5.ws.vads.lyra.com/", "duplicatePaymentResponse");
     private final static QName _VerifyThreeDSEnrollment_QNAME = new QName("http://v5.ws.vads.lyra.com/", "verifyThreeDSEnrollment");
     private final static QName _ValidatePayment_QNAME = new QName("http://v5.ws.vads.lyra.com/", "validatePayment");
@@ -203,6 +207,22 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link UpdatePaymentDetailsResponse }
+     * 
+     */
+    public UpdatePaymentDetailsResponse createUpdatePaymentDetailsResponse() {
+        return new UpdatePaymentDetailsResponse();
+    }
+
+    /**
+     * Create an instance of {@link CreateTokenFromTransactionResponse }
+     * 
+     */
+    public CreateTokenFromTransactionResponse createCreateTokenFromTransactionResponse() {
+        return new CreateTokenFromTransactionResponse();
+    }
+
+    /**
      * Create an instance of {@link CreatePaymentResponse }
      * 
      */
@@ -272,6 +292,14 @@ public class ObjectFactory {
      */
     public UpdatePayment createUpdatePayment() {
         return new UpdatePayment();
+    }
+
+    /**
+     * Create an instance of {@link UpdatePaymentDetails }
+     * 
+     */
+    public UpdatePaymentDetails createUpdatePaymentDetails() {
+        return new UpdatePaymentDetails();
     }
 
     /**
@@ -403,6 +431,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link CreateTokenFromTransaction }
+     * 
+     */
+    public CreateTokenFromTransaction createCreateTokenFromTransaction() {
+        return new CreateTokenFromTransaction();
+    }
+
+    /**
      * Create an instance of {@link RefundPayment }
      * 
      */
@@ -456,6 +492,14 @@ public class ObjectFactory {
      */
     public PaymentResponse createPaymentResponse() {
         return new PaymentResponse();
+    }
+
+    /**
+     * Create an instance of {@link MpiExtensionRequest }
+     * 
+     */
+    public MpiExtensionRequest createMpiExtensionRequest() {
+        return new MpiExtensionRequest();
     }
 
     /**
@@ -867,6 +911,22 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link UpdatePaymentDetailsResponse.UpdatePaymentDetailsResult }
+     * 
+     */
+    public UpdatePaymentDetailsResponse.UpdatePaymentDetailsResult createUpdatePaymentDetailsResponseUpdatePaymentDetailsResult() {
+        return new UpdatePaymentDetailsResponse.UpdatePaymentDetailsResult();
+    }
+
+    /**
+     * Create an instance of {@link CreateTokenFromTransactionResponse.CreateTokenFromTransactionResult }
+     * 
+     */
+    public CreateTokenFromTransactionResponse.CreateTokenFromTransactionResult createCreateTokenFromTransactionResponseCreateTokenFromTransactionResult() {
+        return new CreateTokenFromTransactionResponse.CreateTokenFromTransactionResult();
+    }
+
+    /**
      * Create an instance of {@link CreatePaymentResponse.CreatePaymentResult }
      * 
      */
@@ -1006,6 +1066,24 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CreateTokenFromTransactionResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://v5.ws.vads.lyra.com/", name = "createTokenFromTransactionResponse")
+    public JAXBElement<CreateTokenFromTransactionResponse> createCreateTokenFromTransactionResponse(CreateTokenFromTransactionResponse value) {
+        return new JAXBElement<CreateTokenFromTransactionResponse>(_CreateTokenFromTransactionResponse_QNAME, CreateTokenFromTransactionResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UpdatePaymentDetailsResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://v5.ws.vads.lyra.com/", name = "updatePaymentDetailsResponse")
+    public JAXBElement<UpdatePaymentDetailsResponse> createUpdatePaymentDetailsResponse(UpdatePaymentDetailsResponse value) {
+        return new JAXBElement<UpdatePaymentDetailsResponse>(_UpdatePaymentDetailsResponse_QNAME, UpdatePaymentDetailsResponse.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UpdatePayment }{@code >}}
      * 
      */
@@ -1021,6 +1099,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://v5.ws.vads.lyra.com/", name = "createPaymentResponse")
     public JAXBElement<CreatePaymentResponse> createCreatePaymentResponse(CreatePaymentResponse value) {
         return new JAXBElement<CreatePaymentResponse>(_CreatePaymentResponse_QNAME, CreatePaymentResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UpdatePaymentDetails }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://v5.ws.vads.lyra.com/", name = "updatePaymentDetails")
+    public JAXBElement<UpdatePaymentDetails> createUpdatePaymentDetails(UpdatePaymentDetails value) {
+        return new JAXBElement<UpdatePaymentDetails>(_UpdatePaymentDetails_QNAME, UpdatePaymentDetails.class, null, value);
     }
 
     /**
@@ -1111,6 +1198,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://v5.ws.vads.lyra.com/", name = "refundPayment")
     public JAXBElement<RefundPayment> createRefundPayment(RefundPayment value) {
         return new JAXBElement<RefundPayment>(_RefundPayment_QNAME, RefundPayment.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CreateTokenFromTransaction }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://v5.ws.vads.lyra.com/", name = "createTokenFromTransaction")
+    public JAXBElement<CreateTokenFromTransaction> createCreateTokenFromTransaction(CreateTokenFromTransaction value) {
+        return new JAXBElement<CreateTokenFromTransaction>(_CreateTokenFromTransaction_QNAME, CreateTokenFromTransaction.class, null, value);
     }
 
     /**

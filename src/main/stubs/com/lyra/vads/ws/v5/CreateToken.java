@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for createToken complex type.
+ * <p>Classe Java pour createToken complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="createToken">
@@ -40,7 +40,7 @@ public class CreateToken {
     protected CustomerRequest customerRequest;
 
     /**
-     * Gets the value of the commonRequest property.
+     * Obtient la valeur de la propriété commonRequest.
      * 
      * @return
      *     possible object is
@@ -52,7 +52,7 @@ public class CreateToken {
     }
 
     /**
-     * Sets the value of the commonRequest property.
+     * Définit la valeur de la propriété commonRequest.
      * 
      * @param value
      *     allowed object is
@@ -64,7 +64,7 @@ public class CreateToken {
     }
 
     /**
-     * Gets the value of the cardRequest property.
+     * Obtient la valeur de la propriété cardRequest.
      * 
      * @return
      *     possible object is
@@ -76,7 +76,7 @@ public class CreateToken {
     }
 
     /**
-     * Sets the value of the cardRequest property.
+     * Définit la valeur de la propriété cardRequest.
      * 
      * @param value
      *     allowed object is
@@ -88,7 +88,7 @@ public class CreateToken {
     }
 
     /**
-     * Gets the value of the customerRequest property.
+     * Obtient la valeur de la propriété customerRequest.
      * 
      * @return
      *     possible object is
@@ -100,7 +100,7 @@ public class CreateToken {
     }
 
     /**
-     * Sets the value of the customerRequest property.
+     * Définit la valeur de la propriété customerRequest.
      * 
      * @param value
      *     allowed object is

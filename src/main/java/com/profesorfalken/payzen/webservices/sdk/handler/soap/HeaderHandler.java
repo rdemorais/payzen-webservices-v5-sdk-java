@@ -1,4 +1,6 @@
 /*
+ * Copyright 2015 Javier Garcia Alonso.
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -49,13 +51,21 @@ public class HeaderHandler implements SOAPHandler<SOAPMessageContext> {
     private final String shopId;
     private final String shopKey;
     private final String mode;
+    private final String wsUser;
+    private final String returnUrl;
 
     private static final String NAMESPACE = "http://v5.ws.vads.lyra.com/Header/";
 
     public HeaderHandler(String shopId, String shopKey, String mode) {
+    	this(shopId, shopKey, mode, null, null);
+    }
+    
+    public HeaderHandler(String shopId, String shopKey, String mode, String wsUser, String returnUrl) {
         this.shopId = shopId;
         this.shopKey = shopKey;
         this.mode = mode;
+        this.wsUser = wsUser;
+        this.returnUrl = returnUrl;
     }
 
     /**
@@ -65,7 +75,6 @@ public class HeaderHandler implements SOAPHandler<SOAPMessageContext> {
      * @param smc SOAP message context
      * @return 
      */
-    @Override
     public boolean handleMessage(SOAPMessageContext smc) {
 
         Boolean outboundProperty = (Boolean) smc.get(MessageContext.MESSAGE_OUTBOUND_PROPERTY);
@@ -85,6 +94,16 @@ public class HeaderHandler implements SOAPHandler<SOAPMessageContext> {
 
                 // Add shopId
                 addHeaderField(header, "shopId", this.shopId);
+                
+                // Add User name
+                if (wsUser != null) {                	
+                	addHeaderField(header, "wsUser", this.wsUser);
+                }
+                
+                // Add return url
+                if (returnUrl != null) {                	
+                	addHeaderField(header, "returnUrl", this.returnUrl);
+                }
 
                 // Timestamp
                 TimeZone tz = TimeZone.getTimeZone("UTC");
@@ -113,17 +132,14 @@ public class HeaderHandler implements SOAPHandler<SOAPMessageContext> {
 
     }
 
-    @Override
     public Set getHeaders() {
         return null;
     }
 
-    @Override
     public boolean handleFault(SOAPMessageContext context) {
         return true;
     }
 
-    @Override
     public void close(MessageContext context) {
     }
 

@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for updateSubscriptionResponse complex type.
+ * <p>Classe Java pour updateSubscriptionResponse complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="updateSubscriptionResponse">
@@ -55,7 +55,7 @@ public class UpdateSubscriptionResponse {
     protected UpdateSubscriptionResponse.UpdateSubscriptionResult updateSubscriptionResult;
 
     /**
-     * Gets the value of the updateSubscriptionResult property.
+     * Obtient la valeur de la propriété updateSubscriptionResult.
      * 
      * @return
      *     possible object is
@@ -67,7 +67,7 @@ public class UpdateSubscriptionResponse {
     }
 
     /**
-     * Sets the value of the updateSubscriptionResult property.
+     * Définit la valeur de la propriété updateSubscriptionResult.
      * 
      * @param value
      *     allowed object is
@@ -80,9 +80,9 @@ public class UpdateSubscriptionResponse {
 
 
     /**
-     * <p>Java class for anonymous complex type.
+     * <p>Classe Java pour anonymous complex type.
      * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
+     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
      * 
      * <pre>
      * &lt;complexType>
@@ -142,7 +142,7 @@ public class UpdateSubscriptionResponse {
         protected FraudManagementResponse fraudManagementResponse;
 
         /**
-         * Gets the value of the commonResponse property.
+         * Obtient la valeur de la propriété commonResponse.
          * 
          * @return
          *     possible object is
@@ -154,7 +154,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Sets the value of the commonResponse property.
+         * Définit la valeur de la propriété commonResponse.
          * 
          * @param value
          *     allowed object is
@@ -166,7 +166,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Gets the value of the paymentResponse property.
+         * Obtient la valeur de la propriété paymentResponse.
          * 
          * @return
          *     possible object is
@@ -178,7 +178,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Sets the value of the paymentResponse property.
+         * Définit la valeur de la propriété paymentResponse.
          * 
          * @param value
          *     allowed object is
@@ -190,7 +190,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Gets the value of the orderResponse property.
+         * Obtient la valeur de la propriété orderResponse.
          * 
          * @return
          *     possible object is
@@ -202,7 +202,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Sets the value of the orderResponse property.
+         * Définit la valeur de la propriété orderResponse.
          * 
          * @param value
          *     allowed object is
@@ -214,7 +214,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Gets the value of the cardResponse property.
+         * Obtient la valeur de la propriété cardResponse.
          * 
          * @return
          *     possible object is
@@ -226,7 +226,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Sets the value of the cardResponse property.
+         * Définit la valeur de la propriété cardResponse.
          * 
          * @param value
          *     allowed object is
@@ -238,7 +238,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Gets the value of the authorizationResponse property.
+         * Obtient la valeur de la propriété authorizationResponse.
          * 
          * @return
          *     possible object is
@@ -250,7 +250,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Sets the value of the authorizationResponse property.
+         * Définit la valeur de la propriété authorizationResponse.
          * 
          * @param value
          *     allowed object is
@@ -262,7 +262,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Gets the value of the captureResponse property.
+         * Obtient la valeur de la propriété captureResponse.
          * 
          * @return
          *     possible object is
@@ -274,7 +274,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Sets the value of the captureResponse property.
+         * Définit la valeur de la propriété captureResponse.
          * 
          * @param value
          *     allowed object is
@@ -286,7 +286,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Gets the value of the customerResponse property.
+         * Obtient la valeur de la propriété customerResponse.
          * 
          * @return
          *     possible object is
@@ -298,7 +298,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Sets the value of the customerResponse property.
+         * Définit la valeur de la propriété customerResponse.
          * 
          * @param value
          *     allowed object is
@@ -310,7 +310,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Gets the value of the markResponse property.
+         * Obtient la valeur de la propriété markResponse.
          * 
          * @return
          *     possible object is
@@ -322,7 +322,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Sets the value of the markResponse property.
+         * Définit la valeur de la propriété markResponse.
          * 
          * @param value
          *     allowed object is
@@ -334,7 +334,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Gets the value of the threeDSResponse property.
+         * Obtient la valeur de la propriété threeDSResponse.
          * 
          * @return
          *     possible object is
@@ -346,7 +346,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Sets the value of the threeDSResponse property.
+         * Définit la valeur de la propriété threeDSResponse.
          * 
          * @param value
          *     allowed object is
@@ -358,7 +358,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Gets the value of the extraResponse property.
+         * Obtient la valeur de la propriété extraResponse.
          * 
          * @return
          *     possible object is
@@ -370,7 +370,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Sets the value of the extraResponse property.
+         * Définit la valeur de la propriété extraResponse.
          * 
          * @param value
          *     allowed object is
@@ -382,7 +382,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Gets the value of the subscriptionResponse property.
+         * Obtient la valeur de la propriété subscriptionResponse.
          * 
          * @return
          *     possible object is
@@ -394,7 +394,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Sets the value of the subscriptionResponse property.
+         * Définit la valeur de la propriété subscriptionResponse.
          * 
          * @param value
          *     allowed object is
@@ -406,7 +406,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Gets the value of the fraudManagementResponse property.
+         * Obtient la valeur de la propriété fraudManagementResponse.
          * 
          * @return
          *     possible object is
@@ -418,7 +418,7 @@ public class UpdateSubscriptionResponse {
         }
 
         /**
-         * Sets the value of the fraudManagementResponse property.
+         * Définit la valeur de la propriété fraudManagementResponse.
          * 
          * @param value
          *     allowed object is

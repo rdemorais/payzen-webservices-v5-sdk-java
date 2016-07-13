@@ -1,4 +1,6 @@
 /*
+ * Copyright 2015 Javier Garcia Alonso.
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -16,9 +18,21 @@ package com.profesorfalken.payzen.webservices.sdk;
 import java.util.Date;
 import java.util.Map;
 
+import com.lyra.vads.ws.v5.CancelSubscriptionResponse.CancelSubscriptionResult;
+import com.lyra.vads.ws.v5.CardRequest;
+import com.lyra.vads.ws.v5.CommonRequest;
 import com.lyra.vads.ws.v5.CreatePayment;
+import com.lyra.vads.ws.v5.OrderRequest;
+import com.lyra.vads.ws.v5.PaymentAPI;
 import com.lyra.vads.ws.v5.PaymentRequest;
+import com.lyra.vads.ws.v5.QueryRequest;
+import com.lyra.vads.ws.v5.SubscriptionRequest;
+import com.lyra.vads.ws.v5.CreateSubscriptionResponse.CreateSubscriptionResult;
+import com.lyra.vads.ws.v5.CreateTokenFromTransactionResponse.CreateTokenFromTransactionResult;
+import com.lyra.vads.ws.v5.GetSubscriptionDetailsResponse.GetSubscriptionDetailsResult;
+import com.lyra.vads.ws.v5.RefundPaymentResponse.RefundPaymentResult;
 import com.lyra.vads.ws.v5.ValidatePaymentResponse.ValidatePaymentResult;
+import com.profesorfalken.payzen.webservices.sdk.client.ClientV5;
 
 /**
  * Allows to perform payment related operations using the Payzen API based in 
@@ -301,6 +315,44 @@ public final class Payment {
      */
     public static ValidatePaymentResult validatePayment(String uuidTransaction, String comment, Map<String, String> ... config) {
         return getInstance().validatePayment((config.length>0)?config[0]:null, uuidTransaction, comment);
+    }
+    
+    /**
+     * Create a CreditCard token from an existing transaction using the UUID of the transaction<p>
+     * 
+     * Please read official documentation for more detailed information about parameter content.
+     * 
+     * @param uuidTransaction unique identifier of the transaction
+     * @param commonRequest commonRequest parameters
+     * @return result with all the response objects
+     */
+    public static CreateTokenFromTransactionResult createTokenFromTransaction(String uuidTransaction, CommonRequest commonRequest, Map<String, String> ... config) {
+        return getInstance().createTokenFromTransaction((config.length>0)?config[0]:null, uuidTransaction, commonRequest);
+    }
+    
+    /**
+     * Refund transaction <p>
+     * 
+     * Please read official documentation for more detailed information about parameter content.
+     * 
+     * @param uuidTransaction unique identifier of the transaction
+     * @param commonRequest commonRequest parameters
+     * @return result with all the response objects
+     */
+    public static ServiceResult refund(String uuidTransaction, PaymentRequest paymentRequest, Map<String, String> ... config) {
+        return getInstance().refund((config.length>0)?config[0]:null, uuidTransaction, paymentRequest);
+    }
+    
+    public static CreateSubscriptionResult createSubscription(CommonRequest commonRequest, OrderRequest orderRequest, SubscriptionRequest subscriptionRequest, CardRequest cardRequest, Map<String, String> ... config) {
+        return getInstance().createSubscription((config.length>0)?config[0]:null, commonRequest, orderRequest, subscriptionRequest, cardRequest);
+    }
+    
+    public static GetSubscriptionDetailsResult getSubscriptionDetails(QueryRequest queryRequest, Map<String, String> ... config) {
+        return getInstance().getSubscriptionDetails((config.length>0)?config[0]:null, queryRequest);
+    }
+    
+    public static CancelSubscriptionResult cancelSubscription(CommonRequest commonRequest, QueryRequest queryRequest, Map<String, String> ... config) {
+        return getInstance().cancelSubscription((config.length>0)?config[0]:null, commonRequest, queryRequest);
     }
     
 }

@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for getPaymentUuidResponse complex type.
+ * <p>Classe Java pour getPaymentUuidResponse complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="getPaymentUuidResponse">
@@ -45,7 +45,7 @@ public class GetPaymentUuidResponse {
     protected GetPaymentUuidResponse.LegacyTransactionKeyResult legacyTransactionKeyResult;
 
     /**
-     * Gets the value of the legacyTransactionKeyResult property.
+     * Obtient la valeur de la propriété legacyTransactionKeyResult.
      * 
      * @return
      *     possible object is
@@ -57,7 +57,7 @@ public class GetPaymentUuidResponse {
     }
 
     /**
-     * Sets the value of the legacyTransactionKeyResult property.
+     * Définit la valeur de la propriété legacyTransactionKeyResult.
      * 
      * @param value
      *     allowed object is
@@ -70,9 +70,9 @@ public class GetPaymentUuidResponse {
 
 
     /**
-     * <p>Java class for anonymous complex type.
+     * <p>Classe Java pour anonymous complex type.
      * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
+     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
      * 
      * <pre>
      * &lt;complexType>
@@ -102,7 +102,7 @@ public class GetPaymentUuidResponse {
         protected PaymentResponse paymentResponse;
 
         /**
-         * Gets the value of the commonResponse property.
+         * Obtient la valeur de la propriété commonResponse.
          * 
          * @return
          *     possible object is
@@ -114,7 +114,7 @@ public class GetPaymentUuidResponse {
         }
 
         /**
-         * Sets the value of the commonResponse property.
+         * Définit la valeur de la propriété commonResponse.
          * 
          * @param value
          *     allowed object is
@@ -126,7 +126,7 @@ public class GetPaymentUuidResponse {
         }
 
         /**
-         * Gets the value of the paymentResponse property.
+         * Obtient la valeur de la propriété paymentResponse.
          * 
          * @return
          *     possible object is
@@ -138,7 +138,7 @@ public class GetPaymentUuidResponse {
         }
 
         /**
-         * Sets the value of the paymentResponse property.
+         * Définit la valeur de la propriété paymentResponse.
          * 
          * @param value
          *     allowed object is
