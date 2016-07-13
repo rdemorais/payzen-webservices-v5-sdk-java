@@ -1,4 +1,6 @@
 /*
+ * Copyright 2015 Javier Garcia Alonso.
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -24,7 +26,6 @@ import com.profesorfalken.payzen.webservices.sdk.ServiceResult;
  */
 public class PrintResponseHandler implements ResponseHandler{
 
-    @Override
     public void handle(ServiceResult response) throws Exception {
         System.out.println("Response Code: " + response.getCommonResponse().getResponseCode());
         System.out.println("Response Code Detail: " + response.getCommonResponse().getResponseCodeDetail());

@@ -59,6 +59,23 @@ public interface PaymentAPI {
 
     /**
      * 
+     * @param commonRequest
+     * @param queryRequest
+     * @return
+     *     returns com.lyra.vads.ws.v5.CreateTokenFromTransactionResponse.CreateTokenFromTransactionResult
+     */
+    @WebMethod
+    @WebResult(name = "createTokenFromTransactionResult", targetNamespace = "")
+    @RequestWrapper(localName = "createTokenFromTransaction", targetNamespace = "http://v5.ws.vads.lyra.com/", className = "com.lyra.vads.ws.v5.CreateTokenFromTransaction")
+    @ResponseWrapper(localName = "createTokenFromTransactionResponse", targetNamespace = "http://v5.ws.vads.lyra.com/", className = "com.lyra.vads.ws.v5.CreateTokenFromTransactionResponse")
+    public com.lyra.vads.ws.v5.CreateTokenFromTransactionResponse.CreateTokenFromTransactionResult createTokenFromTransaction(
+        @WebParam(name = "commonRequest", targetNamespace = "")
+        CommonRequest commonRequest,
+        @WebParam(name = "queryRequest", targetNamespace = "")
+        QueryRequest queryRequest);
+
+    /**
+     * 
      * @param queryRequest
      * @return
      *     returns com.lyra.vads.ws.v5.ReactivateTokenResponse.ReactivateTokenResult
@@ -96,6 +113,7 @@ public interface PaymentAPI {
 
     /**
      * 
+     * @param threeDSRequest
      * @param cardRequest
      * @param commonRequest
      * @param techRequest
@@ -115,7 +133,9 @@ public interface PaymentAPI {
         @WebParam(name = "cardRequest", targetNamespace = "")
         CardRequest cardRequest,
         @WebParam(name = "techRequest", targetNamespace = "")
-        TechRequest techRequest);
+        TechRequest techRequest,
+        @WebParam(name = "threeDSRequest", targetNamespace = "")
+        ThreeDSRequest threeDSRequest);
 
     /**
      * 
@@ -201,6 +221,23 @@ public interface PaymentAPI {
         QueryRequest queryRequest,
         @WebParam(name = "paymentRequest", targetNamespace = "")
         PaymentRequest paymentRequest);
+
+    /**
+     * 
+     * @param shoppingCartRequest
+     * @param queryRequest
+     * @return
+     *     returns com.lyra.vads.ws.v5.UpdatePaymentDetailsResponse.UpdatePaymentDetailsResult
+     */
+    @WebMethod
+    @WebResult(name = "updatePaymentDetailsResult", targetNamespace = "")
+    @RequestWrapper(localName = "updatePaymentDetails", targetNamespace = "http://v5.ws.vads.lyra.com/", className = "com.lyra.vads.ws.v5.UpdatePaymentDetails")
+    @ResponseWrapper(localName = "updatePaymentDetailsResponse", targetNamespace = "http://v5.ws.vads.lyra.com/", className = "com.lyra.vads.ws.v5.UpdatePaymentDetailsResponse")
+    public com.lyra.vads.ws.v5.UpdatePaymentDetailsResponse.UpdatePaymentDetailsResult updatePaymentDetails(
+        @WebParam(name = "queryRequest", targetNamespace = "")
+        QueryRequest queryRequest,
+        @WebParam(name = "shoppingCartRequest", targetNamespace = "")
+        ShoppingCartRequest shoppingCartRequest);
 
     /**
      * 

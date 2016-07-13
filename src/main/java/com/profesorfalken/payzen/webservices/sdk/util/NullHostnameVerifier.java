@@ -1,4 +1,6 @@
 /*
+ * Copyright 2016 Javier Garcia Alonso.
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -22,7 +24,6 @@ import javax.net.ssl.SSLSession;
  */
 public class NullHostnameVerifier implements HostnameVerifier {
 
-    @Override
     public boolean verify(String hostname, SSLSession session) {       
         return true;
     }

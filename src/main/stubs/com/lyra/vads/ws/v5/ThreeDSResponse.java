@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for threeDSResponse complex type.
+ * <p>Classe Java pour threeDSResponse complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="threeDSResponse">
@@ -37,7 +37,7 @@ public class ThreeDSResponse {
     protected AuthenticationResultData authenticationResultData;
 
     /**
-     * Gets the value of the authenticationRequestData property.
+     * Obtient la valeur de la propriété authenticationRequestData.
      * 
      * @return
      *     possible object is
@@ -49,7 +49,7 @@ public class ThreeDSResponse {
     }
 
     /**
-     * Sets the value of the authenticationRequestData property.
+     * Définit la valeur de la propriété authenticationRequestData.
      * 
      * @param value
      *     allowed object is
@@ -61,7 +61,7 @@ public class ThreeDSResponse {
     }
 
     /**
-     * Gets the value of the authenticationResultData property.
+     * Obtient la valeur de la propriété authenticationResultData.
      * 
      * @return
      *     possible object is
@@ -73,7 +73,7 @@ public class ThreeDSResponse {
     }
 
     /**
-     * Sets the value of the authenticationResultData property.
+     * Définit la valeur de la propriété authenticationResultData.
      * 
      * @param value
      *     allowed object is

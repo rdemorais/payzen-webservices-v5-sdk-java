@@ -6,15 +6,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for deliverySpeed.
+ * <p>Classe Java pour deliverySpeed.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * <p>
  * <pre>
  * &lt;simpleType name="deliverySpeed">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *     &lt;enumeration value="STANDARD"/>
  *     &lt;enumeration value="EXPRESS"/>
+ *     &lt;enumeration value="PRIORITY"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -25,7 +26,8 @@ import javax.xml.bind.annotation.XmlType;
 public enum DeliverySpeed {
 
     STANDARD,
-    EXPRESS;
+    EXPRESS,
+    PRIORITY;
 
     public String value() {
         return name();

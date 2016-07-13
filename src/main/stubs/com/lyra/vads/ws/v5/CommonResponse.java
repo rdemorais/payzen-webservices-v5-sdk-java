@@ -9,9 +9,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Java class for commonResponse complex type.
+ * <p>Classe Java pour commonResponse complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="commonResponse">
@@ -58,7 +58,7 @@ public class CommonResponse {
     protected String paymentToken;
 
     /**
-     * Gets the value of the responseCode property.
+     * Obtient la valeur de la propriété responseCode.
      * 
      * @return
      *     possible object is
@@ -70,7 +70,7 @@ public class CommonResponse {
     }
 
     /**
-     * Sets the value of the responseCode property.
+     * Définit la valeur de la propriété responseCode.
      * 
      * @param value
      *     allowed object is
@@ -82,7 +82,7 @@ public class CommonResponse {
     }
 
     /**
-     * Gets the value of the responseCodeDetail property.
+     * Obtient la valeur de la propriété responseCodeDetail.
      * 
      * @return
      *     possible object is
@@ -94,7 +94,7 @@ public class CommonResponse {
     }
 
     /**
-     * Sets the value of the responseCodeDetail property.
+     * Définit la valeur de la propriété responseCodeDetail.
      * 
      * @param value
      *     allowed object is
@@ -106,7 +106,7 @@ public class CommonResponse {
     }
 
     /**
-     * Gets the value of the transactionStatusLabel property.
+     * Obtient la valeur de la propriété transactionStatusLabel.
      * 
      * @return
      *     possible object is
@@ -118,7 +118,7 @@ public class CommonResponse {
     }
 
     /**
-     * Sets the value of the transactionStatusLabel property.
+     * Définit la valeur de la propriété transactionStatusLabel.
      * 
      * @param value
      *     allowed object is
@@ -130,7 +130,7 @@ public class CommonResponse {
     }
 
     /**
-     * Gets the value of the shopId property.
+     * Obtient la valeur de la propriété shopId.
      * 
      * @return
      *     possible object is
@@ -142,7 +142,7 @@ public class CommonResponse {
     }
 
     /**
-     * Sets the value of the shopId property.
+     * Définit la valeur de la propriété shopId.
      * 
      * @param value
      *     allowed object is
@@ -154,7 +154,7 @@ public class CommonResponse {
     }
 
     /**
-     * Gets the value of the paymentSource property.
+     * Obtient la valeur de la propriété paymentSource.
      * 
      * @return
      *     possible object is
@@ -166,7 +166,7 @@ public class CommonResponse {
     }
 
     /**
-     * Sets the value of the paymentSource property.
+     * Définit la valeur de la propriété paymentSource.
      * 
      * @param value
      *     allowed object is
@@ -178,7 +178,7 @@ public class CommonResponse {
     }
 
     /**
-     * Gets the value of the submissionDate property.
+     * Obtient la valeur de la propriété submissionDate.
      * 
      * @return
      *     possible object is
@@ -190,7 +190,7 @@ public class CommonResponse {
     }
 
     /**
-     * Sets the value of the submissionDate property.
+     * Définit la valeur de la propriété submissionDate.
      * 
      * @param value
      *     allowed object is
@@ -202,7 +202,7 @@ public class CommonResponse {
     }
 
     /**
-     * Gets the value of the contractNumber property.
+     * Obtient la valeur de la propriété contractNumber.
      * 
      * @return
      *     possible object is
@@ -214,7 +214,7 @@ public class CommonResponse {
     }
 
     /**
-     * Sets the value of the contractNumber property.
+     * Définit la valeur de la propriété contractNumber.
      * 
      * @param value
      *     allowed object is
@@ -226,7 +226,7 @@ public class CommonResponse {
     }
 
     /**
-     * Gets the value of the paymentToken property.
+     * Obtient la valeur de la propriété paymentToken.
      * 
      * @return
      *     possible object is
@@ -238,7 +238,7 @@ public class CommonResponse {
     }
 
     /**
-     * Sets the value of the paymentToken property.
+     * Définit la valeur de la propriété paymentToken.
      * 
      * @param value
      *     allowed object is

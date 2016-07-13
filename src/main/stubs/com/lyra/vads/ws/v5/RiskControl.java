@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for riskControl complex type.
+ * <p>Classe Java pour riskControl complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="riskControl">
@@ -37,7 +37,7 @@ public class RiskControl {
     protected String result;
 
     /**
-     * Gets the value of the name property.
+     * Obtient la valeur de la propriété name.
      * 
      * @return
      *     possible object is
@@ -49,7 +49,7 @@ public class RiskControl {
     }
 
     /**
-     * Sets the value of the name property.
+     * Définit la valeur de la propriété name.
      * 
      * @param value
      *     allowed object is
@@ -61,7 +61,7 @@ public class RiskControl {
     }
 
     /**
-     * Gets the value of the result property.
+     * Obtient la valeur de la propriété result.
      * 
      * @return
      *     possible object is
@@ -73,7 +73,7 @@ public class RiskControl {
     }
 
     /**
-     * Sets the value of the result property.
+     * Définit la valeur de la propriété result.
      * 
      * @param value
      *     allowed object is

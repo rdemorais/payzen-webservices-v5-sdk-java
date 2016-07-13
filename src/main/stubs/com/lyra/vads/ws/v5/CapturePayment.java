@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for capturePayment complex type.
+ * <p>Classe Java pour capturePayment complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="capturePayment">
@@ -34,7 +34,7 @@ public class CapturePayment {
     protected SettlementRequest settlementRequest;
 
     /**
-     * Gets the value of the settlementRequest property.
+     * Obtient la valeur de la propriété settlementRequest.
      * 
      * @return
      *     possible object is
@@ -46,7 +46,7 @@ public class CapturePayment {
     }
 
     /**
-     * Sets the value of the settlementRequest property.
+     * Définit la valeur de la propriété settlementRequest.
      * 
      * @param value
      *     allowed object is

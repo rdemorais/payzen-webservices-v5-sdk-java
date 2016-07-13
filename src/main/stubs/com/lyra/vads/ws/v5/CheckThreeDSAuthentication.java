@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for checkThreeDSAuthentication complex type.
+ * <p>Classe Java pour checkThreeDSAuthentication complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="checkThreeDSAuthentication">
@@ -37,7 +37,7 @@ public class CheckThreeDSAuthentication {
     protected ThreeDSRequest threeDSRequest;
 
     /**
-     * Gets the value of the commonRequest property.
+     * Obtient la valeur de la propriété commonRequest.
      * 
      * @return
      *     possible object is
@@ -49,7 +49,7 @@ public class CheckThreeDSAuthentication {
     }
 
     /**
-     * Sets the value of the commonRequest property.
+     * Définit la valeur de la propriété commonRequest.
      * 
      * @param value
      *     allowed object is
@@ -61,7 +61,7 @@ public class CheckThreeDSAuthentication {
     }
 
     /**
-     * Gets the value of the threeDSRequest property.
+     * Obtient la valeur de la propriété threeDSRequest.
      * 
      * @return
      *     possible object is
@@ -73,7 +73,7 @@ public class CheckThreeDSAuthentication {
     }
 
     /**
-     * Sets the value of the threeDSRequest property.
+     * Définit la valeur de la propriété threeDSRequest.
      * 
      * @param value
      *     allowed object is

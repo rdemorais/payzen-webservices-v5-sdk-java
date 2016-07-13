@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for techRequest complex type.
+ * <p>Classe Java pour techRequest complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="techRequest">
@@ -37,7 +37,7 @@ public class TechRequest {
     protected String browserAccept;
 
     /**
-     * Gets the value of the browserUserAgent property.
+     * Obtient la valeur de la propriété browserUserAgent.
      * 
      * @return
      *     possible object is
@@ -49,7 +49,7 @@ public class TechRequest {
     }
 
     /**
-     * Sets the value of the browserUserAgent property.
+     * Définit la valeur de la propriété browserUserAgent.
      * 
      * @param value
      *     allowed object is
@@ -61,7 +61,7 @@ public class TechRequest {
     }
 
     /**
-     * Gets the value of the browserAccept property.
+     * Obtient la valeur de la propriété browserAccept.
      * 
      * @return
      *     possible object is
@@ -73,7 +73,7 @@ public class TechRequest {
     }
 
     /**
-     * Sets the value of the browserAccept property.
+     * Définit la valeur de la propriété browserAccept.
      * 
      * @param value
      *     allowed object is

@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for verifyThreeDSEnrollment complex type.
+ * <p>Classe Java pour verifyThreeDSEnrollment complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="verifyThreeDSEnrollment">
@@ -20,6 +20,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="paymentRequest" type="{http://v5.ws.vads.lyra.com/}paymentRequest" minOccurs="0"/>
  *         &lt;element name="cardRequest" type="{http://v5.ws.vads.lyra.com/}cardRequest" minOccurs="0"/>
  *         &lt;element name="techRequest" type="{http://v5.ws.vads.lyra.com/}techRequest" minOccurs="0"/>
+ *         &lt;element name="threeDSRequest" type="{http://v5.ws.vads.lyra.com/}threeDSRequest" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -33,7 +34,8 @@ import javax.xml.bind.annotation.XmlType;
     "commonRequest",
     "paymentRequest",
     "cardRequest",
-    "techRequest"
+    "techRequest",
+    "threeDSRequest"
 })
 public class VerifyThreeDSEnrollment {
 
@@ -41,9 +43,10 @@ public class VerifyThreeDSEnrollment {
     protected PaymentRequest paymentRequest;
     protected CardRequest cardRequest;
     protected TechRequest techRequest;
+    protected ThreeDSRequest threeDSRequest;
 
     /**
-     * Gets the value of the commonRequest property.
+     * Obtient la valeur de la propriété commonRequest.
      * 
      * @return
      *     possible object is
@@ -55,7 +58,7 @@ public class VerifyThreeDSEnrollment {
     }
 
     /**
-     * Sets the value of the commonRequest property.
+     * Définit la valeur de la propriété commonRequest.
      * 
      * @param value
      *     allowed object is
@@ -67,7 +70,7 @@ public class VerifyThreeDSEnrollment {
     }
 
     /**
-     * Gets the value of the paymentRequest property.
+     * Obtient la valeur de la propriété paymentRequest.
      * 
      * @return
      *     possible object is
@@ -79,7 +82,7 @@ public class VerifyThreeDSEnrollment {
     }
 
     /**
-     * Sets the value of the paymentRequest property.
+     * Définit la valeur de la propriété paymentRequest.
      * 
      * @param value
      *     allowed object is
@@ -91,7 +94,7 @@ public class VerifyThreeDSEnrollment {
     }
 
     /**
-     * Gets the value of the cardRequest property.
+     * Obtient la valeur de la propriété cardRequest.
      * 
      * @return
      *     possible object is
@@ -103,7 +106,7 @@ public class VerifyThreeDSEnrollment {
     }
 
     /**
-     * Sets the value of the cardRequest property.
+     * Définit la valeur de la propriété cardRequest.
      * 
      * @param value
      *     allowed object is
@@ -115,7 +118,7 @@ public class VerifyThreeDSEnrollment {
     }
 
     /**
-     * Gets the value of the techRequest property.
+     * Obtient la valeur de la propriété techRequest.
      * 
      * @return
      *     possible object is
@@ -127,7 +130,7 @@ public class VerifyThreeDSEnrollment {
     }
 
     /**
-     * Sets the value of the techRequest property.
+     * Définit la valeur de la propriété techRequest.
      * 
      * @param value
      *     allowed object is
@@ -136,6 +139,30 @@ public class VerifyThreeDSEnrollment {
      */
     public void setTechRequest(TechRequest value) {
         this.techRequest = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété threeDSRequest.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ThreeDSRequest }
+     *     
+     */
+    public ThreeDSRequest getThreeDSRequest() {
+        return threeDSRequest;
+    }
+
+    /**
+     * Définit la valeur de la propriété threeDSRequest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ThreeDSRequest }
+     *     
+     */
+    public void setThreeDSRequest(ThreeDSRequest value) {
+        this.threeDSRequest = value;
     }
 
 }
