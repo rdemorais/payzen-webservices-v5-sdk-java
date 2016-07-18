@@ -7,4 +7,10 @@ before_install:
   - echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import
   - echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust
 deploy:
-  - mvn clean deploy --settings .travis/settings.xml -DskipTests=true -B -U
+  -
+    provider: script
+    script: .travis/deploy.sh
+    on:
+      repo: com.lyra.payzensdk/payzen-ws-sdk
+      branch: master
+      jdk: openjdk8
