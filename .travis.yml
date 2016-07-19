@@ -11,6 +11,5 @@ deploy:
     provider: script
     script: .travis/deploy.sh
     on:
-      repo: eu.payzen.sdk/payzen-ws-sdk
       branch: master
       jdk: oraclejdk8
