@@ -9,9 +9,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Java class for subscriptionRequest complex type.
+ * <p>Classe Java pour subscriptionRequest complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="subscriptionRequest">
@@ -58,7 +58,7 @@ public class SubscriptionRequest {
     protected String description;
 
     /**
-     * Gets the value of the subscriptionId property.
+     * Obtient la valeur de la propriété subscriptionId.
      * 
      * @return
      *     possible object is
@@ -70,7 +70,7 @@ public class SubscriptionRequest {
     }
 
     /**
-     * Sets the value of the subscriptionId property.
+     * Définit la valeur de la propriété subscriptionId.
      * 
      * @param value
      *     allowed object is
@@ -82,7 +82,7 @@ public class SubscriptionRequest {
     }
 
     /**
-     * Gets the value of the effectDate property.
+     * Obtient la valeur de la propriété effectDate.
      * 
      * @return
      *     possible object is
@@ -94,7 +94,7 @@ public class SubscriptionRequest {
     }
 
     /**
-     * Sets the value of the effectDate property.
+     * Définit la valeur de la propriété effectDate.
      * 
      * @param value
      *     allowed object is
@@ -106,7 +106,7 @@ public class SubscriptionRequest {
     }
 
     /**
-     * Gets the value of the amount property.
+     * Obtient la valeur de la propriété amount.
      * 
      * @return
      *     possible object is
@@ -118,7 +118,7 @@ public class SubscriptionRequest {
     }
 
     /**
-     * Sets the value of the amount property.
+     * Définit la valeur de la propriété amount.
      * 
      * @param value
      *     allowed object is
@@ -130,7 +130,7 @@ public class SubscriptionRequest {
     }
 
     /**
-     * Gets the value of the currency property.
+     * Obtient la valeur de la propriété currency.
      * 
      * @return
      *     possible object is
@@ -142,7 +142,7 @@ public class SubscriptionRequest {
     }
 
     /**
-     * Sets the value of the currency property.
+     * Définit la valeur de la propriété currency.
      * 
      * @param value
      *     allowed object is
@@ -154,7 +154,7 @@ public class SubscriptionRequest {
     }
 
     /**
-     * Gets the value of the initialAmount property.
+     * Obtient la valeur de la propriété initialAmount.
      * 
      * @return
      *     possible object is
@@ -166,7 +166,7 @@ public class SubscriptionRequest {
     }
 
     /**
-     * Sets the value of the initialAmount property.
+     * Définit la valeur de la propriété initialAmount.
      * 
      * @param value
      *     allowed object is
@@ -178,7 +178,7 @@ public class SubscriptionRequest {
     }
 
     /**
-     * Gets the value of the initialAmountNumber property.
+     * Obtient la valeur de la propriété initialAmountNumber.
      * 
      * @return
      *     possible object is
@@ -190,7 +190,7 @@ public class SubscriptionRequest {
     }
 
     /**
-     * Sets the value of the initialAmountNumber property.
+     * Définit la valeur de la propriété initialAmountNumber.
      * 
      * @param value
      *     allowed object is
@@ -202,7 +202,7 @@ public class SubscriptionRequest {
     }
 
     /**
-     * Gets the value of the rrule property.
+     * Obtient la valeur de la propriété rrule.
      * 
      * @return
      *     possible object is
@@ -214,7 +214,7 @@ public class SubscriptionRequest {
     }
 
     /**
-     * Sets the value of the rrule property.
+     * Définit la valeur de la propriété rrule.
      * 
      * @param value
      *     allowed object is
@@ -226,7 +226,7 @@ public class SubscriptionRequest {
     }
 
     /**
-     * Gets the value of the description property.
+     * Obtient la valeur de la propriété description.
      * 
      * @return
      *     possible object is
@@ -238,7 +238,7 @@ public class SubscriptionRequest {
     }
 
     /**
-     * Sets the value of the description property.
+     * Définit la valeur de la propriété description.
      * 
      * @param value
      *     allowed object is

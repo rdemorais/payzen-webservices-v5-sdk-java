@@ -10,9 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for shoppingCartRequest complex type.
+ * <p>Classe Java pour shoppingCartRequest complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="shoppingCartRequest">
@@ -47,7 +47,7 @@ public class ShoppingCartRequest {
     protected List<CartItemInfo> cartItemInfo;
 
     /**
-     * Gets the value of the insuranceAmount property.
+     * Obtient la valeur de la propriété insuranceAmount.
      * 
      */
     public long getInsuranceAmount() {
@@ -55,7 +55,7 @@ public class ShoppingCartRequest {
     }
 
     /**
-     * Sets the value of the insuranceAmount property.
+     * Définit la valeur de la propriété insuranceAmount.
      * 
      */
     public void setInsuranceAmount(long value) {
@@ -63,7 +63,7 @@ public class ShoppingCartRequest {
     }
 
     /**
-     * Gets the value of the shippingAmount property.
+     * Obtient la valeur de la propriété shippingAmount.
      * 
      */
     public long getShippingAmount() {
@@ -71,7 +71,7 @@ public class ShoppingCartRequest {
     }
 
     /**
-     * Sets the value of the shippingAmount property.
+     * Définit la valeur de la propriété shippingAmount.
      * 
      */
     public void setShippingAmount(long value) {
@@ -79,7 +79,7 @@ public class ShoppingCartRequest {
     }
 
     /**
-     * Gets the value of the taxAmount property.
+     * Obtient la valeur de la propriété taxAmount.
      * 
      */
     public long getTaxAmount() {
@@ -87,7 +87,7 @@ public class ShoppingCartRequest {
     }
 
     /**
-     * Sets the value of the taxAmount property.
+     * Définit la valeur de la propriété taxAmount.
      * 
      */
     public void setTaxAmount(long value) {

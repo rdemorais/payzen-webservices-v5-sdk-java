@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for extraDetailsRequest complex type.
+ * <p>Classe Java pour extraDetailsRequest complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="extraDetailsRequest">
@@ -37,7 +37,7 @@ public class ExtraDetailsRequest {
     protected String fingerPrintId;
 
     /**
-     * Gets the value of the ipAddress property.
+     * Obtient la valeur de la propriété ipAddress.
      * 
      * @return
      *     possible object is
@@ -49,7 +49,7 @@ public class ExtraDetailsRequest {
     }
 
     /**
-     * Sets the value of the ipAddress property.
+     * Définit la valeur de la propriété ipAddress.
      * 
      * @param value
      *     allowed object is
@@ -61,7 +61,7 @@ public class ExtraDetailsRequest {
     }
 
     /**
-     * Gets the value of the fingerPrintId property.
+     * Obtient la valeur de la propriété fingerPrintId.
      * 
      * @return
      *     possible object is
@@ -73,7 +73,7 @@ public class ExtraDetailsRequest {
     }
 
     /**
-     * Sets the value of the fingerPrintId property.
+     * Définit la valeur de la propriété fingerPrintId.
      * 
      * @param value
      *     allowed object is

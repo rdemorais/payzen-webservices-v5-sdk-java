@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for cancelPaymentResponse complex type.
+ * <p>Classe Java pour cancelPaymentResponse complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="cancelPaymentResponse">
@@ -44,7 +44,7 @@ public class CancelPaymentResponse {
     protected CancelPaymentResponse.CancelPaymentResult cancelPaymentResult;
 
     /**
-     * Gets the value of the cancelPaymentResult property.
+     * Obtient la valeur de la propriété cancelPaymentResult.
      * 
      * @return
      *     possible object is
@@ -56,7 +56,7 @@ public class CancelPaymentResponse {
     }
 
     /**
-     * Sets the value of the cancelPaymentResult property.
+     * Définit la valeur de la propriété cancelPaymentResult.
      * 
      * @param value
      *     allowed object is
@@ -69,9 +69,9 @@ public class CancelPaymentResponse {
 
 
     /**
-     * <p>Java class for anonymous complex type.
+     * <p>Classe Java pour anonymous complex type.
      * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
+     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
      * 
      * <pre>
      * &lt;complexType>
@@ -98,7 +98,7 @@ public class CancelPaymentResponse {
         protected CommonResponse commonResponse;
 
         /**
-         * Gets the value of the commonResponse property.
+         * Obtient la valeur de la propriété commonResponse.
          * 
          * @return
          *     possible object is
@@ -110,7 +110,7 @@ public class CancelPaymentResponse {
         }
 
         /**
-         * Sets the value of the commonResponse property.
+         * Définit la valeur de la propriété commonResponse.
          * 
          * @param value
          *     allowed object is

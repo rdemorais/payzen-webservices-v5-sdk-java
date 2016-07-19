@@ -9,9 +9,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Java class for paymentResponse complex type.
+ * <p>Classe Java pour paymentResponse complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="paymentResponse">
@@ -80,7 +80,7 @@ public class PaymentResponse {
     protected Integer paymentError;
 
     /**
-     * Gets the value of the transactionId property.
+     * Obtient la valeur de la propriété transactionId.
      * 
      * @return
      *     possible object is
@@ -92,7 +92,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Sets the value of the transactionId property.
+     * Définit la valeur de la propriété transactionId.
      * 
      * @param value
      *     allowed object is
@@ -104,7 +104,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Gets the value of the amount property.
+     * Obtient la valeur de la propriété amount.
      * 
      * @return
      *     possible object is
@@ -116,7 +116,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Sets the value of the amount property.
+     * Définit la valeur de la propriété amount.
      * 
      * @param value
      *     allowed object is
@@ -128,7 +128,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Gets the value of the currency property.
+     * Obtient la valeur de la propriété currency.
      * 
      * @return
      *     possible object is
@@ -140,7 +140,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Sets the value of the currency property.
+     * Définit la valeur de la propriété currency.
      * 
      * @param value
      *     allowed object is
@@ -152,7 +152,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Gets the value of the effectiveAmount property.
+     * Obtient la valeur de la propriété effectiveAmount.
      * 
      * @return
      *     possible object is
@@ -164,7 +164,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Sets the value of the effectiveAmount property.
+     * Définit la valeur de la propriété effectiveAmount.
      * 
      * @param value
      *     allowed object is
@@ -176,7 +176,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Gets the value of the effectiveCurrency property.
+     * Obtient la valeur de la propriété effectiveCurrency.
      * 
      * @return
      *     possible object is
@@ -188,7 +188,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Sets the value of the effectiveCurrency property.
+     * Définit la valeur de la propriété effectiveCurrency.
      * 
      * @param value
      *     allowed object is
@@ -200,7 +200,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Gets the value of the expectedCaptureDate property.
+     * Obtient la valeur de la propriété expectedCaptureDate.
      * 
      * @return
      *     possible object is
@@ -212,7 +212,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Sets the value of the expectedCaptureDate property.
+     * Définit la valeur de la propriété expectedCaptureDate.
      * 
      * @param value
      *     allowed object is
@@ -224,7 +224,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Gets the value of the manualValidation property.
+     * Obtient la valeur de la propriété manualValidation.
      * 
      * @return
      *     possible object is
@@ -236,7 +236,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Sets the value of the manualValidation property.
+     * Définit la valeur de la propriété manualValidation.
      * 
      * @param value
      *     allowed object is
@@ -248,7 +248,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Gets the value of the operationType property.
+     * Obtient la valeur de la propriété operationType.
      * 
      * @return
      *     possible object is
@@ -260,7 +260,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Sets the value of the operationType property.
+     * Définit la valeur de la propriété operationType.
      * 
      * @param value
      *     allowed object is
@@ -272,7 +272,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Gets the value of the creationDate property.
+     * Obtient la valeur de la propriété creationDate.
      * 
      * @return
      *     possible object is
@@ -284,7 +284,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Sets the value of the creationDate property.
+     * Définit la valeur de la propriété creationDate.
      * 
      * @param value
      *     allowed object is
@@ -296,7 +296,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Gets the value of the externalTransactionId property.
+     * Obtient la valeur de la propriété externalTransactionId.
      * 
      * @return
      *     possible object is
@@ -308,7 +308,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Sets the value of the externalTransactionId property.
+     * Définit la valeur de la propriété externalTransactionId.
      * 
      * @param value
      *     allowed object is
@@ -320,7 +320,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Gets the value of the liabilityShift property.
+     * Obtient la valeur de la propriété liabilityShift.
      * 
      * @return
      *     possible object is
@@ -332,7 +332,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Sets the value of the liabilityShift property.
+     * Définit la valeur de la propriété liabilityShift.
      * 
      * @param value
      *     allowed object is
@@ -344,7 +344,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Gets the value of the transactionUuid property.
+     * Obtient la valeur de la propriété transactionUuid.
      * 
      * @return
      *     possible object is
@@ -356,7 +356,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Sets the value of the transactionUuid property.
+     * Définit la valeur de la propriété transactionUuid.
      * 
      * @param value
      *     allowed object is
@@ -368,7 +368,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Gets the value of the sequenceNumber property.
+     * Obtient la valeur de la propriété sequenceNumber.
      * 
      * @return
      *     possible object is
@@ -380,7 +380,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Sets the value of the sequenceNumber property.
+     * Définit la valeur de la propriété sequenceNumber.
      * 
      * @param value
      *     allowed object is
@@ -392,7 +392,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Gets the value of the paymentType property.
+     * Obtient la valeur de la propriété paymentType.
      * 
      * @return
      *     possible object is
@@ -404,7 +404,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Sets the value of the paymentType property.
+     * Définit la valeur de la propriété paymentType.
      * 
      * @param value
      *     allowed object is
@@ -416,7 +416,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Gets the value of the paymentError property.
+     * Obtient la valeur de la propriété paymentError.
      * 
      * @return
      *     possible object is
@@ -428,7 +428,7 @@ public class PaymentResponse {
     }
 
     /**
-     * Sets the value of the paymentError property.
+     * Définit la valeur de la propriété paymentError.
      * 
      * @param value
      *     allowed object is

@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for reactivateTokenResponse complex type.
+ * <p>Classe Java pour reactivateTokenResponse complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="reactivateTokenResponse">
@@ -44,7 +44,7 @@ public class ReactivateTokenResponse {
     protected ReactivateTokenResponse.ReactivateTokenResult reactivateTokenResult;
 
     /**
-     * Gets the value of the reactivateTokenResult property.
+     * Obtient la valeur de la propriété reactivateTokenResult.
      * 
      * @return
      *     possible object is
@@ -56,7 +56,7 @@ public class ReactivateTokenResponse {
     }
 
     /**
-     * Sets the value of the reactivateTokenResult property.
+     * Définit la valeur de la propriété reactivateTokenResult.
      * 
      * @param value
      *     allowed object is
@@ -69,9 +69,9 @@ public class ReactivateTokenResponse {
 
 
     /**
-     * <p>Java class for anonymous complex type.
+     * <p>Classe Java pour anonymous complex type.
      * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
+     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
      * 
      * <pre>
      * &lt;complexType>
@@ -98,7 +98,7 @@ public class ReactivateTokenResponse {
         protected CommonResponse commonResponse;
 
         /**
-         * Gets the value of the commonResponse property.
+         * Obtient la valeur de la propriété commonResponse.
          * 
          * @return
          *     possible object is
@@ -110,7 +110,7 @@ public class ReactivateTokenResponse {
         }
 
         /**
-         * Sets the value of the commonResponse property.
+         * Définit la valeur de la propriété commonResponse.
          * 
          * @param value
          *     allowed object is

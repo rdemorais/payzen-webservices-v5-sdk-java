@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for riskAssessments complex type.
+ * <p>Classe Java pour riskAssessments complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="riskAssessments">
@@ -34,7 +34,7 @@ public class RiskAssessments {
     protected String results;
 
     /**
-     * Gets the value of the results property.
+     * Obtient la valeur de la propriété results.
      * 
      * @return
      *     possible object is
@@ -46,7 +46,7 @@ public class RiskAssessments {
     }
 
     /**
-     * Sets the value of the results property.
+     * Définit la valeur de la propriété results.
      * 
      * @param value
      *     allowed object is

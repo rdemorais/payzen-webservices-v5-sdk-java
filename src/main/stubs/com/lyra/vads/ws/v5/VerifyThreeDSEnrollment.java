@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for verifyThreeDSEnrollment complex type.
+ * <p>Classe Java pour verifyThreeDSEnrollment complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="verifyThreeDSEnrollment">
@@ -46,7 +46,7 @@ public class VerifyThreeDSEnrollment {
     protected ThreeDSRequest threeDSRequest;
 
     /**
-     * Gets the value of the commonRequest property.
+     * Obtient la valeur de la propriété commonRequest.
      * 
      * @return
      *     possible object is
@@ -58,7 +58,7 @@ public class VerifyThreeDSEnrollment {
     }
 
     /**
-     * Sets the value of the commonRequest property.
+     * Définit la valeur de la propriété commonRequest.
      * 
      * @param value
      *     allowed object is
@@ -70,7 +70,7 @@ public class VerifyThreeDSEnrollment {
     }
 
     /**
-     * Gets the value of the paymentRequest property.
+     * Obtient la valeur de la propriété paymentRequest.
      * 
      * @return
      *     possible object is
@@ -82,7 +82,7 @@ public class VerifyThreeDSEnrollment {
     }
 
     /**
-     * Sets the value of the paymentRequest property.
+     * Définit la valeur de la propriété paymentRequest.
      * 
      * @param value
      *     allowed object is
@@ -94,7 +94,7 @@ public class VerifyThreeDSEnrollment {
     }
 
     /**
-     * Gets the value of the cardRequest property.
+     * Obtient la valeur de la propriété cardRequest.
      * 
      * @return
      *     possible object is
@@ -106,7 +106,7 @@ public class VerifyThreeDSEnrollment {
     }
 
     /**
-     * Sets the value of the cardRequest property.
+     * Définit la valeur de la propriété cardRequest.
      * 
      * @param value
      *     allowed object is
@@ -118,7 +118,7 @@ public class VerifyThreeDSEnrollment {
     }
 
     /**
-     * Gets the value of the techRequest property.
+     * Obtient la valeur de la propriété techRequest.
      * 
      * @return
      *     possible object is
@@ -130,7 +130,7 @@ public class VerifyThreeDSEnrollment {
     }
 
     /**
-     * Sets the value of the techRequest property.
+     * Définit la valeur de la propriété techRequest.
      * 
      * @param value
      *     allowed object is
@@ -142,7 +142,7 @@ public class VerifyThreeDSEnrollment {
     }
 
     /**
-     * Gets the value of the threeDSRequest property.
+     * Obtient la valeur de la propriété threeDSRequest.
      * 
      * @return
      *     possible object is
@@ -154,7 +154,7 @@ public class VerifyThreeDSEnrollment {
     }
 
     /**
-     * Sets the value of the threeDSRequest property.
+     * Définit la valeur de la propriété threeDSRequest.
      * 
      * @param value
      *     allowed object is

@@ -9,9 +9,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for fraudManagementResponse complex type.
+ * <p>Classe Java pour fraudManagementResponse complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="fraudManagementResponse">
@@ -100,7 +100,7 @@ public class FraudManagementResponse {
     }
 
     /**
-     * Gets the value of the riskAssessments property.
+     * Obtient la valeur de la propriété riskAssessments.
      * 
      * @return
      *     possible object is
@@ -112,7 +112,7 @@ public class FraudManagementResponse {
     }
 
     /**
-     * Sets the value of the riskAssessments property.
+     * Définit la valeur de la propriété riskAssessments.
      * 
      * @param value
      *     allowed object is
