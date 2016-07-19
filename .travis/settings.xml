@@ -22,4 +22,7 @@
             </properties>
         </profile>
     </profiles>
+    <activeProfiles>
+        <activeProfile>generate-ws-stubs</activeProfile>
+    </activeProfiles>
 </settings>

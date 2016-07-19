@@ -121,10 +121,7 @@
         <profile>
             <id>generate-ws-stubs</id>
             <activation>
-                <property>
-                    <name>generate.ws.stubs</name>
-                    <value>true</value>
-                </property>
+                <activeByDefault>false</activeByDefault>
             </activation>
             <build>
                 <plugins>
