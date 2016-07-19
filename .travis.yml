@@ -8,6 +8,7 @@ before_install:
   - echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust
 before_deploy:
   - git reset --hard
+  - chmod u+x .travis/deploy.sh
 deploy:
   -
     provider: script
