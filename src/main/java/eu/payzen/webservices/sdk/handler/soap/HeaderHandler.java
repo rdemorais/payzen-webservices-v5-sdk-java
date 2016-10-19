@@ -23,6 +23,7 @@ import java.util.Date;
 import java.util.Set;
 import java.util.TimeZone;
 import java.util.UUID;
+
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 import javax.management.openmbean.InvalidKeyException;
@@ -35,6 +36,7 @@ import javax.xml.soap.SOAPMessage;
 import javax.xml.ws.handler.MessageContext;
 import javax.xml.ws.handler.soap.SOAPHandler;
 import javax.xml.ws.handler.soap.SOAPMessageContext;
+
 import org.apache.commons.codec.binary.Base64;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -53,19 +55,21 @@ public class HeaderHandler implements SOAPHandler<SOAPMessageContext> {
     private final String mode;
     private final String wsUser;
     private final String returnUrl;
+    private final String ecsPaymentId;
 
     private static final String NAMESPACE = "http://v5.ws.vads.lyra.com/Header/";
 
     public HeaderHandler(String shopId, String shopKey, String mode) {
-    	this(shopId, shopKey, mode, null, null);
+    	this(shopId, shopKey, mode, null, null, null);
     }
     
-    public HeaderHandler(String shopId, String shopKey, String mode, String wsUser, String returnUrl) {
+    public HeaderHandler(String shopId, String shopKey, String mode, String wsUser, String returnUrl, String ecsPaymentId) {
         this.shopId = shopId;
         this.shopKey = shopKey;
         this.mode = mode;
         this.wsUser = wsUser;
         this.returnUrl = returnUrl;
+        this.ecsPaymentId = ecsPaymentId;
     }
 
     /**
@@ -104,6 +108,12 @@ public class HeaderHandler implements SOAPHandler<SOAPMessageContext> {
                 if (returnUrl != null) {                	
                 	addHeaderField(header, "returnUrl", this.returnUrl);
                 }
+                
+                // Add ecsPaymentId
+                if (ecsPaymentId != null) {                	
+                	addHeaderField(header, "ecsPaymentId", this.ecsPaymentId);
+                }
+
 
                 // Timestamp
                 TimeZone tz = TimeZone.getTimeZone("UTC");
