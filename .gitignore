@@ -1,6 +1,6 @@
 /target/
 /src/main/stubs/
 *.iml
-*.classpath
-*.project
-*.settings
+.classpath
+.project
+.settings
