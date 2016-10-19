@@ -333,21 +333,53 @@ public final class Payment {
      * Please read official documentation for more detailed information about parameter content.
      * 
      * @param uuidTransaction unique identifier of the transaction
-     * @param commonRequest commonRequest parameters
+     * @param paymentRequest commonRequest parameters
+     * @param config
      * @return result with all the response objects
      */
     public static ServiceResult refund(String uuidTransaction, PaymentRequest paymentRequest, Map<String, String> ... config) {
         return getInstance().refund((config.length>0)?config[0]:null, uuidTransaction, paymentRequest);
     }
     
+    /**
+     * Create a subscription <p>
+     * 
+     * Please read official documentation for more detailed information about parameter content.
+     * 
+     * @param commonRequest
+     * @param orderRequest
+     * @param subscriptionRequest
+     * @param cardRequest
+     * @param config
+     * @return
+     */
     public static CreateSubscriptionResult createSubscription(CommonRequest commonRequest, OrderRequest orderRequest, SubscriptionRequest subscriptionRequest, CardRequest cardRequest, Map<String, String> ... config) {
         return getInstance().createSubscription((config.length>0)?config[0]:null, commonRequest, orderRequest, subscriptionRequest, cardRequest);
     }
     
+    /**
+     * Get a subscription <p>
+     * 
+     * Please read official documentation for more detailed information about parameter content.
+     * 
+     * @param queryRequest
+     * @param config
+     * @return
+     */
     public static GetSubscriptionDetailsResult getSubscriptionDetails(QueryRequest queryRequest, Map<String, String> ... config) {
         return getInstance().getSubscriptionDetails((config.length>0)?config[0]:null, queryRequest);
     }
     
+    /**
+     * Cancel a subscription <p>
+     * 
+     * Please read official documentation for more detailed information about parameter content.
+     *  
+     * @param commonRequest
+     * @param queryRequest
+     * @param config
+     * @return
+     */
     public static CancelSubscriptionResult cancelSubscription(CommonRequest commonRequest, QueryRequest queryRequest, Map<String, String> ... config) {
         return getInstance().cancelSubscription((config.length>0)?config[0]:null, commonRequest, queryRequest);
     }
