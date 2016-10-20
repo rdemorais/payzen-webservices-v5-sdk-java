@@ -33,17 +33,19 @@ public class HeaderHandlerResolver implements HandlerResolver {
     private final String mode;
     private final String wsUser;
     private final String returnUrl;
+    private final String ecsPaymentId;
     
     public HeaderHandlerResolver(String shopId, String shopKey, String mode) {
-    	this(shopId, shopKey, mode, null, null);
+    	this(shopId, shopKey, mode, null, null, null);
     }
     
-    public HeaderHandlerResolver(String shopId, String shopKey, String mode, String wsUser, String returnUrl) {
+    public HeaderHandlerResolver(String shopId, String shopKey, String mode, String wsUser, String returnUrl, String ecsPaymentId) {
         this.shopId = shopId;
         this.shopKey = shopKey;
         this.mode = mode;
         this.wsUser = wsUser;
         this.returnUrl = returnUrl;
+        this.ecsPaymentId = ecsPaymentId;
     }
 
     /**
@@ -55,7 +57,7 @@ public class HeaderHandlerResolver implements HandlerResolver {
     public List<Handler> getHandlerChain(PortInfo portInfo) {
         List<Handler> handlerChain = new ArrayList<Handler>();
 
-        HeaderHandler hh = new HeaderHandler(shopId, shopKey, mode, wsUser, returnUrl);
+        HeaderHandler hh = new HeaderHandler(shopId, shopKey, mode, wsUser, returnUrl, ecsPaymentId);
 
         handlerChain.add(hh);
 

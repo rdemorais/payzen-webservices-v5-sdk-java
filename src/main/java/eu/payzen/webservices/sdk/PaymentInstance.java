@@ -22,9 +22,6 @@ import java.util.Map;
 import javax.xml.ws.BindingProvider;
 import javax.xml.ws.handler.MessageContext;
 
-import eu.payzen.webservices.sdk.client.ClientV5;
-import eu.payzen.webservices.sdk.util.BuilderUtils;
-import eu.payzen.webservices.sdk.util.RequestUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -50,6 +47,10 @@ import com.lyra.vads.ws.v5.ThreeDSMode;
 import com.lyra.vads.ws.v5.ThreeDSRequest;
 import com.lyra.vads.ws.v5.UpdatePaymentResponse;
 import com.lyra.vads.ws.v5.ValidatePaymentResponse.ValidatePaymentResult;
+
+import eu.payzen.webservices.sdk.client.ClientV5;
+import eu.payzen.webservices.sdk.util.BuilderUtils;
+import eu.payzen.webservices.sdk.util.RequestUtils;
 import eu.payzen.webservices.sdk.util.SessionUtils;
 
 /**
@@ -683,8 +684,6 @@ final class PaymentInstance {
 	 * 
 	 * @param uuidTransaction
 	 *            unique identifier of the transaction
-	 * @param paymentRequest
-	 *            paymentRequest parameters to update
 	 * @return result with all the response objects
 	 */
 	ValidatePaymentResult validatePayment(Map<String, String> config, String uuidTransaction, String comment) {
@@ -701,6 +700,13 @@ final class PaymentInstance {
 		return validatePayment;
 	}
 
+	/**
+	 * 
+	 * @param config
+	 * @param uuidTransaction
+	 * @param paymentRequest
+	 * @return
+	 */
 	ServiceResult refund(Map<String, String> config, String uuidTransaction, PaymentRequest paymentRequest) {
 
 		PaymentAPI api = new ClientV5(config).getPaymentAPIImplPort();
@@ -739,6 +745,15 @@ final class PaymentInstance {
 		return createTokenFromTransaction;
 	}
 
+	/**
+	 * 
+	 * @param config
+	 * @param commonRequest
+	 * @param orderRequest
+	 * @param subscriptionRequest
+	 * @param cardRequest
+	 * @return
+	 */
 	CreateSubscriptionResult createSubscription(Map<String, String> config, CommonRequest commonRequest,
 			OrderRequest orderRequest, SubscriptionRequest subscriptionRequest, CardRequest cardRequest) {
 		PaymentAPI api = new ClientV5(config).getPaymentAPIImplPort();
@@ -747,12 +762,25 @@ final class PaymentInstance {
 		return createSubscription;
 	}
 
+	/**
+	 * 
+	 * @param config
+	 * @param queryRequest
+	 * @return
+	 */
 	GetSubscriptionDetailsResult getSubscriptionDetails(Map<String, String> config, QueryRequest queryRequest) {
 		PaymentAPI api = new ClientV5(config).getPaymentAPIImplPort();
 		GetSubscriptionDetailsResult subscriptionDetails = api.getSubscriptionDetails(queryRequest);
 		return subscriptionDetails;
 	}
 
+	/**
+	 * 
+	 * @param config
+	 * @param commonRequest
+	 * @param queryRequest
+	 * @return
+	 */
 	CancelSubscriptionResult cancelSubscription(Map<String, String> config, CommonRequest commonRequest,
 			QueryRequest queryRequest) {
 		PaymentAPI api = new ClientV5(config).getPaymentAPIImplPort();
@@ -760,6 +788,12 @@ final class PaymentInstance {
 		return cancelSubscription;
 	}
 
+	/**
+	 * 
+	 * @param config
+	 * @param orderId
+	 * @return
+	 */
 	// TODO: not used for the moment
 	ServiceResult details(Map<String, String> config, String orderId) {
 		PaymentAPI api = new ClientV5(config).getPaymentAPIImplPort();
@@ -773,6 +807,13 @@ final class PaymentInstance {
 		return serviceResult;
 	}
 
+	/**
+	 * 
+	 * @param config
+	 * @param orderId
+	 * @param response
+	 * @return
+	 */
 	// TODO: not used for the moment
 	ServiceResult details(Map<String, String> config, String orderId, ResponseHandler response) {
 		ServiceResult serviceResult = details(config, orderId);

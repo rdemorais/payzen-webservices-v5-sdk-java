@@ -58,7 +58,9 @@ public class ClientV5 {
 				: Config.getConfig().getProperty("wsUser");
 		String returnUrl = (config != null && config.get("returnUrl") != null) ? config.get("returnUrl")
 				: Config.getConfig().getProperty("returnUrl");
-
+		String ecsPaymentId = (config != null && config.get("ecsPaymentId") != null) ? config.get("ecsPaymentId")
+				: Config.getConfig().getProperty("ecsPaymentId");
+		
 		String protocol = "https://";
 		if (!("true".equalsIgnoreCase(secureConnection))) {
 			protocol = "http://";
@@ -77,7 +79,7 @@ public class ClientV5 {
 			wsdlURL = new URL(wsdlURLStr.toString());
 			QName qname = new QName("http://v5.ws.vads.lyra.com/", "v5");
 			Service service = Service.create(wsdlURL, qname);
-			service.setHandlerResolver(new HeaderHandlerResolver(shopId, shopKey, mode, wsUser, returnUrl));
+			service.setHandlerResolver(new HeaderHandlerResolver(shopId, shopKey, mode, wsUser, returnUrl, ecsPaymentId));
 			port = service.getPort(PaymentAPI.class);
 
 		} catch (MalformedURLException e) {
