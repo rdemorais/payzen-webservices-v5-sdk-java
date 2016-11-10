@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour extInfo complex type.
+ * <p>Java class for extInfo complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="extInfo">
@@ -37,7 +37,7 @@ public class ExtInfo {
     protected String value;
 
     /**
-     * Obtient la valeur de la propriété key.
+     * Gets the value of the key property.
      * 
      * @return
      *     possible object is
@@ -49,7 +49,7 @@ public class ExtInfo {
     }
 
     /**
-     * Définit la valeur de la propriété key.
+     * Sets the value of the key property.
      * 
      * @param value
      *     allowed object is
@@ -61,7 +61,7 @@ public class ExtInfo {
     }
 
     /**
-     * Obtient la valeur de la propriété value.
+     * Gets the value of the value property.
      * 
      * @return
      *     possible object is
@@ -73,7 +73,7 @@ public class ExtInfo {
     }
 
     /**
-     * Définit la valeur de la propriété value.
+     * Sets the value of the value property.
      * 
      * @param value
      *     allowed object is

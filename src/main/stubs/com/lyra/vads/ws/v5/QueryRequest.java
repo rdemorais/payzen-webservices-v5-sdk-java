@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour queryRequest complex type.
+ * <p>Java class for queryRequest complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="queryRequest">
@@ -43,7 +43,7 @@ public class QueryRequest {
     protected String paymentToken;
 
     /**
-     * Obtient la valeur de la propriété uuid.
+     * Gets the value of the uuid property.
      * 
      * @return
      *     possible object is
@@ -55,7 +55,7 @@ public class QueryRequest {
     }
 
     /**
-     * Définit la valeur de la propriété uuid.
+     * Sets the value of the uuid property.
      * 
      * @param value
      *     allowed object is
@@ -67,7 +67,7 @@ public class QueryRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété orderId.
+     * Gets the value of the orderId property.
      * 
      * @return
      *     possible object is
@@ -79,7 +79,7 @@ public class QueryRequest {
     }
 
     /**
-     * Définit la valeur de la propriété orderId.
+     * Sets the value of the orderId property.
      * 
      * @param value
      *     allowed object is
@@ -91,7 +91,7 @@ public class QueryRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété subscriptionId.
+     * Gets the value of the subscriptionId property.
      * 
      * @return
      *     possible object is
@@ -103,7 +103,7 @@ public class QueryRequest {
     }
 
     /**
-     * Définit la valeur de la propriété subscriptionId.
+     * Sets the value of the subscriptionId property.
      * 
      * @param value
      *     allowed object is
@@ -115,7 +115,7 @@ public class QueryRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété paymentToken.
+     * Gets the value of the paymentToken property.
      * 
      * @return
      *     possible object is
@@ -127,7 +127,7 @@ public class QueryRequest {
     }
 
     /**
-     * Définit la valeur de la propriété paymentToken.
+     * Sets the value of the paymentToken property.
      * 
      * @param value
      *     allowed object is

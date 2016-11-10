@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour createPayment complex type.
+ * <p>Java class for createPayment complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="createPayment">
@@ -55,7 +55,7 @@ public class CreatePayment {
     protected ShoppingCartRequest shoppingCartRequest;
 
     /**
-     * Obtient la valeur de la propriété commonRequest.
+     * Gets the value of the commonRequest property.
      * 
      * @return
      *     possible object is
@@ -67,7 +67,7 @@ public class CreatePayment {
     }
 
     /**
-     * Définit la valeur de la propriété commonRequest.
+     * Sets the value of the commonRequest property.
      * 
      * @param value
      *     allowed object is
@@ -79,7 +79,7 @@ public class CreatePayment {
     }
 
     /**
-     * Obtient la valeur de la propriété threeDSRequest.
+     * Gets the value of the threeDSRequest property.
      * 
      * @return
      *     possible object is
@@ -91,7 +91,7 @@ public class CreatePayment {
     }
 
     /**
-     * Définit la valeur de la propriété threeDSRequest.
+     * Sets the value of the threeDSRequest property.
      * 
      * @param value
      *     allowed object is
@@ -103,7 +103,7 @@ public class CreatePayment {
     }
 
     /**
-     * Obtient la valeur de la propriété paymentRequest.
+     * Gets the value of the paymentRequest property.
      * 
      * @return
      *     possible object is
@@ -115,7 +115,7 @@ public class CreatePayment {
     }
 
     /**
-     * Définit la valeur de la propriété paymentRequest.
+     * Sets the value of the paymentRequest property.
      * 
      * @param value
      *     allowed object is
@@ -127,7 +127,7 @@ public class CreatePayment {
     }
 
     /**
-     * Obtient la valeur de la propriété orderRequest.
+     * Gets the value of the orderRequest property.
      * 
      * @return
      *     possible object is
@@ -139,7 +139,7 @@ public class CreatePayment {
     }
 
     /**
-     * Définit la valeur de la propriété orderRequest.
+     * Sets the value of the orderRequest property.
      * 
      * @param value
      *     allowed object is
@@ -151,7 +151,7 @@ public class CreatePayment {
     }
 
     /**
-     * Obtient la valeur de la propriété cardRequest.
+     * Gets the value of the cardRequest property.
      * 
      * @return
      *     possible object is
@@ -163,7 +163,7 @@ public class CreatePayment {
     }
 
     /**
-     * Définit la valeur de la propriété cardRequest.
+     * Sets the value of the cardRequest property.
      * 
      * @param value
      *     allowed object is
@@ -175,7 +175,7 @@ public class CreatePayment {
     }
 
     /**
-     * Obtient la valeur de la propriété customerRequest.
+     * Gets the value of the customerRequest property.
      * 
      * @return
      *     possible object is
@@ -187,7 +187,7 @@ public class CreatePayment {
     }
 
     /**
-     * Définit la valeur de la propriété customerRequest.
+     * Sets the value of the customerRequest property.
      * 
      * @param value
      *     allowed object is
@@ -199,7 +199,7 @@ public class CreatePayment {
     }
 
     /**
-     * Obtient la valeur de la propriété techRequest.
+     * Gets the value of the techRequest property.
      * 
      * @return
      *     possible object is
@@ -211,7 +211,7 @@ public class CreatePayment {
     }
 
     /**
-     * Définit la valeur de la propriété techRequest.
+     * Sets the value of the techRequest property.
      * 
      * @param value
      *     allowed object is
@@ -223,7 +223,7 @@ public class CreatePayment {
     }
 
     /**
-     * Obtient la valeur de la propriété shoppingCartRequest.
+     * Gets the value of the shoppingCartRequest property.
      * 
      * @return
      *     possible object is
@@ -235,7 +235,7 @@ public class CreatePayment {
     }
 
     /**
-     * Définit la valeur de la propriété shoppingCartRequest.
+     * Sets the value of the shoppingCartRequest property.
      * 
      * @param value
      *     allowed object is

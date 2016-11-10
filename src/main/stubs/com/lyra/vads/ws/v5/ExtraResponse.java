@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour extraResponse complex type.
+ * <p>Java class for extraResponse complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="extraResponse">
@@ -37,7 +37,7 @@ public class ExtraResponse {
     protected Integer paymentOptionOccNumber;
 
     /**
-     * Obtient la valeur de la propriété paymentOptionCode.
+     * Gets the value of the paymentOptionCode property.
      * 
      * @return
      *     possible object is
@@ -49,7 +49,7 @@ public class ExtraResponse {
     }
 
     /**
-     * Définit la valeur de la propriété paymentOptionCode.
+     * Sets the value of the paymentOptionCode property.
      * 
      * @param value
      *     allowed object is
@@ -61,7 +61,7 @@ public class ExtraResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété paymentOptionOccNumber.
+     * Gets the value of the paymentOptionOccNumber property.
      * 
      * @return
      *     possible object is
@@ -73,7 +73,7 @@ public class ExtraResponse {
     }
 
     /**
-     * Définit la valeur de la propriété paymentOptionOccNumber.
+     * Sets the value of the paymentOptionOccNumber property.
      * 
      * @param value
      *     allowed object is

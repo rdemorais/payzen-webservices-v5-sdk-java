@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour refundPaymentResponse complex type.
+ * <p>Java class for refundPaymentResponse complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="refundPaymentResponse">
@@ -54,7 +54,7 @@ public class RefundPaymentResponse {
     protected RefundPaymentResponse.RefundPaymentResult refundPaymentResult;
 
     /**
-     * Obtient la valeur de la propriété refundPaymentResult.
+     * Gets the value of the refundPaymentResult property.
      * 
      * @return
      *     possible object is
@@ -66,7 +66,7 @@ public class RefundPaymentResponse {
     }
 
     /**
-     * Définit la valeur de la propriété refundPaymentResult.
+     * Sets the value of the refundPaymentResult property.
      * 
      * @param value
      *     allowed object is
@@ -79,9 +79,9 @@ public class RefundPaymentResponse {
 
 
     /**
-     * <p>Classe Java pour anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType>
@@ -138,7 +138,7 @@ public class RefundPaymentResponse {
         protected FraudManagementResponse fraudManagementResponse;
 
         /**
-         * Obtient la valeur de la propriété commonResponse.
+         * Gets the value of the commonResponse property.
          * 
          * @return
          *     possible object is
@@ -150,7 +150,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Définit la valeur de la propriété commonResponse.
+         * Sets the value of the commonResponse property.
          * 
          * @param value
          *     allowed object is
@@ -162,7 +162,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Obtient la valeur de la propriété paymentResponse.
+         * Gets the value of the paymentResponse property.
          * 
          * @return
          *     possible object is
@@ -174,7 +174,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Définit la valeur de la propriété paymentResponse.
+         * Sets the value of the paymentResponse property.
          * 
          * @param value
          *     allowed object is
@@ -186,7 +186,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Obtient la valeur de la propriété orderResponse.
+         * Gets the value of the orderResponse property.
          * 
          * @return
          *     possible object is
@@ -198,7 +198,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Définit la valeur de la propriété orderResponse.
+         * Sets the value of the orderResponse property.
          * 
          * @param value
          *     allowed object is
@@ -210,7 +210,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Obtient la valeur de la propriété cardResponse.
+         * Gets the value of the cardResponse property.
          * 
          * @return
          *     possible object is
@@ -222,7 +222,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Définit la valeur de la propriété cardResponse.
+         * Sets the value of the cardResponse property.
          * 
          * @param value
          *     allowed object is
@@ -234,7 +234,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Obtient la valeur de la propriété authorizationResponse.
+         * Gets the value of the authorizationResponse property.
          * 
          * @return
          *     possible object is
@@ -246,7 +246,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Définit la valeur de la propriété authorizationResponse.
+         * Sets the value of the authorizationResponse property.
          * 
          * @param value
          *     allowed object is
@@ -258,7 +258,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Obtient la valeur de la propriété captureResponse.
+         * Gets the value of the captureResponse property.
          * 
          * @return
          *     possible object is
@@ -270,7 +270,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Définit la valeur de la propriété captureResponse.
+         * Sets the value of the captureResponse property.
          * 
          * @param value
          *     allowed object is
@@ -282,7 +282,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Obtient la valeur de la propriété customerResponse.
+         * Gets the value of the customerResponse property.
          * 
          * @return
          *     possible object is
@@ -294,7 +294,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Définit la valeur de la propriété customerResponse.
+         * Sets the value of the customerResponse property.
          * 
          * @param value
          *     allowed object is
@@ -306,7 +306,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Obtient la valeur de la propriété markResponse.
+         * Gets the value of the markResponse property.
          * 
          * @return
          *     possible object is
@@ -318,7 +318,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Définit la valeur de la propriété markResponse.
+         * Sets the value of the markResponse property.
          * 
          * @param value
          *     allowed object is
@@ -330,7 +330,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Obtient la valeur de la propriété threeDSResponse.
+         * Gets the value of the threeDSResponse property.
          * 
          * @return
          *     possible object is
@@ -342,7 +342,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Définit la valeur de la propriété threeDSResponse.
+         * Sets the value of the threeDSResponse property.
          * 
          * @param value
          *     allowed object is
@@ -354,7 +354,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Obtient la valeur de la propriété extraResponse.
+         * Gets the value of the extraResponse property.
          * 
          * @return
          *     possible object is
@@ -366,7 +366,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Définit la valeur de la propriété extraResponse.
+         * Sets the value of the extraResponse property.
          * 
          * @param value
          *     allowed object is
@@ -378,7 +378,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Obtient la valeur de la propriété fraudManagementResponse.
+         * Gets the value of the fraudManagementResponse property.
          * 
          * @return
          *     possible object is
@@ -390,7 +390,7 @@ public class RefundPaymentResponse {
         }
 
         /**
-         * Définit la valeur de la propriété fraudManagementResponse.
+         * Sets the value of the fraudManagementResponse property.
          * 
          * @param value
          *     allowed object is

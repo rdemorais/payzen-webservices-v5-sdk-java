@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour refundPayment complex type.
+ * <p>Java class for refundPayment complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="refundPayment">
@@ -40,7 +40,7 @@ public class RefundPayment {
     protected QueryRequest queryRequest;
 
     /**
-     * Obtient la valeur de la propriété commonRequest.
+     * Gets the value of the commonRequest property.
      * 
      * @return
      *     possible object is
@@ -52,7 +52,7 @@ public class RefundPayment {
     }
 
     /**
-     * Définit la valeur de la propriété commonRequest.
+     * Sets the value of the commonRequest property.
      * 
      * @param value
      *     allowed object is
@@ -64,7 +64,7 @@ public class RefundPayment {
     }
 
     /**
-     * Obtient la valeur de la propriété paymentRequest.
+     * Gets the value of the paymentRequest property.
      * 
      * @return
      *     possible object is
@@ -76,7 +76,7 @@ public class RefundPayment {
     }
 
     /**
-     * Définit la valeur de la propriété paymentRequest.
+     * Sets the value of the paymentRequest property.
      * 
      * @param value
      *     allowed object is
@@ -88,7 +88,7 @@ public class RefundPayment {
     }
 
     /**
-     * Obtient la valeur de la propriété queryRequest.
+     * Gets the value of the queryRequest property.
      * 
      * @return
      *     possible object is
@@ -100,7 +100,7 @@ public class RefundPayment {
     }
 
     /**
-     * Définit la valeur de la propriété queryRequest.
+     * Sets the value of the queryRequest property.
      * 
      * @param value
      *     allowed object is

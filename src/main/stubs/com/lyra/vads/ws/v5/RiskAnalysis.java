@@ -10,9 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour riskAnalysis complex type.
+ * <p>Java class for riskAnalysis complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="riskAnalysis">
@@ -53,7 +53,7 @@ public class RiskAnalysis {
     protected String fingerPrintId;
 
     /**
-     * Obtient la valeur de la propriété score.
+     * Gets the value of the score property.
      * 
      * @return
      *     possible object is
@@ -65,7 +65,7 @@ public class RiskAnalysis {
     }
 
     /**
-     * Définit la valeur de la propriété score.
+     * Sets the value of the score property.
      * 
      * @param value
      *     allowed object is
@@ -77,7 +77,7 @@ public class RiskAnalysis {
     }
 
     /**
-     * Obtient la valeur de la propriété resultCode.
+     * Gets the value of the resultCode property.
      * 
      * @return
      *     possible object is
@@ -89,7 +89,7 @@ public class RiskAnalysis {
     }
 
     /**
-     * Définit la valeur de la propriété resultCode.
+     * Sets the value of the resultCode property.
      * 
      * @param value
      *     allowed object is
@@ -101,7 +101,7 @@ public class RiskAnalysis {
     }
 
     /**
-     * Obtient la valeur de la propriété status.
+     * Gets the value of the status property.
      * 
      * @return
      *     possible object is
@@ -113,7 +113,7 @@ public class RiskAnalysis {
     }
 
     /**
-     * Définit la valeur de la propriété status.
+     * Sets the value of the status property.
      * 
      * @param value
      *     allowed object is
@@ -125,7 +125,7 @@ public class RiskAnalysis {
     }
 
     /**
-     * Obtient la valeur de la propriété requestId.
+     * Gets the value of the requestId property.
      * 
      * @return
      *     possible object is
@@ -137,7 +137,7 @@ public class RiskAnalysis {
     }
 
     /**
-     * Définit la valeur de la propriété requestId.
+     * Sets the value of the requestId property.
      * 
      * @param value
      *     allowed object is
@@ -178,7 +178,7 @@ public class RiskAnalysis {
     }
 
     /**
-     * Obtient la valeur de la propriété fingerPrintId.
+     * Gets the value of the fingerPrintId property.
      * 
      * @return
      *     possible object is
@@ -190,7 +190,7 @@ public class RiskAnalysis {
     }
 
     /**
-     * Définit la valeur de la propriété fingerPrintId.
+     * Sets the value of the fingerPrintId property.
      * 
      * @param value
      *     allowed object is

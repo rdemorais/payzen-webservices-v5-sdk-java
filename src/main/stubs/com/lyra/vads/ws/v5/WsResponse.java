@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour wsResponse complex type.
+ * <p>Java class for wsResponse complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="wsResponse">
@@ -60,7 +60,7 @@ public class WsResponse {
     protected String requestId;
 
     /**
-     * Obtient la valeur de la propriété requestId.
+     * Gets the value of the requestId property.
      * 
      * @return
      *     possible object is
@@ -72,7 +72,7 @@ public class WsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété requestId.
+     * Sets the value of the requestId property.
      * 
      * @param value
      *     allowed object is

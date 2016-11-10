@@ -9,9 +9,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Classe Java pour subscriptionResponse complex type.
+ * <p>Java class for subscriptionResponse complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="subscriptionResponse">
@@ -68,7 +68,7 @@ public class SubscriptionResponse {
     protected Integer currency;
 
     /**
-     * Obtient la valeur de la propriété subscriptionId.
+     * Gets the value of the subscriptionId property.
      * 
      * @return
      *     possible object is
@@ -80,7 +80,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Définit la valeur de la propriété subscriptionId.
+     * Sets the value of the subscriptionId property.
      * 
      * @param value
      *     allowed object is
@@ -92,7 +92,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété effectDate.
+     * Gets the value of the effectDate property.
      * 
      * @return
      *     possible object is
@@ -104,7 +104,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Définit la valeur de la propriété effectDate.
+     * Sets the value of the effectDate property.
      * 
      * @param value
      *     allowed object is
@@ -116,7 +116,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété cancelDate.
+     * Gets the value of the cancelDate property.
      * 
      * @return
      *     possible object is
@@ -128,7 +128,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Définit la valeur de la propriété cancelDate.
+     * Sets the value of the cancelDate property.
      * 
      * @param value
      *     allowed object is
@@ -140,7 +140,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété initialAmount.
+     * Gets the value of the initialAmount property.
      * 
      * @return
      *     possible object is
@@ -152,7 +152,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Définit la valeur de la propriété initialAmount.
+     * Sets the value of the initialAmount property.
      * 
      * @param value
      *     allowed object is
@@ -164,7 +164,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété rrule.
+     * Gets the value of the rrule property.
      * 
      * @return
      *     possible object is
@@ -176,7 +176,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Définit la valeur de la propriété rrule.
+     * Sets the value of the rrule property.
      * 
      * @param value
      *     allowed object is
@@ -188,7 +188,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété description.
+     * Gets the value of the description property.
      * 
      * @return
      *     possible object is
@@ -200,7 +200,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Définit la valeur de la propriété description.
+     * Sets the value of the description property.
      * 
      * @param value
      *     allowed object is
@@ -212,7 +212,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété initialAmountNumber.
+     * Gets the value of the initialAmountNumber property.
      * 
      * @return
      *     possible object is
@@ -224,7 +224,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Définit la valeur de la propriété initialAmountNumber.
+     * Sets the value of the initialAmountNumber property.
      * 
      * @param value
      *     allowed object is
@@ -236,7 +236,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété pastPaymentNumber.
+     * Gets the value of the pastPaymentNumber property.
      * 
      * @return
      *     possible object is
@@ -248,7 +248,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Définit la valeur de la propriété pastPaymentNumber.
+     * Sets the value of the pastPaymentNumber property.
      * 
      * @param value
      *     allowed object is
@@ -260,7 +260,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété totalPaymentNumber.
+     * Gets the value of the totalPaymentNumber property.
      * 
      * @return
      *     possible object is
@@ -272,7 +272,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Définit la valeur de la propriété totalPaymentNumber.
+     * Sets the value of the totalPaymentNumber property.
      * 
      * @param value
      *     allowed object is
@@ -284,7 +284,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété amount.
+     * Gets the value of the amount property.
      * 
      * @return
      *     possible object is
@@ -296,7 +296,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Définit la valeur de la propriété amount.
+     * Sets the value of the amount property.
      * 
      * @param value
      *     allowed object is
@@ -308,7 +308,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété currency.
+     * Gets the value of the currency property.
      * 
      * @return
      *     possible object is
@@ -320,7 +320,7 @@ public class SubscriptionResponse {
     }
 
     /**
-     * Définit la valeur de la propriété currency.
+     * Sets the value of the currency property.
      * 
      * @param value
      *     allowed object is

@@ -9,9 +9,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Classe Java pour transactionItem complex type.
+ * <p>Java class for transactionItem complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="transactionItem">
@@ -49,7 +49,7 @@ public class TransactionItem {
     protected XMLGregorianCalendar expectedCaptureDate;
 
     /**
-     * Obtient la valeur de la propriété transactionUuid.
+     * Gets the value of the transactionUuid property.
      * 
      * @return
      *     possible object is
@@ -61,7 +61,7 @@ public class TransactionItem {
     }
 
     /**
-     * Définit la valeur de la propriété transactionUuid.
+     * Sets the value of the transactionUuid property.
      * 
      * @param value
      *     allowed object is
@@ -73,7 +73,7 @@ public class TransactionItem {
     }
 
     /**
-     * Obtient la valeur de la propriété transactionStatusLabel.
+     * Gets the value of the transactionStatusLabel property.
      * 
      * @return
      *     possible object is
@@ -85,7 +85,7 @@ public class TransactionItem {
     }
 
     /**
-     * Définit la valeur de la propriété transactionStatusLabel.
+     * Sets the value of the transactionStatusLabel property.
      * 
      * @param value
      *     allowed object is
@@ -97,7 +97,7 @@ public class TransactionItem {
     }
 
     /**
-     * Obtient la valeur de la propriété amount.
+     * Gets the value of the amount property.
      * 
      * @return
      *     possible object is
@@ -109,7 +109,7 @@ public class TransactionItem {
     }
 
     /**
-     * Définit la valeur de la propriété amount.
+     * Sets the value of the amount property.
      * 
      * @param value
      *     allowed object is
@@ -121,7 +121,7 @@ public class TransactionItem {
     }
 
     /**
-     * Obtient la valeur de la propriété currency.
+     * Gets the value of the currency property.
      * 
      * @return
      *     possible object is
@@ -133,7 +133,7 @@ public class TransactionItem {
     }
 
     /**
-     * Définit la valeur de la propriété currency.
+     * Sets the value of the currency property.
      * 
      * @param value
      *     allowed object is
@@ -145,7 +145,7 @@ public class TransactionItem {
     }
 
     /**
-     * Obtient la valeur de la propriété expectedCaptureDate.
+     * Gets the value of the expectedCaptureDate property.
      * 
      * @return
      *     possible object is
@@ -157,7 +157,7 @@ public class TransactionItem {
     }
 
     /**
-     * Définit la valeur de la propriété expectedCaptureDate.
+     * Sets the value of the expectedCaptureDate property.
      * 
      * @param value
      *     allowed object is
