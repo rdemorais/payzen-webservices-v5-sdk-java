@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>eu.payzen.sdk</groupId>
 	<artifactId>payzen-ws-sdk</artifactId>
-	<version>1.0.4</version>
+	<version>1.0.5</version>
 	<packaging>jar</packaging>
 
 	<name>Payzen Webservices SDK</name>
@@ -51,7 +51,7 @@
 	</properties>
 	<build>
 		<resources>
-			<!-- <resource> <directory>src/main/stubs</directory> </resource> -->
+			<!-- <resource> <directory>src/main/stubs</directory> </resource> --> 
 			<resource>
 				<directory>src/main/resources</directory>
 			</resource>
@@ -62,6 +62,7 @@
 		<profile>
 			<id>release-profile</id>
 			<build>
+			<pluginManagement>
 				<plugins>
 					<plugin>
 						<groupId>org.sonatype.plugins</groupId>
@@ -97,6 +98,9 @@
 								<goals>
 									<goal>jar</goal>
 								</goals>
+								<configuration>
+									<additionalparam>${javadoc.opts}</additionalparam>
+								</configuration>
 							</execution>
 						</executions>
 					</plugin>
@@ -115,19 +119,35 @@
 						</executions>
 					</plugin>
 					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-javadoc-plugin</artifactId>
-						<version>2.9.1</version>
+       <artifactId>maven-compiler-plugin</artifactId>
+       <version>2.5.1</version>
+          <configuration>
+            <includes>
+              <include>src/main/stubs/**/*.java</include>
+            </includes>
+          </configuration>          
+     </plugin>    
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>build-helper-maven-plugin</artifactId>
+						<version>1.12</version>
 						<executions>
 							<execution>
-								<id>attach-javadocs</id>
+								<id>add-source</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>add-source</goal>
+								</goals>
 								<configuration>
-									<additionalparam>${javadoc.opts}</additionalparam>
+									<sources>
+										<source>src/main/stubs</source>
+									</sources>
 								</configuration>
 							</execution>
 						</executions>
 					</plugin>
 				</plugins>
+				</pluginManagement>
 			</build>
 		</profile>
 		<profile>
