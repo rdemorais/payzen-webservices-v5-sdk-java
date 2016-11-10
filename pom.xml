@@ -50,9 +50,9 @@
     </properties>
     <build>
         <resources>
-            <resource>
+            <!-- <resource>
                 <directory>src/main/stubs</directory>
-            </resource>
+            </resource> -->
             <resource>
                 <directory>src/main/resources</directory>
             </resource>
