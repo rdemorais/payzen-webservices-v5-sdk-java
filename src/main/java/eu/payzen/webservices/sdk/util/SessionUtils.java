@@ -40,7 +40,8 @@ public class SessionUtils {
      */
     public static String getHttpSessionId(BindingProvider port) {
         
-        Map<String, List<String>> headers = (Map<String, List<String>>) port.getResponseContext().get(MessageContext.HTTP_RESPONSE_HEADERS);
+        @SuppressWarnings("unchecked")
+		Map<String, List<String>> headers = (Map<String, List<String>>) port.getResponseContext().get(MessageContext.HTTP_RESPONSE_HEADERS);
         
         List<String> cookie = headers.get(SET_COOKIE_HEADER);
         String cookieValue = cookie.get(0);        

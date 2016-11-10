@@ -16,7 +16,6 @@
 package eu.payzen.webservices.sdk.client;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Map;
 
@@ -26,6 +25,7 @@ import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 
 import com.lyra.vads.ws.v5.PaymentAPI;
+
 import eu.payzen.webservices.sdk.handler.soap.HeaderHandlerResolver;
 import eu.payzen.webservices.sdk.util.Config;
 import eu.payzen.webservices.sdk.util.NullHostnameVerifier;
@@ -82,9 +82,7 @@ public class ClientV5 {
 			service.setHandlerResolver(new HeaderHandlerResolver(shopId, shopKey, mode, wsUser, returnUrl, ecsPaymentId));
 			port = service.getPort(PaymentAPI.class);
 
-		} catch (MalformedURLException e) {
-			throw new RuntimeException(e.getMessage(), e);
-		} catch (IOException e) {
+		}  catch (IOException e) {
 			throw new RuntimeException(e.getMessage(), e);
 		}
 	}

@@ -68,7 +68,7 @@ public class RequestUtils {
         
         String[] tokens = MD.split("\\+");
         
-        if (tokens == null && tokens.length < 2) {
+        if (tokens == null || tokens.length < 2) {
             logger.error("Incomplete MD data: " + MD + ". Payment will fail!");
             return null;
         }
