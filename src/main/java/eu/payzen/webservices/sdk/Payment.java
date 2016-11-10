@@ -325,6 +325,9 @@ public final class Payment {
      * 
      * Please read official documentation for more detailed information about parameter content.
      * 
+     * DEPRECATED: this method has been created without using builder (as the other methods) and will be removed/replaced in 
+     * future versions. DO NOT USE IT.
+     * 
      * @param uuidTransaction unique identifier of the transaction
      * @param paymentRequest paymentRequest parameters to update
      * @param config OPTIONAL, allows to override configuration at runtime
@@ -355,12 +358,16 @@ public final class Payment {
      * 
      * Please read official documentation for more detailed information about parameter content.
      * 
+     * DEPRECATED: this method has been created without using builder (as the other methods) and will be removed/replaced in 
+     * future versions. DO NOT USE IT.
+     * 
      * @param uuidTransaction unique identifier of the transaction
      * @param commonRequest commonRequest parameters
      * @param config OPTIONAL, allows to override configuration at runtime
      * @return result with all the response objects
      */
     @SafeVarargs
+    @Deprecated
 	public static CreateTokenFromTransactionResult createTokenFromTransaction(String uuidTransaction, CommonRequest commonRequest, Map<String, String> ... config) {
         return getInstance().createTokenFromTransaction((config.length>0)?config[0]:null, uuidTransaction, commonRequest);
     }
@@ -370,12 +377,16 @@ public final class Payment {
      * 
      * Please read official documentation for more detailed information about parameter content.
      * 
+     * DEPRECATED: this method has been created without using builder (as the other methods) and will be removed/replaced in 
+     * future versions. DO NOT USE IT.
+     * 
      * @param uuidTransaction unique identifier of the transaction
      * @param paymentRequest commonRequest parameters
      * @param config OPTIONAL, allows to override configuration at runtime
      * @return result with all the response objects
      */
     @SafeVarargs
+    @Deprecated
 	public static ServiceResult refund(String uuidTransaction, PaymentRequest paymentRequest, Map<String, String> ... config) {
         return getInstance().refund((config.length>0)?config[0]:null, uuidTransaction, paymentRequest);
     }
@@ -383,7 +394,10 @@ public final class Payment {
     /**
      * Create a subscription <p>
      * 
-     * Please read official documentation for more detailed information about parameter content.
+     * Please read official documentation for more detailed information about parameter content.<p>
+     * 
+     * DEPRECATED: this method has been created without using builder (as the other methods) and will be removed/replaced in 
+     * future versions. DO NOT USE IT.
      * 
      * @param commonRequest
      * @param orderRequest
@@ -393,6 +407,7 @@ public final class Payment {
      * @return
      */
     @SafeVarargs
+    @Deprecated
 	public static CreateSubscriptionResult createSubscription(CommonRequest commonRequest, OrderRequest orderRequest, SubscriptionRequest subscriptionRequest, CardRequest cardRequest, Map<String, String> ... config) {
         return getInstance().createSubscription((config.length>0)?config[0]:null, commonRequest, orderRequest, subscriptionRequest, cardRequest);
     }
@@ -400,13 +415,17 @@ public final class Payment {
     /**
      * Get a subscription <p>
      * 
-     * Please read official documentation for more detailed information about parameter content.
+     * Please read official documentation for more detailed information about parameter content.<p>
+     * 
+     * DEPRECATED: this method has been created without using builder (as the other methods) and will be removed/replaced in 
+     * future versions. DO NOT USE IT.
      * 
      * @param queryRequest
      * @param config OPTIONAL, allows to override configuration at runtime
      * @return
      */
     @SafeVarargs
+    @Deprecated
 	public static GetSubscriptionDetailsResult getSubscriptionDetails(QueryRequest queryRequest, Map<String, String> ... config) {
         return getInstance().getSubscriptionDetails((config.length>0)?config[0]:null, queryRequest);
     }
@@ -414,7 +433,10 @@ public final class Payment {
     /**
      * Cancel a subscription <p>
      * 
-     * Please read official documentation for more detailed information about parameter content.
+     * Please read official documentation for more detailed information about parameter content.<p>
+     * 
+     * DEPRECATED: this method has been created without using builder (as the other methods) and will be removed/replaced in 
+     * future versions. DO NOT USE IT.
      *  
      * @param commonRequest
      * @param queryRequest
@@ -422,6 +444,7 @@ public final class Payment {
      * @return
      */
     @SafeVarargs
+    @Deprecated
 	public static CancelSubscriptionResult cancelSubscription(CommonRequest commonRequest, QueryRequest queryRequest, Map<String, String> ... config) {
         return getInstance().cancelSubscription((config.length>0)?config[0]:null, commonRequest, queryRequest);
     }
