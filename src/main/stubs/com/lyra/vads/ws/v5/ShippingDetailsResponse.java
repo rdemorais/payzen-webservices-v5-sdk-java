@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour shippingDetailsResponse complex type.
+ * <p>Java class for shippingDetailsResponse complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="shippingDetailsResponse">
@@ -82,7 +82,7 @@ public class ShippingDetailsResponse {
     protected String identityCode;
 
     /**
-     * Obtient la valeur de la propriété type.
+     * Gets the value of the type property.
      * 
      * @return
      *     possible object is
@@ -94,7 +94,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété type.
+     * Sets the value of the type property.
      * 
      * @param value
      *     allowed object is
@@ -106,7 +106,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété firstName.
+     * Gets the value of the firstName property.
      * 
      * @return
      *     possible object is
@@ -118,7 +118,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété firstName.
+     * Sets the value of the firstName property.
      * 
      * @param value
      *     allowed object is
@@ -130,7 +130,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété lastName.
+     * Gets the value of the lastName property.
      * 
      * @return
      *     possible object is
@@ -142,7 +142,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété lastName.
+     * Sets the value of the lastName property.
      * 
      * @param value
      *     allowed object is
@@ -154,7 +154,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété phoneNumber.
+     * Gets the value of the phoneNumber property.
      * 
      * @return
      *     possible object is
@@ -166,7 +166,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété phoneNumber.
+     * Sets the value of the phoneNumber property.
      * 
      * @param value
      *     allowed object is
@@ -178,7 +178,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété streetNumber.
+     * Gets the value of the streetNumber property.
      * 
      * @return
      *     possible object is
@@ -190,7 +190,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété streetNumber.
+     * Sets the value of the streetNumber property.
      * 
      * @param value
      *     allowed object is
@@ -202,7 +202,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété address.
+     * Gets the value of the address property.
      * 
      * @return
      *     possible object is
@@ -214,7 +214,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété address.
+     * Sets the value of the address property.
      * 
      * @param value
      *     allowed object is
@@ -226,7 +226,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété address2.
+     * Gets the value of the address2 property.
      * 
      * @return
      *     possible object is
@@ -238,7 +238,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété address2.
+     * Sets the value of the address2 property.
      * 
      * @param value
      *     allowed object is
@@ -250,7 +250,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété district.
+     * Gets the value of the district property.
      * 
      * @return
      *     possible object is
@@ -262,7 +262,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété district.
+     * Sets the value of the district property.
      * 
      * @param value
      *     allowed object is
@@ -274,7 +274,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété zipCode.
+     * Gets the value of the zipCode property.
      * 
      * @return
      *     possible object is
@@ -286,7 +286,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété zipCode.
+     * Sets the value of the zipCode property.
      * 
      * @param value
      *     allowed object is
@@ -298,7 +298,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété city.
+     * Gets the value of the city property.
      * 
      * @return
      *     possible object is
@@ -310,7 +310,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété city.
+     * Sets the value of the city property.
      * 
      * @param value
      *     allowed object is
@@ -322,7 +322,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété state.
+     * Gets the value of the state property.
      * 
      * @return
      *     possible object is
@@ -334,7 +334,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété state.
+     * Sets the value of the state property.
      * 
      * @param value
      *     allowed object is
@@ -346,7 +346,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété country.
+     * Gets the value of the country property.
      * 
      * @return
      *     possible object is
@@ -358,7 +358,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété country.
+     * Sets the value of the country property.
      * 
      * @param value
      *     allowed object is
@@ -370,7 +370,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété deliveryCompanyName.
+     * Gets the value of the deliveryCompanyName property.
      * 
      * @return
      *     possible object is
@@ -382,7 +382,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété deliveryCompanyName.
+     * Sets the value of the deliveryCompanyName property.
      * 
      * @param value
      *     allowed object is
@@ -394,7 +394,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété shippingSpeed.
+     * Gets the value of the shippingSpeed property.
      * 
      * @return
      *     possible object is
@@ -406,7 +406,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété shippingSpeed.
+     * Sets the value of the shippingSpeed property.
      * 
      * @param value
      *     allowed object is
@@ -418,7 +418,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété shippingMethod.
+     * Gets the value of the shippingMethod property.
      * 
      * @return
      *     possible object is
@@ -430,7 +430,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété shippingMethod.
+     * Sets the value of the shippingMethod property.
      * 
      * @param value
      *     allowed object is
@@ -442,7 +442,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété legalName.
+     * Gets the value of the legalName property.
      * 
      * @return
      *     possible object is
@@ -454,7 +454,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété legalName.
+     * Sets the value of the legalName property.
      * 
      * @param value
      *     allowed object is
@@ -466,7 +466,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété identityCode.
+     * Gets the value of the identityCode property.
      * 
      * @return
      *     possible object is
@@ -478,7 +478,7 @@ public class ShippingDetailsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété identityCode.
+     * Sets the value of the identityCode property.
      * 
      * @param value
      *     allowed object is

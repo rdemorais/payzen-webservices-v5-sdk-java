@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour createSubscription complex type.
+ * <p>Java class for createSubscription complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="createSubscription">
@@ -43,7 +43,7 @@ public class CreateSubscription {
     protected CardRequest cardRequest;
 
     /**
-     * Obtient la valeur de la propriété commonRequest.
+     * Gets the value of the commonRequest property.
      * 
      * @return
      *     possible object is
@@ -55,7 +55,7 @@ public class CreateSubscription {
     }
 
     /**
-     * Définit la valeur de la propriété commonRequest.
+     * Sets the value of the commonRequest property.
      * 
      * @param value
      *     allowed object is
@@ -67,7 +67,7 @@ public class CreateSubscription {
     }
 
     /**
-     * Obtient la valeur de la propriété orderRequest.
+     * Gets the value of the orderRequest property.
      * 
      * @return
      *     possible object is
@@ -79,7 +79,7 @@ public class CreateSubscription {
     }
 
     /**
-     * Définit la valeur de la propriété orderRequest.
+     * Sets the value of the orderRequest property.
      * 
      * @param value
      *     allowed object is
@@ -91,7 +91,7 @@ public class CreateSubscription {
     }
 
     /**
-     * Obtient la valeur de la propriété subscriptionRequest.
+     * Gets the value of the subscriptionRequest property.
      * 
      * @return
      *     possible object is
@@ -103,7 +103,7 @@ public class CreateSubscription {
     }
 
     /**
-     * Définit la valeur de la propriété subscriptionRequest.
+     * Sets the value of the subscriptionRequest property.
      * 
      * @param value
      *     allowed object is
@@ -115,7 +115,7 @@ public class CreateSubscription {
     }
 
     /**
-     * Obtient la valeur de la propriété cardRequest.
+     * Gets the value of the cardRequest property.
      * 
      * @return
      *     possible object is
@@ -127,7 +127,7 @@ public class CreateSubscription {
     }
 
     /**
-     * Définit la valeur de la propriété cardRequest.
+     * Sets the value of the cardRequest property.
      * 
      * @param value
      *     allowed object is

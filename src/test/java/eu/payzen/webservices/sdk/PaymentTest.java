@@ -15,25 +15,30 @@
  */
 package eu.payzen.webservices.sdk;
 
-import java.util.Date;
+import static eu.payzen.webservices.sdk.Payment.cancel;
+import static eu.payzen.webservices.sdk.Payment.create;
+import static eu.payzen.webservices.sdk.Payment.details;
+import static eu.payzen.webservices.sdk.Payment.update;
 
-import eu.payzen.webservices.sdk.builder.request.CardRequestBuilder;
-import eu.payzen.webservices.sdk.builder.request.OrderRequestBuilder;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static eu.payzen.webservices.sdk.Payment.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import eu.payzen.webservices.sdk.builder.PaymentBuilder;
+import eu.payzen.webservices.sdk.builder.request.CardRequestBuilder;
+import eu.payzen.webservices.sdk.builder.request.OrderRequestBuilder;
 import eu.payzen.webservices.sdk.builder.request.PaymentRequestBuilder;
 import eu.payzen.webservices.sdk.handler.response.LogResponseHandler;
 import eu.payzen.webservices.sdk.util.Config;
-import java.util.HashMap;
-import java.util.Map;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  *
@@ -361,7 +366,8 @@ public class PaymentTest {
 
         logger.info("End Test cancel simple");
     }
-
+    
+    //TODO: add tests for new operations!!!
     private class LogAndCheckResponseHandler extends LogResponseHandler {
 
         @Override

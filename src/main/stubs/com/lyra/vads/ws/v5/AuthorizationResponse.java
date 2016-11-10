@@ -9,9 +9,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Classe Java pour authorizationResponse complex type.
+ * <p>Java class for authorizationResponse complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="authorizationResponse">
@@ -52,7 +52,7 @@ public class AuthorizationResponse {
     protected Integer result;
 
     /**
-     * Obtient la valeur de la propriété mode.
+     * Gets the value of the mode property.
      * 
      * @return
      *     possible object is
@@ -64,7 +64,7 @@ public class AuthorizationResponse {
     }
 
     /**
-     * Définit la valeur de la propriété mode.
+     * Sets the value of the mode property.
      * 
      * @param value
      *     allowed object is
@@ -76,7 +76,7 @@ public class AuthorizationResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété amount.
+     * Gets the value of the amount property.
      * 
      * @return
      *     possible object is
@@ -88,7 +88,7 @@ public class AuthorizationResponse {
     }
 
     /**
-     * Définit la valeur de la propriété amount.
+     * Sets the value of the amount property.
      * 
      * @param value
      *     allowed object is
@@ -100,7 +100,7 @@ public class AuthorizationResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété currency.
+     * Gets the value of the currency property.
      * 
      * @return
      *     possible object is
@@ -112,7 +112,7 @@ public class AuthorizationResponse {
     }
 
     /**
-     * Définit la valeur de la propriété currency.
+     * Sets the value of the currency property.
      * 
      * @param value
      *     allowed object is
@@ -124,7 +124,7 @@ public class AuthorizationResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété date.
+     * Gets the value of the date property.
      * 
      * @return
      *     possible object is
@@ -136,7 +136,7 @@ public class AuthorizationResponse {
     }
 
     /**
-     * Définit la valeur de la propriété date.
+     * Sets the value of the date property.
      * 
      * @param value
      *     allowed object is
@@ -148,7 +148,7 @@ public class AuthorizationResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété number.
+     * Gets the value of the number property.
      * 
      * @return
      *     possible object is
@@ -160,7 +160,7 @@ public class AuthorizationResponse {
     }
 
     /**
-     * Définit la valeur de la propriété number.
+     * Sets the value of the number property.
      * 
      * @param value
      *     allowed object is
@@ -172,7 +172,7 @@ public class AuthorizationResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété result.
+     * Gets the value of the result property.
      * 
      * @return
      *     possible object is
@@ -184,7 +184,7 @@ public class AuthorizationResponse {
     }
 
     /**
-     * Définit la valeur de la propriété result.
+     * Sets the value of the result property.
      * 
      * @param value
      *     allowed object is

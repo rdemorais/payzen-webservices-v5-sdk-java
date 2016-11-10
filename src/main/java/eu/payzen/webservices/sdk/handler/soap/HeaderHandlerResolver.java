@@ -54,8 +54,9 @@ public class HeaderHandlerResolver implements HandlerResolver {
      * @param portInfo
      * @return list of handlers
      */
-    public List<Handler> getHandlerChain(PortInfo portInfo) {
-        List<Handler> handlerChain = new ArrayList<Handler>();
+    @SuppressWarnings("rawtypes")
+	public List<Handler> getHandlerChain(PortInfo portInfo) {
+        List<Handler> handlerChain = new ArrayList<>();
 
         HeaderHandler hh = new HeaderHandler(shopId, shopKey, mode, wsUser, returnUrl, ecsPaymentId);
 

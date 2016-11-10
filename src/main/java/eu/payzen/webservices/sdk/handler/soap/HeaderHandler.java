@@ -142,10 +142,6 @@ public class HeaderHandler implements SOAPHandler<SOAPMessageContext> {
 
     }
 
-    public Set getHeaders() {
-        return null;
-    }
-
     public boolean handleFault(SOAPMessageContext context) {
         return true;
     }
@@ -190,4 +186,9 @@ public class HeaderHandler implements SOAPHandler<SOAPMessageContext> {
 
         return hmacSha1.doFinal(text);
     }
+
+	@Override
+	public Set<QName> getHeaders() {
+		return null;
+	}
 }

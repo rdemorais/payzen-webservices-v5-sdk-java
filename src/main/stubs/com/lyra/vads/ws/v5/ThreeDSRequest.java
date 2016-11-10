@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour threeDSRequest complex type.
+ * <p>Java class for threeDSRequest complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="threeDSRequest">
@@ -64,7 +64,7 @@ public class ThreeDSRequest {
     protected MpiExtensionRequest mpiExtension;
 
     /**
-     * Obtient la valeur de la propriété mode.
+     * Gets the value of the mode property.
      * 
      * @return
      *     possible object is
@@ -76,7 +76,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Définit la valeur de la propriété mode.
+     * Sets the value of the mode property.
      * 
      * @param value
      *     allowed object is
@@ -88,7 +88,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété requestId.
+     * Gets the value of the requestId property.
      * 
      * @return
      *     possible object is
@@ -100,7 +100,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Définit la valeur de la propriété requestId.
+     * Sets the value of the requestId property.
      * 
      * @param value
      *     allowed object is
@@ -112,7 +112,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété pares.
+     * Gets the value of the pares property.
      * 
      * @return
      *     possible object is
@@ -124,7 +124,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Définit la valeur de la propriété pares.
+     * Sets the value of the pares property.
      * 
      * @param value
      *     allowed object is
@@ -136,7 +136,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété brand.
+     * Gets the value of the brand property.
      * 
      * @return
      *     possible object is
@@ -148,7 +148,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Définit la valeur de la propriété brand.
+     * Sets the value of the brand property.
      * 
      * @param value
      *     allowed object is
@@ -160,7 +160,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété enrolled.
+     * Gets the value of the enrolled property.
      * 
      * @return
      *     possible object is
@@ -172,7 +172,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Définit la valeur de la propriété enrolled.
+     * Sets the value of the enrolled property.
      * 
      * @param value
      *     allowed object is
@@ -184,7 +184,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété status.
+     * Gets the value of the status property.
      * 
      * @return
      *     possible object is
@@ -196,7 +196,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Définit la valeur de la propriété status.
+     * Sets the value of the status property.
      * 
      * @param value
      *     allowed object is
@@ -208,7 +208,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété eci.
+     * Gets the value of the eci property.
      * 
      * @return
      *     possible object is
@@ -220,7 +220,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Définit la valeur de la propriété eci.
+     * Sets the value of the eci property.
      * 
      * @param value
      *     allowed object is
@@ -232,7 +232,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété xid.
+     * Gets the value of the xid property.
      * 
      * @return
      *     possible object is
@@ -244,7 +244,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Définit la valeur de la propriété xid.
+     * Sets the value of the xid property.
      * 
      * @param value
      *     allowed object is
@@ -256,7 +256,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété cavv.
+     * Gets the value of the cavv property.
      * 
      * @return
      *     possible object is
@@ -268,7 +268,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Définit la valeur de la propriété cavv.
+     * Sets the value of the cavv property.
      * 
      * @param value
      *     allowed object is
@@ -280,7 +280,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété algorithm.
+     * Gets the value of the algorithm property.
      * 
      * @return
      *     possible object is
@@ -292,7 +292,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Définit la valeur de la propriété algorithm.
+     * Sets the value of the algorithm property.
      * 
      * @param value
      *     allowed object is
@@ -304,7 +304,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Obtient la valeur de la propriété mpiExtension.
+     * Gets the value of the mpiExtension property.
      * 
      * @return
      *     possible object is
@@ -316,7 +316,7 @@ public class ThreeDSRequest {
     }
 
     /**
-     * Définit la valeur de la propriété mpiExtension.
+     * Sets the value of the mpiExtension property.
      * 
      * @param value
      *     allowed object is

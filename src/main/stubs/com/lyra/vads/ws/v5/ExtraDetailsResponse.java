@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour extraDetailsResponse complex type.
+ * <p>Java class for extraDetailsResponse complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="extraDetailsResponse">
@@ -34,7 +34,7 @@ public class ExtraDetailsResponse {
     protected String ipAddress;
 
     /**
-     * Obtient la valeur de la propriété ipAddress.
+     * Gets the value of the ipAddress property.
      * 
      * @return
      *     possible object is
@@ -46,7 +46,7 @@ public class ExtraDetailsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété ipAddress.
+     * Sets the value of the ipAddress property.
      * 
      * @param value
      *     allowed object is

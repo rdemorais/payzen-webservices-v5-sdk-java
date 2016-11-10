@@ -9,9 +9,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Classe Java pour markResponse complex type.
+ * <p>Java class for markResponse complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="markResponse">
@@ -49,7 +49,7 @@ public class MarkResponse {
     protected Integer result;
 
     /**
-     * Obtient la valeur de la propriété amount.
+     * Gets the value of the amount property.
      * 
      * @return
      *     possible object is
@@ -61,7 +61,7 @@ public class MarkResponse {
     }
 
     /**
-     * Définit la valeur de la propriété amount.
+     * Sets the value of the amount property.
      * 
      * @param value
      *     allowed object is
@@ -73,7 +73,7 @@ public class MarkResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété currency.
+     * Gets the value of the currency property.
      * 
      * @return
      *     possible object is
@@ -85,7 +85,7 @@ public class MarkResponse {
     }
 
     /**
-     * Définit la valeur de la propriété currency.
+     * Sets the value of the currency property.
      * 
      * @param value
      *     allowed object is
@@ -97,7 +97,7 @@ public class MarkResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété date.
+     * Gets the value of the date property.
      * 
      * @return
      *     possible object is
@@ -109,7 +109,7 @@ public class MarkResponse {
     }
 
     /**
-     * Définit la valeur de la propriété date.
+     * Sets the value of the date property.
      * 
      * @param value
      *     allowed object is
@@ -121,7 +121,7 @@ public class MarkResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété number.
+     * Gets the value of the number property.
      * 
      * @return
      *     possible object is
@@ -133,7 +133,7 @@ public class MarkResponse {
     }
 
     /**
-     * Définit la valeur de la propriété number.
+     * Sets the value of the number property.
      * 
      * @param value
      *     allowed object is
@@ -145,7 +145,7 @@ public class MarkResponse {
     }
 
     /**
-     * Obtient la valeur de la propriété result.
+     * Gets the value of the result property.
      * 
      * @return
      *     possible object is
@@ -157,7 +157,7 @@ public class MarkResponse {
     }
 
     /**
-     * Définit la valeur de la propriété result.
+     * Sets the value of the result property.
      * 
      * @param value
      *     allowed object is

@@ -9,9 +9,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour findPaymentsResponse complex type.
+ * <p>Java class for findPaymentsResponse complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="findPaymentsResponse">
@@ -48,7 +48,7 @@ public class FindPaymentsResponse {
     protected FindPaymentsResponse.FindPaymentsResult findPaymentsResult;
 
     /**
-     * Obtient la valeur de la propriété findPaymentsResult.
+     * Gets the value of the findPaymentsResult property.
      * 
      * @return
      *     possible object is
@@ -60,7 +60,7 @@ public class FindPaymentsResponse {
     }
 
     /**
-     * Définit la valeur de la propriété findPaymentsResult.
+     * Sets the value of the findPaymentsResult property.
      * 
      * @param value
      *     allowed object is
@@ -73,9 +73,9 @@ public class FindPaymentsResponse {
 
 
     /**
-     * <p>Classe Java pour anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType>
@@ -108,7 +108,7 @@ public class FindPaymentsResponse {
         protected List<TransactionItem> transactionItem;
 
         /**
-         * Obtient la valeur de la propriété commonResponse.
+         * Gets the value of the commonResponse property.
          * 
          * @return
          *     possible object is
@@ -120,7 +120,7 @@ public class FindPaymentsResponse {
         }
 
         /**
-         * Définit la valeur de la propriété commonResponse.
+         * Sets the value of the commonResponse property.
          * 
          * @param value
          *     allowed object is
@@ -132,7 +132,7 @@ public class FindPaymentsResponse {
         }
 
         /**
-         * Obtient la valeur de la propriété orderResponse.
+         * Gets the value of the orderResponse property.
          * 
          * @return
          *     possible object is
@@ -144,7 +144,7 @@ public class FindPaymentsResponse {
         }
 
         /**
-         * Définit la valeur de la propriété orderResponse.
+         * Sets the value of the orderResponse property.
          * 
          * @param value
          *     allowed object is

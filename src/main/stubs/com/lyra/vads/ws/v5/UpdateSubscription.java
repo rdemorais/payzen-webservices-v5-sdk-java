@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour updateSubscription complex type.
+ * <p>Java class for updateSubscription complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="updateSubscription">
@@ -40,7 +40,7 @@ public class UpdateSubscription {
     protected SubscriptionRequest subscriptionRequest;
 
     /**
-     * Obtient la valeur de la propriété commonRequest.
+     * Gets the value of the commonRequest property.
      * 
      * @return
      *     possible object is
@@ -52,7 +52,7 @@ public class UpdateSubscription {
     }
 
     /**
-     * Définit la valeur de la propriété commonRequest.
+     * Sets the value of the commonRequest property.
      * 
      * @param value
      *     allowed object is
@@ -64,7 +64,7 @@ public class UpdateSubscription {
     }
 
     /**
-     * Obtient la valeur de la propriété queryRequest.
+     * Gets the value of the queryRequest property.
      * 
      * @return
      *     possible object is
@@ -76,7 +76,7 @@ public class UpdateSubscription {
     }
 
     /**
-     * Définit la valeur de la propriété queryRequest.
+     * Sets the value of the queryRequest property.
      * 
      * @param value
      *     allowed object is
@@ -88,7 +88,7 @@ public class UpdateSubscription {
     }
 
     /**
-     * Obtient la valeur de la propriété subscriptionRequest.
+     * Gets the value of the subscriptionRequest property.
      * 
      * @return
      *     possible object is
@@ -100,7 +100,7 @@ public class UpdateSubscription {
     }
 
     /**
-     * Définit la valeur de la propriété subscriptionRequest.
+     * Sets the value of the subscriptionRequest property.
      * 
      * @param value
      *     allowed object is

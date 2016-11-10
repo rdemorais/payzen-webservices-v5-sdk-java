@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour findPayments complex type.
+ * <p>Java class for findPayments complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="findPayments">
@@ -34,7 +34,7 @@ public class FindPayments {
     protected QueryRequest queryRequest;
 
     /**
-     * Obtient la valeur de la propriété queryRequest.
+     * Gets the value of the queryRequest property.
      * 
      * @return
      *     possible object is
@@ -46,7 +46,7 @@ public class FindPayments {
     }
 
     /**
-     * Définit la valeur de la propriété queryRequest.
+     * Sets the value of the queryRequest property.
      * 
      * @param value
      *     allowed object is
