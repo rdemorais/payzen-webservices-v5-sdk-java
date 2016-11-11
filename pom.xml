@@ -45,13 +45,12 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
 		<maven.javadoc.failOnError>false</maven.javadoc.failOnError>
 	</properties>
 	<build>
 		<resources>
-			<!-- <resource> <directory>src/main/stubs</directory> </resource> -->
 			<resource>
 				<directory>src/main/resources</directory>
 			</resource>
@@ -122,64 +121,6 @@
 				</pluginManagement>
 			</build>
 		</profile>
-		<profile>
-			<id>generate-ws-stubs</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<build>
-				<plugins>
-
-					<plugin>
-						<groupId>org.jvnet.jax-ws-commons</groupId>
-						<artifactId>jaxws-maven-plugin</artifactId>
-						<version>2.3</version>
-						<configuration>
-							<encoding>UTF-8</encoding>
-							<verbose>true</verbose>
-						</configuration>
-						<executions>
-							<execution>
-								<phase>generate-sources</phase>
-								<goals>
-									<goal>wsimport</goal>
-								</goals>
-								<configuration>
-									<!-- Needed with JAXP 1.5 -->
-									<vmArgs>
-										<vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
-									</vmArgs>
-									<!-- Keep generated files -->
-									<keep>true</keep>
-									<encoding>UTF-8</encoding>
-									<extension>true</extension>
-									<sourceDestDir>
-										src/main/stubs
-									</sourceDestDir>
-									<destDir>
-										target/classes
-									</destDir>
-									<wsdlUrls>
-										<wsdlUrl>
-											https://secure.payzen.eu/vads-ws/v5?wsdl
-										</wsdlUrl>
-									</wsdlUrls>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-		<profile>
-			<id>doclint-java8-disable</id>
-			<activation>
-				<jdk>[1.8,)</jdk>
-			</activation>
-			<properties>
-				<javadoc.opts>-Xdoclint:none</javadoc.opts>
-			</properties>
-		</profile>
 	</profiles>
 	<dependencies>
 		<dependency>
@@ -214,6 +155,13 @@
 			<artifactId>slf4j-simple</artifactId>
 			<version>1.7.12</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>eu.payzen.sdk</groupId>
+			<artifactId>payzen-ws-stubs</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/payzen-ws-stubs-1.0.0-SNAPSHOT.jar</systemPath>
 		</dependency>
 	</dependencies>
 </project>
