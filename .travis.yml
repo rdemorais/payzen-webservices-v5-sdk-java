@@ -2,7 +2,7 @@ language: java
 jdk:
   - oraclejdk8
 install:
-  - mvn --settings .travis/settings.xml install -Dmaven.javadoc.skip=true -B -V
+  - mvn --settings .travis/settings.xml install -B -V
 before_install:
   - 'if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import; fi'
   - 'if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust; fi'
