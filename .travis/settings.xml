@@ -22,4 +22,7 @@
             </properties>
         </profile>
     </profiles>
+    <activeProfiles>		 
+        <activeProfile>release-profile</activeProfile>		
+    </activeProfiles>
 </settings>
