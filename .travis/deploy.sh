@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-mvn clean deploy --settings .travis/settings.xml -Prelease-profile,generate-ws-stubs -DskipTests=true -B -U
+mvn clean deploy --settings .travis/settings.xml -DskipTests=true -B -U
