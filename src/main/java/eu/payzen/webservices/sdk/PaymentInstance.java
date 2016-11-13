@@ -232,7 +232,7 @@ final class PaymentInstance {
 		ThreeDSRequest threeDSRequest = new ThreeDSRequest();
 		threeDSRequest.setMode(ThreeDSMode.ENABLED_FINALIZE);
 		threeDSRequest.setPares(paREs);
-		threeDSRequest.setRequestId(RequestUtils.getRequestIdFormMD(MD));
+		threeDSRequest.setRequestId(RequestUtils.getRequestIdFromMD(MD));
 
 		// Maintain Session! (this payment context will not be found if we do
 		// not provide the good session)

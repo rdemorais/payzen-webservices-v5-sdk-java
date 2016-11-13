@@ -77,7 +77,7 @@ public class HeaderHandler implements SOAPHandler<SOAPMessageContext> {
      * information
      * 
      * @param smc SOAP message context
-     * @return 
+     * @return boolean indicating outbound property
      */
     public boolean handleMessage(SOAPMessageContext smc) {
 
