@@ -51,7 +51,7 @@ public class HeaderHandlerResolver implements HandlerResolver {
     /**
      * Adds HeaderHandler into the handler chain
      * 
-     * @param portInfo
+     * @param portInfo used to query information about the port
      * @return list of handlers
      */
     @SuppressWarnings("rawtypes")

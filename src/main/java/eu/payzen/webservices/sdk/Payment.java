@@ -297,6 +297,7 @@ public final class Payment {
      * 
      * @param uuidTransaction unique identifier of the transaction
      * @param amount the new amount for the transaction
+     * @param currency the currency of the transaction
      * @param config OPTIONAL, allows to override configuration at runtime
      * @return result with all the response objects
      */
@@ -399,12 +400,12 @@ public final class Payment {
      * DEPRECATED: this method has been created without using builder (as the other methods) and will be removed/replaced in 
      * future versions. DO NOT USE IT.
      * 
-     * @param commonRequest
-     * @param orderRequest
-     * @param subscriptionRequest
-     * @param cardRequest
+     * @param commonRequest the common request data
+     * @param orderRequest the order request data
+     * @param subscriptionRequest the subscription request data
+     * @param cardRequest the card request data
      * @param config OPTIONAL, allows to override configuration at runtime
-     * @return
+     * @return result with all the response objects
      */
     @SafeVarargs
     @Deprecated
@@ -420,9 +421,9 @@ public final class Payment {
      * DEPRECATED: this method has been created without using builder (as the other methods) and will be removed/replaced in 
      * future versions. DO NOT USE IT.
      * 
-     * @param queryRequest
+     * @param queryRequest the query request data
      * @param config OPTIONAL, allows to override configuration at runtime
-     * @return
+     * @return result with all the response objects
      */
     @SafeVarargs
     @Deprecated
@@ -438,10 +439,10 @@ public final class Payment {
      * DEPRECATED: this method has been created without using builder (as the other methods) and will be removed/replaced in 
      * future versions. DO NOT USE IT.
      *  
-     * @param commonRequest
-     * @param queryRequest
+     * @param commonRequest the common data
+     * @param queryRequest the query request data
      * @param config OPTIONAL, allows to override configuration at runtime
-     * @return
+     * @return result with all the response objects
      */
     @SafeVarargs
     @Deprecated

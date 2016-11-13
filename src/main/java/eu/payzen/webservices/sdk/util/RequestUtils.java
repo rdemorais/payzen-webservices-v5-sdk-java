@@ -30,9 +30,9 @@ public class RequestUtils {
      * Retrieves the requestId information from the MD field
      * 
      * @param MD MD information sent to ACS
-     * @return 
+     * @return the extracted requestId
      */
-    public static String getRequestIdFormMD(String MD) {
+    public static String getRequestIdFromMD(String MD) {
         String requestId = "";
         String data[] = getMDTokens(MD);
         
@@ -47,7 +47,7 @@ public class RequestUtils {
      * Retrieves the sessioncookie (JSESSIONID) form the MD field
      * 
      * @param MD MD information sent to ACS
-     * @return 
+     * @return the extracted cookie
      */
     public static String getSessionCookieFromMD(String MD) {
         String jsessionId = "";
