@@ -61,7 +61,6 @@
 		<profile>
 			<id>release-profile</id>
 			<build>
-				<pluginManagement>
 					<plugins>
 						<plugin>
 							<groupId>org.sonatype.plugins</groupId>
@@ -118,7 +117,6 @@
 							</executions>
 						</plugin>
 					</plugins>
-				</pluginManagement>
 			</build>
 		</profile>
 	</profiles>
