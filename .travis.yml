@@ -4,8 +4,9 @@ jdk:
 install:
   - mvn --settings .travis/settings.xml install -B -V
 before_install:
-  - 'if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import; fi'
-  - 'if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust; fi'
+  -
+    provider: script
+    script: .travis/deploy.sh
 before_deploy:
   - git reset --hard
 deploy:
