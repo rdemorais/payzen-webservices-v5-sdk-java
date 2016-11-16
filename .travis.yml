@@ -7,7 +7,7 @@ before_install:
   - 'if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import; fi'
   - 'if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust; fi'
   - 'if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then $GPG_EXECUTABLE  --list-keys; fi'
-  - 'if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then $GPG_EXECUTABLE  --keyserver hkp://pool.sks-keyservers.net --send-keys a979a5f6682d6268; fi'
+  - 'if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then $GPG_EXECUTABLE  --keyserver hkp://pool.sks-keyservers.net --send-keys 682D6268; fi'
 before_deploy:
   - git reset --hard
 deploy:
