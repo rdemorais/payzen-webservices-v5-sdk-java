@@ -17,6 +17,8 @@ package eu.payzen.webservices.sdk.handler.soap;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+
 import javax.xml.ws.handler.Handler;
 import javax.xml.ws.handler.HandlerResolver;
 import javax.xml.ws.handler.PortInfo;
@@ -34,18 +36,19 @@ public class HeaderHandlerResolver implements HandlerResolver {
     private final String wsUser;
     private final String returnUrl;
     private final String ecsPaymentId;
+    private final String remoteId;
     
-    public HeaderHandlerResolver(String shopId, String shopKey, String mode) {
-    	this(shopId, shopKey, mode, null, null, null);
-    }
+    private final Map<String, String> dynamicHeaders;
     
-    public HeaderHandlerResolver(String shopId, String shopKey, String mode, String wsUser, String returnUrl, String ecsPaymentId) {
+    public HeaderHandlerResolver(String shopId, String shopKey, String mode, String wsUser, String returnUrl, String ecsPaymentId, String remoteId, Map<String, String> dynamicHeaders) {
         this.shopId = shopId;
         this.shopKey = shopKey;
         this.mode = mode;
         this.wsUser = wsUser;
         this.returnUrl = returnUrl;
         this.ecsPaymentId = ecsPaymentId;
+        this.remoteId = remoteId;
+       	this.dynamicHeaders = dynamicHeaders;
     }
 
     /**
@@ -58,7 +61,7 @@ public class HeaderHandlerResolver implements HandlerResolver {
 	public List<Handler> getHandlerChain(PortInfo portInfo) {
         List<Handler> handlerChain = new ArrayList<>();
 
-        HeaderHandler hh = new HeaderHandler(shopId, shopKey, mode, wsUser, returnUrl, ecsPaymentId);
+        HeaderHandler hh = new HeaderHandler(shopId, shopKey, mode, wsUser, returnUrl, ecsPaymentId, remoteId, dynamicHeaders);
 
         handlerChain.add(hh);
 

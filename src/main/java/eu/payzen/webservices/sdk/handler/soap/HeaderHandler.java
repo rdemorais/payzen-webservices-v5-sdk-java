@@ -20,6 +20,7 @@ import java.security.NoSuchAlgorithmException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Map;
 import java.util.Set;
 import java.util.TimeZone;
 import java.util.UUID;
@@ -56,21 +57,24 @@ public class HeaderHandler implements SOAPHandler<SOAPMessageContext> {
     private final String wsUser;
     private final String returnUrl;
     private final String ecsPaymentId;
+    private final String remoteId;
+    
+    private final Map<String, String> dynamicHeaders;
 
     private static final String NAMESPACE = "http://v5.ws.vads.lyra.com/Header/";
 
-    public HeaderHandler(String shopId, String shopKey, String mode) {
-    	this(shopId, shopKey, mode, null, null, null);
-    }
-    
-    public HeaderHandler(String shopId, String shopKey, String mode, String wsUser, String returnUrl, String ecsPaymentId) {
+    public HeaderHandler(String shopId, String shopKey, String mode, String wsUser, String returnUrl, String ecsPaymentId, String remoteId, Map<String, String> dynamicHeaders) {
         this.shopId = shopId;
         this.shopKey = shopKey;
         this.mode = mode;
         this.wsUser = wsUser;
         this.returnUrl = returnUrl;
         this.ecsPaymentId = ecsPaymentId;
+        this.remoteId = remoteId;
+        
+        this.dynamicHeaders = dynamicHeaders;
     }
+    
 
     /**
      * Takes the outgoing SOAP message and modifies it adding the header 
@@ -113,7 +117,21 @@ public class HeaderHandler implements SOAPHandler<SOAPMessageContext> {
                 if (ecsPaymentId != null) {                	
                 	addHeaderField(header, "ecsPaymentId", this.ecsPaymentId);
                 }
-
+                
+                // Add remoteId
+                if (remoteId != null) {                	
+                	addHeaderField(header, "remoteId", this.remoteId);
+                }
+                
+                //DynamicHeaders
+                if (dynamicHeaders != null) {
+                	for (String key : dynamicHeaders.keySet()) {
+                		String value = dynamicHeaders.get(key);
+						if (value != null) {
+							addHeaderField(header, key, value);
+						}	
+					}
+                }
 
                 // Timestamp
                 TimeZone tz = TimeZone.getTimeZone("UTC");
