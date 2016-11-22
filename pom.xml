@@ -155,11 +155,9 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>eu.payzen.sdk</groupId>
+			<groupId>com.profesorfalken</groupId>
 			<artifactId>payzen-ws-stubs</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/resources/payzen-ws-stubs-1.0.0-SNAPSHOT.jar</systemPath>
+			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 </project>
