@@ -42,24 +42,18 @@ public class ClientV5 {
 
 	public ClientV5(Map<String, String> config) {
 		// Read client properties - payzen-config.properties
-		String shopId = (config != null && config.get("shopId") != null) ? config.get("shopId")
-				: Config.getConfig().getProperty("shopId");
-		String shopKey = (config != null && config.get("shopKey") != null) ? config.get("shopKey")
-				: Config.getConfig().getProperty("shopKey");
-		String mode = (config != null && config.get("mode") != null) ? config.get("mode")
-				: Config.getConfig().getProperty("mode");
-		String endpointHost = (config != null && config.get("endpointHost") != null) ? config.get("endpointHost")
-				: Config.getConfig().getProperty("endpointHost");
-		String secureConnection = (config != null && config.get("secureConnection") != null)
-				? config.get("secureConnection") : Config.getConfig().getProperty("secureConnection");
-		String disableHostnameVerifier = (config != null && config.get("disableHostnameVerifier") != null)
-				? config.get("disableHostnameVerifier") : Config.getConfig().getProperty("disableHostnameVerifier");
-		String wsUser = (config != null && config.get("wsUser") != null) ? config.get("wsUser")
-				: Config.getConfig().getProperty("wsUser");
-		String returnUrl = (config != null && config.get("returnUrl") != null) ? config.get("returnUrl")
-				: Config.getConfig().getProperty("returnUrl");
-		String ecsPaymentId = (config != null && config.get("ecsPaymentId") != null) ? config.get("ecsPaymentId")
-				: Config.getConfig().getProperty("ecsPaymentId");
+		String shopId = getProperty("shopId", config);
+		String shopKey = getProperty("shopKey", config);
+		String mode = getProperty("mode", config);
+		String endpointHost = getProperty("endpointHost", config);
+		String secureConnection = getProperty("secureConnection", config);
+		String disableHostnameVerifier = getProperty("disableHostnameVerifier", config);
+		String wsUser = getProperty("wsUser", config);
+		String returnUrl = getProperty("returnUrl", config);
+		String ecsPaymentId = getProperty("ecsPaymentId", config);
+		String remoteId = getProperty("remoteId", config);
+		
+		
 		
 		String protocol = "https://";
 		if (!("true".equalsIgnoreCase(secureConnection))) {
@@ -79,7 +73,7 @@ public class ClientV5 {
 			wsdlURL = new URL(wsdlURLStr.toString());
 			QName qname = new QName("http://v5.ws.vads.lyra.com/", "v5");
 			Service service = Service.create(wsdlURL, qname);
-			service.setHandlerResolver(new HeaderHandlerResolver(shopId, shopKey, mode, wsUser, returnUrl, ecsPaymentId));
+			service.setHandlerResolver(new HeaderHandlerResolver(shopId, shopKey, mode, wsUser, returnUrl, ecsPaymentId, remoteId, config));
 			port = service.getPort(PaymentAPI.class);
 
 		}  catch (IOException e) {
@@ -94,5 +88,11 @@ public class ClientV5 {
 	 */
 	public PaymentAPI getPaymentAPIImplPort() {
 		return port;
+	}
+	
+	private String getProperty(String key, Map<String, String> config) {
+		String value = (config != null && config.get(key) != null) ? config.remove(key)
+				:Config.getConfig().getProperty(key);
+		return value;
 	}
 }
