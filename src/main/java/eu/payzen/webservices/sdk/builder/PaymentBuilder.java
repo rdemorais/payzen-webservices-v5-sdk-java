@@ -18,6 +18,7 @@ package eu.payzen.webservices.sdk.builder;
 import com.lyra.vads.ws.v5.CardRequest;
 import com.lyra.vads.ws.v5.CommonRequest;
 import com.lyra.vads.ws.v5.CreatePayment;
+import com.lyra.vads.ws.v5.CustomerRequest;
 import com.lyra.vads.ws.v5.OrderRequest;
 import com.lyra.vads.ws.v5.PaymentRequest;
 import com.lyra.vads.ws.v5.ThreeDSRequest;
@@ -39,6 +40,7 @@ public class PaymentBuilder {
     OrderRequest order;
     PaymentRequest payment;
     CardRequest card;
+    CustomerRequest customerRequest;
     ThreeDSRequest threeDS;
 
     private PaymentBuilder() {
@@ -77,6 +79,11 @@ public class PaymentBuilder {
         this.payment = payment;
         return this;
     }
+    
+    public PaymentBuilder customer(CustomerRequest customer) {
+        this.customerRequest = customer;
+        return this;
+    }
 
     public PaymentBuilder card(CardRequest card) {
         this.card = card;
@@ -101,6 +108,7 @@ public class PaymentBuilder {
         createPayment.setOrderRequest(order);
         createPayment.setPaymentRequest(payment);
         createPayment.setCardRequest(card);
+        createPayment.setCustomerRequest(customerRequest);
         createPayment.setThreeDSRequest(threeDS);
 
         return createPayment;
