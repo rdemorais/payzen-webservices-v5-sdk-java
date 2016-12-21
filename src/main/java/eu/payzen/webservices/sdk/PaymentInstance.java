@@ -27,12 +27,15 @@ import org.slf4j.LoggerFactory;
 
 import com.lyra.vads.ws.v5.CancelPaymentResponse;
 import com.lyra.vads.ws.v5.CancelSubscriptionResponse.CancelSubscriptionResult;
+import com.lyra.vads.ws.v5.CapturePaymentResponse.CapturePaymentResult;
 import com.lyra.vads.ws.v5.CardRequest;
 import com.lyra.vads.ws.v5.CommonRequest;
 import com.lyra.vads.ws.v5.CreatePayment;
 import com.lyra.vads.ws.v5.CreatePaymentResponse;
 import com.lyra.vads.ws.v5.CreateSubscriptionResponse.CreateSubscriptionResult;
 import com.lyra.vads.ws.v5.CreateTokenFromTransactionResponse.CreateTokenFromTransactionResult;
+import com.lyra.vads.ws.v5.CreateTokenResponse.CreateTokenResult;
+import com.lyra.vads.ws.v5.CustomerRequest;
 import com.lyra.vads.ws.v5.GetPaymentDetailsResponse;
 import com.lyra.vads.ws.v5.GetPaymentUuidResponse;
 import com.lyra.vads.ws.v5.GetSubscriptionDetailsResponse.GetSubscriptionDetailsResult;
@@ -41,6 +44,7 @@ import com.lyra.vads.ws.v5.OrderRequest;
 import com.lyra.vads.ws.v5.PaymentAPI;
 import com.lyra.vads.ws.v5.PaymentRequest;
 import com.lyra.vads.ws.v5.QueryRequest;
+import com.lyra.vads.ws.v5.SettlementRequest;
 import com.lyra.vads.ws.v5.RefundPaymentResponse.RefundPaymentResult;
 import com.lyra.vads.ws.v5.SubscriptionRequest;
 import com.lyra.vads.ws.v5.ThreeDSMode;
@@ -743,6 +747,20 @@ final class PaymentInstance {
 				queryRequest);
 
 		return createTokenFromTransaction;
+	}
+	
+	CreateTokenResult createToken(Map<String, String> config, CommonRequest commonRequest, CardRequest cardRequest, CustomerRequest customerRequest) {
+	    PaymentAPI api = new ClientV5(config).getPaymentAPIImplPort();
+
+	    CreateTokenResult createToken = api.createToken(commonRequest, cardRequest, customerRequest);
+
+        return createToken;
+	}
+	
+	CapturePaymentResult capturePayment(Map<String, String> config, SettlementRequest settlementRequest) {
+	    PaymentAPI api = new ClientV5(config).getPaymentAPIImplPort();
+	    
+	    return api.capturePayment(settlementRequest);
 	}
 
 	/**
