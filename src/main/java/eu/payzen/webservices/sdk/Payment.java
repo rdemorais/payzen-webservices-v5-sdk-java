@@ -19,16 +19,20 @@ import java.util.Date;
 import java.util.Map;
 
 import com.lyra.vads.ws.v5.CancelSubscriptionResponse.CancelSubscriptionResult;
+import com.lyra.vads.ws.v5.CapturePaymentResponse.CapturePaymentResult;
 import com.lyra.vads.ws.v5.CardRequest;
 import com.lyra.vads.ws.v5.CommonRequest;
 import com.lyra.vads.ws.v5.CreatePayment;
+import com.lyra.vads.ws.v5.CustomerRequest;
+import com.lyra.vads.ws.v5.CreateSubscriptionResponse.CreateSubscriptionResult;
+import com.lyra.vads.ws.v5.CreateTokenFromTransactionResponse.CreateTokenFromTransactionResult;
+import com.lyra.vads.ws.v5.CreateTokenResponse.CreateTokenResult;
+import com.lyra.vads.ws.v5.GetSubscriptionDetailsResponse.GetSubscriptionDetailsResult;
 import com.lyra.vads.ws.v5.OrderRequest;
 import com.lyra.vads.ws.v5.PaymentRequest;
 import com.lyra.vads.ws.v5.QueryRequest;
+import com.lyra.vads.ws.v5.SettlementRequest;
 import com.lyra.vads.ws.v5.SubscriptionRequest;
-import com.lyra.vads.ws.v5.CreateSubscriptionResponse.CreateSubscriptionResult;
-import com.lyra.vads.ws.v5.CreateTokenFromTransactionResponse.CreateTokenFromTransactionResult;
-import com.lyra.vads.ws.v5.GetSubscriptionDetailsResponse.GetSubscriptionDetailsResult;
 import com.lyra.vads.ws.v5.ValidatePaymentResponse.ValidatePaymentResult;
 
 /**
@@ -371,6 +375,17 @@ public final class Payment {
     @Deprecated
 	public static CreateTokenFromTransactionResult createTokenFromTransaction(String uuidTransaction, CommonRequest commonRequest, Map<String, String> ... config) {
         return getInstance().createTokenFromTransaction((config.length>0)?config[0]:null, uuidTransaction, commonRequest);
+    }
+    
+    @SafeVarargs
+    public static CreateTokenResult createToken(CommonRequest commonRequest, CardRequest cardRequest, 
+            CustomerRequest customerRequest, Map<String, String> ... config) {
+        return getInstance().createToken((config.length>0)?config[0]:null, commonRequest, cardRequest, customerRequest);
+    }
+    
+    @SafeVarargs
+    public static CapturePaymentResult capturePayment(SettlementRequest settlementRequest, Map<String, String> ... config) {
+        return getInstance().capturePayment((config.length>0)?config[0]:null, settlementRequest);
     }
     
     /**

@@ -76,9 +76,9 @@ public class PaymentTest {
 
         if (checkConfig()) {
             ServiceResult result = create("TestTRS",
-                    100,
-                    978,
-                    "4970100000000003",
+                    10000,
+                    986,
+                    "5970100300000000",
                     12,
                     2017,
                     "123",
@@ -116,7 +116,7 @@ public class PaymentTest {
             ServiceResult result = create("TestTRS",
                     100,
                     978,
-                    "4970100000000003",
+                    "4970100000000098",
                     12,
                     2017,
                     "123",
@@ -245,13 +245,13 @@ public class PaymentTest {
             OrderRequestBuilder orderRequestBuilder
                     = OrderRequestBuilder
                     .create()
-                    .orderId("TestTRS");
+                    .orderId("TestTRS-API");
 
             PaymentRequestBuilder paymentRequestBuilder
                     = PaymentRequestBuilder
                     .create()
                     .amount(100)
-                    .currency(978);
+                    .currency(986);
 
             CardRequestBuilder cardRequestBuilder
                     = CardRequestBuilder
